@@ -379,8 +379,17 @@ button:disabled {
   display: block;
 }
 
-.sign-count-1 .road-sign-svg {
+.sign-img {
+  display: block;
+  width: min(128px, 100%);
+  max-height: 128px;
+  object-fit: contain;
+}
+
+.sign-count-1 .road-sign-svg,
+.sign-count-1 .sign-img {
   width: min(154px, 100%);
+  max-height: 154px;
 }
 
 .sign-tile figcaption {

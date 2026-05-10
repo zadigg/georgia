@@ -1,0 +1,138 @@
+{
+  "stop": {
+    "file": "assets/signs/stop.gif",
+    "source": "https://lawlor.cs.uaf.edu/~olawlor/projects/2003/roadsigns/regulatory/r1-1.html",
+    "label": "STOP (R1-1)"
+  },
+  "yield": {
+    "file": "assets/signs/yield.svg",
+    "source": "https://lawlor.cs.uaf.edu/~olawlor/projects/2003/roadsigns/regulatory/r1-2.html",
+    "label": "YIELD (R1-2)"
+  },
+  "speedLimit": {
+    "file": "assets/signs/speed-limit.gif",
+    "source": "https://lawlor.cs.uaf.edu/~olawlor/projects/2003/roadsigns/regulatory/r2-1.html",
+    "label": "Speed limit (R2-1)"
+  },
+  "noRightTurn": {
+    "file": "assets/signs/no-right-turn.gif",
+    "source": "https://lawlor.cs.uaf.edu/~olawlor/projects/2003/roadsigns/regulatory/r3-1.html",
+    "label": "No right turn (R3-1)"
+  },
+  "oneWayLeft": {
+    "file": "assets/signs/one-way-left.gif",
+    "source": "https://lawlor.cs.uaf.edu/~olawlor/projects/2003/roadsigns/regulatory/r6-1.html",
+    "label": "ONE WAY left (R6-1)"
+  },
+  "warningDiamond": {
+    "file": "assets/signs/warning-diamond.svg",
+    "source": "https://lawlor.cs.uaf.edu/~olawlor/projects/2003/roadsigns/warning/w2-1.html",
+    "label": "Warning sign example (W2-1)"
+  },
+  "mergeRight": {
+    "file": "assets/signs/merge-right.gif",
+    "source": "https://lawlor.cs.uaf.edu/~olawlor/projects/2003/roadsigns/warning/w4-1.html",
+    "label": "Merge right-side traffic (W4-1)"
+  },
+  "slippery": {
+    "file": "assets/signs/slippery.gif",
+    "source": "https://lawlor.cs.uaf.edu/~olawlor/projects/2003/roadsigns/warning/w8-5.html",
+    "label": "Slippery when wet (W8-5)"
+  },
+  "dividedHighwayBegins": {
+    "file": "assets/signs/divided-highway-begins.gif",
+    "source": "https://lawlor.cs.uaf.edu/~olawlor/projects/2003/roadsigns/warning/w6-1.html",
+    "label": "Divided highway begins (W6-1)"
+  },
+  "pedestrian": {
+    "file": "assets/signs/pedestrian.gif",
+    "source": "https://lawlor.cs.uaf.edu/~olawlor/projects/2003/roadsigns/warning/w11-2.html",
+    "label": "Pedestrian crossing warning (W11-2)"
+  },
+  "bicycle": {
+    "file": "assets/signs/bicycle.svg",
+    "source": "https://lawlor.cs.uaf.edu/~olawlor/projects/2003/roadsigns/warning/w11-1.html",
+    "label": "Bicycle warning (W11-1)"
+  },
+  "deer": {
+    "file": "assets/signs/deer.gif",
+    "source": "https://lawlor.cs.uaf.edu/~olawlor/projects/2003/roadsigns/warning/w11-3.html",
+    "label": "Deer crossing (W11-3)"
+  },
+  "lowClearance": {
+    "file": "assets/signs/low-clearance.gif",
+    "source": "https://lawlor.cs.uaf.edu/~olawlor/projects/2003/roadsigns/warning/w12-2.html",
+    "label": "Low clearance (W12-2)"
+  },
+  "greenGuide": {
+    "file": "assets/signs/green-guide.gif",
+    "source": "https://lawlor.cs.uaf.edu/~olawlor/projects/2003/roadsigns/info/d1-1.html",
+    "label": "Green guide sign example"
+  },
+  "blueServices": {
+    "file": "assets/signs/blue-services.gif",
+    "source": "https://lawlor.cs.uaf.edu/~olawlor/projects/2003/roadsigns/info/d9-7.html",
+    "label": "Blue services sign example"
+  },
+  "orangeWork": {
+    "file": "assets/signs/orange-work.png",
+    "source": "https://commons.wikimedia.org/wiki/File:MUTCD_CW20-1.svg",
+    "label": "Road work / work-zone warning"
+  },
+  "laneEndsRight": {
+    "file": "assets/signs/lane-ends-right.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:MUTCD_W4-2R.svg",
+    "label": "Right lane ends (W4-2R)"
+  },
+  "laneEndsLeft": {
+    "file": "assets/signs/lane-ends-left.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:MUTCD_W4-2L.svg",
+    "label": "Left lane ends (W4-2L)"
+  },
+  "laneEndsMergeLeft": {
+    "file": "assets/signs/lane-ends-merge-left.png",
+    "source": "https://commons.wikimedia.org/wiki/File:MUTCD_W9-2L.svg",
+    "label": "LANE ENDS MERGE LEFT (W9-2L)"
+  },
+  "laneEndsMergeRight": {
+    "file": "assets/signs/lane-ends-merge-right.png",
+    "source": "https://commons.wikimedia.org/wiki/File:MUTCD_W9-2R.svg",
+    "label": "LANE ENDS MERGE RIGHT (W9-2R)"
+  },
+  "crossbuck": {
+    "file": "assets/signs/crossbuck.png",
+    "source": "https://commons.wikimedia.org/wiki/File:MUTCD_R15-1.svg",
+    "label": "Railroad crossing crossbuck (R15-1)"
+  },
+  "school": {
+    "file": "assets/signs/school.png",
+    "source": "https://commons.wikimedia.org/wiki/File:MUTCD_S1-1.svg",
+    "label": "School / school crossing (S1-1)"
+  },
+  "railroadAdvance": {
+    "file": "assets/signs/railroad-advance.png",
+    "source": "https://commons.wikimedia.org/wiki/File:MUTCD_W10-1.svg",
+    "label": "Railroad advance warning (W10-1)"
+  },
+  "mergeLeft": {
+    "file": "assets/signs/merge-left.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:MUTCD_W4-1L.svg",
+    "label": "Merge left-side traffic (W4-1)"
+  },
+  "oneWayRight": {
+    "file": "assets/signs/one-way-right.png",
+    "source": "https://commons.wikimedia.org/wiki/File:MUTCD_R6-1R.svg",
+    "label": "ONE WAY right (R6-1)"
+  },
+  "slowMoving": {
+    "file": "assets/signs/slow-moving.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Slow_moving_vehicle.svg",
+    "thumbnailSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Slow_moving_vehicle.svg/250px-Slow_moving_vehicle.svg.png",
+    "label": "Slow-moving vehicle emblem"
+  },
+  "whiteDashedLanes": {
+    "file": "assets/signs/white-dashed-lanes.svg",
+    "source": "Local road-marking illustration based on MUTCD dashed white lane-line convention",
+    "label": "White dashed lane lines"
+  }
+}

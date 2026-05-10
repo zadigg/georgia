@@ -1,4 +1,5 @@
 let questions = [];
+let signAssets = {};
 const els = {
   mode: document.querySelector("#mode"),
   score: document.querySelector("#score"),
@@ -303,6 +304,19 @@ const signImages = {
   }
 };
 
+const visualAliases = {
+  diamond: "warningDiamond",
+  orange: "orangeWork",
+  rail: "railroadAdvance",
+  slow: "slowMoving",
+  lanes: "whiteDashedLanes"
+};
+
+function signAssetFor(key) {
+  const assetKey = visualAliases[key] || key;
+  return signAssets[assetKey] || null;
+}
+
 function setVisual(question) {
   const labels = {
     stop: "STOP",
@@ -319,16 +333,24 @@ function setVisual(question) {
     "hand-left": "LEFT"
   };
   const visualKeys = question.visuals || [question.visual || "rule"];
-  if (visualKeys.some((key) => signImages[key])) {
+  if (visualKeys.some((key) => signAssetFor(key) || signImages[key])) {
     els.signVisual.className = `sign-visual sign-set sign-count-${visualKeys.length}`;
     els.signVisual.innerHTML = visualKeys
-      .filter((key) => signImages[key])
-      .map((key) => `
-        <figure class="sign-tile">
-          ${signImages[key].svg()}
-          <figcaption>${escapeHtml(signImages[key].label)}</figcaption>
-        </figure>
-      `)
+      .filter((key) => signAssetFor(key) || signImages[key])
+      .map((key) => {
+        const asset = signAssetFor(key);
+        const fallback = signImages[key] || signImages[visualAliases[key]];
+        const label = asset?.label || fallback?.label || key;
+        const visual = asset
+          ? `<img class="sign-img" src="${escapeHtml(asset.file)}" alt="${escapeHtml(label)}">`
+          : fallback.svg();
+        return `
+          <figure class="sign-tile">
+            ${visual}
+            <figcaption>${escapeHtml(label)}</figcaption>
+          </figure>
+        `;
+      })
       .join("");
   } else {
     els.signVisual.className = `sign-visual sign-${question.visual || "rule"}`;
@@ -508,8 +530,13 @@ els.speakBtn.addEventListener("click", () => {
 
 async function loadQuestions() {
   try {
-    const response = await fetch("./questions.json?v=signs3");
+    const [response, assetResponse] = await Promise.all([
+      fetch("./questions.json?v=assets1"),
+      fetch("./assets/signs/sources.json?v=assets1")
+    ]);
     if (!response.ok) throw new Error(`Unable to load questions: ${response.status}`);
+    if (!assetResponse.ok) throw new Error(`Unable to load sign assets: ${assetResponse.status}`);
+    signAssets = await assetResponse.json();
     questions = await response.json();
     pool = shuffle([...questions]);
     updateStats();
