@@ -11,12 +11,14 @@ const els = {
   questionAm: document.querySelector("#questionAm"),
   answers: document.querySelector("#answers"),
   feedback: document.querySelector("#feedback"),
+  questionCard: document.querySelector(".question-card"),
   nextBtn: document.querySelector("#nextBtn"),
   reviewBtn: document.querySelector("#reviewBtn"),
   resetBtn: document.querySelector("#resetBtn"),
   testBtn: document.querySelector("#testBtn"),
   speakBtn: document.querySelector("#speakBtn"),
   signVisual: document.querySelector("#signVisual"),
+  inlineSignVisual: document.querySelector("#inlineSignVisual"),
   topicTitle: document.querySelector("#topicTitle"),
   topicHelp: document.querySelector("#topicHelp")
 };
@@ -317,7 +319,7 @@ function signAssetFor(key) {
   return signAssets[assetKey] || null;
 }
 
-function setVisual(question) {
+function visualMarkup(question) {
   const labels = {
     stop: "STOP",
     yield: "",
@@ -334,8 +336,9 @@ function setVisual(question) {
   };
   const visualKeys = question.visuals || [question.visual || "rule"];
   if (visualKeys.some((key) => signAssetFor(key) || signImages[key])) {
-    els.signVisual.className = `sign-visual sign-set sign-count-${visualKeys.length}`;
-    els.signVisual.innerHTML = visualKeys
+    return {
+      className: `sign-visual sign-set sign-count-${visualKeys.length}`,
+      html: visualKeys
       .filter((key) => signAssetFor(key) || signImages[key])
       .map((key) => {
         const asset = signAssetFor(key);
@@ -351,13 +354,25 @@ function setVisual(question) {
           </figure>
         `;
       })
-      .join("");
-  } else {
-    els.signVisual.className = `sign-visual sign-${question.visual || "rule"}`;
-    els.signVisual.innerHTML = ["diamond", "orange", "crossbuck", "slow"].includes(question.visual)
-      ? `<span>${labels[question.visual]}</span>`
-      : labels[question.visual || "rule"];
+      .join("")
+    };
   }
+  return {
+    className: `sign-visual sign-${question.visual || "rule"}`,
+    html: ["diamond", "orange", "crossbuck", "slow"].includes(question.visual)
+      ? `<span>${labels[question.visual]}</span>`
+      : labels[question.visual || "rule"]
+  };
+}
+
+function setVisual(question) {
+  const visual = visualMarkup(question);
+  els.signVisual.className = visual.className;
+  els.signVisual.innerHTML = visual.html;
+  const showInlineSign = question.topic === "signs";
+  els.inlineSignVisual.hidden = !showInlineSign;
+  els.inlineSignVisual.className = showInlineSign ? `inline-sign-visual ${visual.className}` : "inline-sign-visual";
+  els.inlineSignVisual.innerHTML = showInlineSign ? visual.html : "";
   const topicNames = {
     signs: "Road signs",
     rules: "Road rules",
@@ -386,6 +401,7 @@ function renderQuestion() {
   current = testQueue ? testQueue.shift() : pool.find((q) => available.includes(q)) || shuffle([...available])[0];
   if (!testQueue) pool = pool.filter((q) => q !== current);
   answeredCurrent = false;
+  els.questionCard?.classList?.toggle("has-inline-sign", current.topic === "signs");
   els.nextBtn.disabled = true;
   els.feedback.hidden = true;
   els.questionNumber.textContent = testQueue ? `Practice test: ${20 - testQueue.length} of 20` : `Question ${answered + 1}`;
