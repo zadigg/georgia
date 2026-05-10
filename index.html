@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Georgia Driver Practice | ጆርጂያ የመንጃ ፈቃድ ልምምድ</title>
+    <link rel="stylesheet" href="./styles.css?v=signs2" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="topbar" aria-label="Quiz controls">
+        <div>
+          <p class="eyebrow">Georgia DDS Study Helper</p>
+          <h1>Driver License Practice</h1>
+          <p class="subtitle">English + Amharic questions for calmer studying.</p>
+        </div>
+        <div class="mode-panel">
+          <label for="mode">Mode</label>
+          <select id="mode">
+            <option value="all">All topics</option>
+            <option value="signs">Road signs</option>
+            <option value="rules">Road rules</option>
+            <option value="safety">Safe driving</option>
+            <option value="ga">Georgia laws</option>
+            <option value="missed">Missed practice</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="dashboard" aria-label="Progress">
+        <div class="metric">
+          <span id="score">0</span>
+          <p>Correct</p>
+        </div>
+        <div class="metric">
+          <span id="answered">0</span>
+          <p>Answered</p>
+        </div>
+        <div class="metric">
+          <span id="streak">0</span>
+          <p>Streak</p>
+        </div>
+        <div class="metric">
+          <span id="bankTotal">0</span>
+          <p>Question bank</p>
+        </div>
+        <div class="metric pass">
+          <span>15/20</span>
+          <p>DDS passing target</p>
+        </div>
+      </section>
+
+      <section class="quiz-layout">
+        <aside class="study-card">
+          <div id="signVisual" class="sign-visual" aria-hidden="true"></div>
+          <h2 id="topicTitle">Ready?</h2>
+          <p id="topicHelp">Pick an answer. The app explains every question after you choose.</p>
+          <div class="source-note">
+            Based on the Georgia DDS
+            <a href="https://dds.georgia.gov/drivers-manual" target="_blank" rel="noreferrer">Drivers Manual</a>
+            and
+            <a href="https://dds.georgia.gov/testing-and-training/practice-test" target="_blank" rel="noreferrer">practice-test guidance</a>.
+            This is a study app, not an official DDS exam.
+          </div>
+        </aside>
+
+        <section class="question-card" aria-live="polite">
+          <div class="question-meta">
+            <span id="questionNumber">Question 1</span>
+            <button id="speakBtn" type="button" title="Read English question aloud">Read</button>
+          </div>
+          <h2 id="questionEn"></h2>
+          <p id="questionAm" lang="am"></p>
+          <div id="answers" class="answers"></div>
+          <div id="feedback" class="feedback" hidden></div>
+          <div class="actions">
+            <button id="nextBtn" type="button" disabled>Next question</button>
+            <button id="reviewBtn" type="button">Review missed</button>
+            <button id="resetBtn" type="button">Reset</button>
+          </div>
+        </section>
+      </section>
+
+      <section class="practice-test">
+        <div>
+          <h2>20-question practice test</h2>
+          <p>Start a timed-style mixed set from the full question bank. Georgia says each Knowledge Exam part needs 15 correct out of 20.</p>
+        </div>
+        <button id="testBtn" type="button">Start 20-question test</button>
+      </section>
+    </main>
+
+    <script src="./app.js?v=signs2"></script>
+  </body>
+</html>

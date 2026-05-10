@@ -1,0 +1,4770 @@
+[
+  {
+    "id": "q001",
+    "topic": "signs",
+    "visual": "stop",
+    "question": {
+      "en": "What does an eight-sided red sign mean?",
+      "am": "ስምንት ጎን ያለው ቀይ ምልክት ምን ማለት ነው?"
+    },
+    "answers": [
+      {
+        "en": "Stop completely",
+        "am": "ሙሉ በሙሉ ቁም"
+      },
+      {
+        "en": "Slow down only",
+        "am": "ፍጥነት መቀነስ ብቻ"
+      },
+      {
+        "en": "Railroad crossing ahead",
+        "am": "ከፊት የባቡር ሀዲድ መሻገሪያ አለ"
+      },
+      {
+        "en": "No passing",
+        "am": "ማለፍ ክልክል ነው"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "An octagon always means stop. Stop at the line, crosswalk, or the safest point where you can see traffic.",
+      "am": "ስምንት ጎን (Octagon) ያለው ምልክት ሁልጊዜ 'ቁም' ማለት ነው። በመስመሩ ላይ፣ በእግረኛ ማቋረጫው ወይም ትራፊክን በደንብ ማየት በሚችሉበት አስተማማኝ ቦታ ላይ መቆም አለብዎት።"
+    }
+  },
+  {
+    "id": "q002",
+    "topic": "signs",
+    "visual": "yield",
+    "question": {
+      "en": "A triangle sign means you should:",
+      "am": "የሶስት ማዕዘን ምልክት ሲያዩ ምን ማድረግ ይገባዎታል?"
+    },
+    "answers": [
+      {
+        "en": "Speed up",
+        "am": "ፍጥነት መጨመር"
+      },
+      {
+        "en": "Yield and stop if necessary",
+        "am": "ቅድሚያ መስጠት (መንገድ መልቀቅ) እና ካስፈለገም መቆም"
+      },
+      {
+        "en": "Always turn right",
+        "am": "ሁልጊዜ ወደ ቀኝ መታጠፍ"
+      },
+      {
+        "en": "Park only",
+        "am": "ተሽከርካሪ ማቆሚያ ብቻ"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "A yield sign means slow to a safe speed and stop if needed before entering.",
+      "am": "የመንገድ መልቀቂያ (Yield) ምልክት ማለት ወደ መንገዱ ከመግባትዎ በፊት ፍጥነትዎን ቀንሰው በጥንቃቄ ማሽከርከር እና አስፈላጊ ሆኖ ሲገኝ መቆም ማለት ነው።"
+    }
+  },
+  {
+    "id": "q003",
+    "topic": "signs",
+    "visual": "diamond",
+    "question": {
+      "en": "What do yellow diamond-shaped signs usually warn about?",
+      "am": "ቢጫ የአልማዝ (ዳይመንድ) ቅርጽ ያላቸው ምልክቶች ብዙውን ጊዜ ስለ ምን ያስጠነቅቃሉ?"
+    },
+    "answers": [
+      {
+        "en": "Services nearby",
+        "am": "በአቅራቢያ ስላሉ አገልግሎቶች"
+      },
+      {
+        "en": "Possible hazards",
+        "am": "ሊያጋጥሙ ስለሚችሉ አደጋዎች"
+      },
+      {
+        "en": "Destination directions",
+        "am": "ስለ መድረሻ አቅጣጫዎች"
+      },
+      {
+        "en": "License offices",
+        "am": "ስለ መንጃ ፈቃድ ቢሮዎች"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "Diamond signs warn about existing or possible hazards, such as curves, merging traffic, or slippery roads.",
+      "am": "የአልማዝ ቅርጽ ያላቸው ምልክቶች እንደ ኩርባ መንገድ፣ የሚቀላቀሉ ተሽከርካሪዎች ወይም ተንሸራታች መንገዶችን የመሰሉ ሊያጋጥሙ የሚችሉ አደጋዎችን ለመጠቆም ያገለግላሉ።"
+    }
+  },
+  {
+    "id": "q004",
+    "topic": "signs",
+    "visual": "rail",
+    "question": {
+      "en": "A round yellow sign means:",
+      "am": "ክብ ቢጫ ምልክት ምን ማለት ነው?"
+    },
+    "answers": [
+      {
+        "en": "School zone",
+        "am": "የትምህርት ቤት አካባቢ"
+      },
+      {
+        "en": "Railroad crossing ahead",
+        "am": "ከፊት የባቡር ሀዲድ መሻገሪያ አለ"
+      },
+      {
+        "en": "No right turn",
+        "am": "ወደ ቀኝ መታጠፍ ክልክል ነው"
+      },
+      {
+        "en": "Hospital nearby",
+        "am": "በአቅራቢያ ሆስፒታል አለ"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "A round sign warns that you are approaching railroad tracks. Slow down, look, listen, and be ready to stop.",
+      "am": "ክብ ቢጫ ምልክት ወደ ባቡር ሀዲድ እየተጠጉ መሆኑን ያሳያል። ፍጥነትዎን ቀንሰው፣ ግራና ቀኝ ተመልክተውና አድምጠው ለመቆም መዘጋጀት አለብዎት።"
+    }
+  },
+  {
+    "id": "q005",
+    "topic": "signs",
+    "visual": "school",
+    "question": {
+      "en": "A pentagon-shaped sign means you are approaching:",
+      "am": "አምስት ጎን ያለው ምልክት ምንን ያመለክታል?"
+    },
+    "answers": [
+      {
+        "en": "A school zone or school crossing",
+        "am": "የትምህርት ቤት አካባቢ ወይም የእግረኛ መሻገሪያ"
+      },
+      {
+        "en": "A divided highway",
+        "am": "የተከፈለ አውራ ጎዳና"
+      },
+      {
+        "en": "A rest area",
+        "am": "የእረፍት ቦታ"
+      },
+      {
+        "en": "A one-way street",
+        "am": "አንድ አቅጣጫ መንገድ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Pentagon signs are used for school zones and school crossings.",
+      "am": "አምስት ጎን ያላቸው ምልክቶች ለትምህርት ቤት አካባቢዎች እና ለትምህርት ቤት የእግረኛ መሻገሪያዎች ያገለግላሉ።"
+    }
+  },
+  {
+    "id": "q006",
+    "topic": "signs",
+    "visual": "rule",
+    "question": {
+      "en": "A vertical rectangular sign is usually:",
+      "am": "ቀጥ ያለ አራት ማዕዘን ምልክት ብዙውን ጊዜ ምንን ይገልጻል?"
+    },
+    "answers": [
+      {
+        "en": "A regulatory sign that must be obeyed",
+        "am": "መታዘዝ ያለበት የህግ/መመሪያ ምልክት"
+      },
+      {
+        "en": "A railroad warning",
+        "am": "የባቡር ሀዲድ ማስጠንቀቂያ"
+      },
+      {
+        "en": "A school crossing only",
+        "am": "የትምህርት ቤት መሻገሪያ ብቻ"
+      },
+      {
+        "en": "A recreational sign",
+        "am": "የመዝናኛ ቦታ ምልክት"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Vertical rectangle signs usually regulate traffic and tell drivers what they must or must not do.",
+      "am": "ቀጥ ያሉ አራት ማዕዘን ምልክቶች ብዙውን ጊዜ የትራፊክ ደንቦችን የሚገልጹ ሲሆን አሽከርካሪዎች ምን ማድረግ እንዳለባቸው ወይም እንደሌለባቸው ይነግሯቸዋል።"
+    }
+  },
+  {
+    "id": "q007",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "At an intersection with no signs or signals, two vehicles arrive at the same time. Who yields?",
+      "am": "ምልክት ወይም መብራት በሌለው የመንገድ መገናኛ ላይ ሁለት ተሽከርካሪዎች እኩል ቢደርሱ፣ ቅድሚያ መስጠት ያለበት ማን ነው?"
+    },
+    "answers": [
+      {
+        "en": "The driver on the left yields to the driver on the right",
+        "am": "በግራ በኩል ያለው አሽከርካሪ በቀኝ በኩል ላለው አሽከርካሪ ቅድሚያ ይሰጣል"
+      },
+      {
+        "en": "The driver on the right always yields",
+        "am": "በቀኝ በኩል ያለው አሽከርካሪ ሁልጊዜ ቅድሚያ ይሰጣል"
+      },
+      {
+        "en": "The faster car goes first",
+        "am": "ፈጣኑ መኪና ይቀድማል"
+      },
+      {
+        "en": "The larger vehicle goes first",
+        "am": "ትልቁ ተሽከርካሪ ይቀድማል"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "When two vehicles arrive at the same time at an uncontrolled intersection, the driver on the left yields to the driver on the right.",
+      "am": "ምልክት በሌለው የመንገድ መገናኛ ላይ ሁለት ተሽከርካሪዎች እኩል ሲደርሱ፣ በግራ በኩል ያለው አሽከርካሪ በቀኝ በኩል ላለው ተሽከርካሪ ቅድሚያ መስጠት አለበት።"
+    }
+  },
+  {
+    "id": "q008",
+    "topic": "rules",
+    "visual": "stop",
+    "question": {
+      "en": "At a four-way stop, vehicles should generally proceed:",
+      "am": "በአራቱም አቅጣጫ የ'ቁም' ምልክት ባለበት መገናኛ ተሽከርካሪዎች እንዴት ማለፍ አለባቸው?"
+    },
+    "answers": [
+      {
+        "en": "Largest vehicle first",
+        "am": "ትልቁ ተሽከርካሪ ይቀድማል"
+      },
+      {
+        "en": "First to arrive, first to proceed",
+        "am": "ቀድሞ የደረሰ ቀድሞ ያልፋል"
+      },
+      {
+        "en": "Youngest driver first",
+        "am": "ወጣቱ አሽከርካሪ ይቀድማል"
+      },
+      {
+        "en": "Anyone turning left first",
+        "am": "ወደ ግራ የሚታጠፍ ማንኛውም ሰው ይቀድማል"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "At a four-way stop, yield to pedestrians, then use first-arrive, first-proceed. If tied, yield to the vehicle on your right.",
+      "am": "በአራት አቅጣጫ 'ቁም' ምልክት ላይ ለእግረኞች ቅድሚያ ይስጡ፣ ከዚያም በመጀመሪያ የደረሰው በመጀመሪያ ያልፋል። እኩል ከደረሱ በቀኝዎ ላለው ተሽከርካሪ ቅድሚያ ይስጡ።"
+    }
+  },
+  {
+    "id": "q009",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "Before turning left across traffic, you must yield to:",
+      "am": "ትራፊክን አቋርጠው ወደ ግራ ከመታጠፍዎ በፊት ለማን ቅድሚያ መስጠት አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Only trucks",
+        "am": "ለትላልቅ መኪናዎች (ትራኮች) ብቻ"
+      },
+      {
+        "en": "Traffic coming from the opposite direction",
+        "am": "ከተቃራኒ አቅጣጫ ለሚመጣ ትራፊክ"
+      },
+      {
+        "en": "Only bicycles",
+        "am": "ለብስክሌቶች ብቻ"
+      },
+      {
+        "en": "No one if your signal is on",
+        "am": "የመታጠፊያ ምልክት (ሲግናል) ካበሩ ለማንም"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "When making a left turn, yield to all traffic coming from the opposite direction.",
+      "am": "ወደ ግራ በሚታጠፉበት ጊዜ ከተቃራኒ አቅጣጫ ለሚመጡ ተሽከርካሪዎች ሁሉ ቅድሚያ መስጠት አለብዎት።"
+    }
+  },
+  {
+    "id": "q010",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "Right turn on red is allowed in Georgia only after:",
+      "am": "በጆርጂያ በቀይ መብራት ወደ ቀኝ መታጠፍ የሚፈቀደው ከምን በኋላ ነው?"
+    },
+    "answers": [
+      {
+        "en": "Honking once",
+        "am": "አንድ ጊዜ ጥሩምባ ከነፉ በኋላ"
+      },
+      {
+        "en": "A complete stop and yielding to traffic and pedestrians",
+        "am": "ሙሉ በሙሉ ቆመው ለትራፊክና ለእግረኞች ቅድሚያ ከሰጡ በኋላ"
+      },
+      {
+        "en": "Speeding up before the turn",
+        "am": "ከመታጠፍዎ በፊት ፍጥነት ከጨመሩ በኋላ"
+      },
+      {
+        "en": "Flashing headlights",
+        "am": "መብራት አብርተው ካጠፉ በኋላ"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "Unless a sign prohibits it, right on red is allowed after a complete stop and after yielding.",
+      "am": "የሚከለክል ምልክት ከሌለ በቀር፣ በቀይ መብራት ላይ ሙሉ በሙሉ ቆመውና ቅድሚያ ለሚገባቸው ከለቀቁ በኋላ ወደ ቀኝ መታጠፍ ይፈቀዳል።"
+    }
+  },
+  {
+    "id": "q011",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "Georgia's Move Over Law says that when an emergency, sanitation, or utility vehicle is stopped on the shoulder, you should:",
+      "am": "በጆርጂያ 'Move Over' ህግ መሰረት፣ የአደጋ ጊዜ፣ የቆሻሻ ወይም የፍጆታ ተሽከርካሪ በመንገድ ዳር ቆሞ ሲያዩ ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Move over if safe; otherwise slow below the speed limit and be ready to stop",
+        "am": "ደህንነቱ የተጠበቀ ከሆነ መስመርዎን ይቀይሩ፤ ካልሆነ ግን ከፍጥነት ገደቡ በታች ቀንሰው ለመቆም ይዘጋጁ"
+      },
+      {
+        "en": "Keep the same speed",
+        "am": "ባሉበት ፍጥነት ይቀጥሉ"
+      },
+      {
+        "en": "Stop in your lane every time",
+        "am": "ሁልጊዜ በያዙት መስመር ላይ ይቁሙ"
+      },
+      {
+        "en": "Turn on high beams",
+        "am": "ረጅም መብራት ያብሩ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Move to the next lane if safely possible. If not, slow below the speed limit and be prepared to stop.",
+      "am": "ደህንነቱ የተጠበቀ ከሆነ ወደ ሌላኛው መስመር ይለፉ። ካልተቻለ ግን ፍጥነትዎን በከፍተኛ ሁኔታ በመቀነስ አስፈላጊ ሆኖ ሲገኝ ለመቆም ይዘጋጁ።"
+    }
+  },
+  {
+    "id": "q012",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "A Super Speeder fee may apply in Georgia for driving:",
+      "am": "በጆርጂያ 'Super Speeder' ተብሎ የሚታወቀው ከፍተኛ ቅጣት የሚጣለው በምን ፍጥነት ሲነዱ ነው?"
+    },
+    "answers": [
+      {
+        "en": "60 mph on any road",
+        "am": "በማንኛውም መንገድ ላይ በ60 mph"
+      },
+      {
+        "en": "75 mph or more on a two-lane road, or 85 mph or more on any road",
+        "am": "በሁለት መስመር መንገድ 75 mph ወይም ከዚያ በላይ፣ ወይም በማንኛውም መንገድ 85 mph ወይም ከዚያ በላይ"
+      },
+      {
+        "en": "Any speed over 35 mph",
+        "am": "ከ35 mph በላይ በማንኛውም ፍጥነት"
+      },
+      {
+        "en": "Only in school zones",
+        "am": "በትምህርት ቤት አካባቢ ብቻ"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "Georgia assesses a Super Speeder state fee for 75+ mph on a two-lane road or 85+ mph on any road.",
+      "am": "ጆርጂያ በሁለት መስመር መንገድ ላይ ከ75 mph በላይ ወይም በማንኛውም መንገድ ላይ ከ85 mph በላይ ለሚነዱ አሽከርካሪዎች የ'Super Speeder' ተጨማሪ ክፍያ ይጠይቃል።"
+    }
+  },
+  {
+    "id": "q013",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "Unless otherwise posted, the general speed limit in an urban or residential district is:",
+      "am": "ሌላ የፍጥነት ገደብ ምልክት ከሌለ በቀር፣ በከተማ ወይም በመኖሪያ መንደሮች ውስጥ የፍጥነት ገደቡ ስንት ነው?"
+    },
+    "answers": [
+      {
+        "en": "25 mph",
+        "am": "25 mph"
+      },
+      {
+        "en": "30 mph",
+        "am": "30 mph"
+      },
+      {
+        "en": "55 mph",
+        "am": "55 mph"
+      },
+      {
+        "en": "70 mph",
+        "am": "70 mph"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "Georgia's general rule is 30 mph in urban or residential districts unless otherwise posted.",
+      "am": "በጆርጂያ አጠቃላይ ህግ መሰረት በከተማ ወይም በመኖሪያ አካባቢዎች ሌላ ምልክት ካልተቀመጠ ፍጥነቱ 30 mph መሆን አለበት።"
+    }
+  },
+  {
+    "id": "q014",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "Unless otherwise posted, the general speed limit on a rural interstate is:",
+      "am": "ሌላ ምልክት ከሌለ በቀር፣ በገጠር ኢንተር ስቴት (Rural Interstate) መንገዶች ላይ የፍጥነት ገደቡ ስንት ነው?"
+    },
+    "answers": [
+      {
+        "en": "45 mph",
+        "am": "45 mph"
+      },
+      {
+        "en": "55 mph",
+        "am": "55 mph"
+      },
+      {
+        "en": "65 mph",
+        "am": "65 mph"
+      },
+      {
+        "en": "70 mph",
+        "am": "70 mph"
+      }
+    ],
+    "correctIndex": 3,
+    "reasoning": {
+      "en": "Georgia lists 70 mph as the general maximum on rural interstates unless otherwise posted.",
+      "am": "በጆርጂያ ገጠራማ አካባቢዎች በሚገኙ ኢንተር ስቴት መንገዶች ላይ ሌላ ምልክት ከሌለ ከፍተኛው ፍጥነት 70 mph ነው።"
+    }
+  },
+  {
+    "id": "q015",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "Unless otherwise posted, the general speed limit on an urban interstate or multi-lane divided highway is:",
+      "am": "ሌላ ምልክት ከሌለ በቀር፣ በከተማ ኢንተር ስቴት ወይም በብዙ መስመር የተከፈለ አውራ ጎዳና ላይ የፍጥነት ገደቡ ስንት ነው?"
+    },
+    "answers": [
+      {
+        "en": "35 mph",
+        "am": "35 mph"
+      },
+      {
+        "en": "55 mph",
+        "am": "55 mph"
+      },
+      {
+        "en": "65 mph",
+        "am": "65 mph"
+      },
+      {
+        "en": "80 mph",
+        "am": "80 mph"
+      }
+    ],
+    "correctIndex": 2,
+    "reasoning": {
+      "en": "Georgia's general rule is 65 mph on urban interstates and multi-lane divided highways.",
+      "am": "ጆርጂያ በከተማ ኢንተር ስቴት እና በብዙ መስመር በተከፈሉ አውራ ጎዳናዎች ላይ አጠቃላይ የፍጥነት ገደቡን 65 mph አድርጋለች።"
+    }
+  },
+  {
+    "id": "q016",
+    "topic": "rules",
+    "visual": "rail",
+    "question": {
+      "en": "At a railroad crossing, you must stop within what distance when required to stop?",
+      "am": "በባቡር ሀዲድ መሻገሪያ ላይ መቆም ሲገባዎት፣ ከሀዲዱ በምን ያህል ርቀት መቆም አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Within 50 feet, but not less than 15 feet",
+        "am": "በ50 ጫማ ውስጥ፣ ነገር ግን ከ15 ጫማ ባላነሰ ርቀት"
+      },
+      {
+        "en": "Exactly 100 feet away",
+        "am": "በትክክል በ100 ጫማ ርቀት ላይ"
+      },
+      {
+        "en": "On the tracks",
+        "am": "በሀዲዱ ላይ"
+      },
+      {
+        "en": "Only after the gate rises",
+        "am": "መዝጊያው ከተነሳ በኋላ ብቻ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "When required to stop at railroad tracks, stop within 50 feet but not less than 15 feet from the nearest rail.",
+      "am": "በባቡር ሀዲድ ላይ መቆም በሚኖርብዎት ጊዜ፣ ከሀዲዱ በቅርቡ በ50 ጫማ ውስጥ እና ከ15 ጫማ ባልበለጠ ርቀት ላይ መቆም ይገባዎታል።"
+    }
+  },
+  {
+    "id": "q017",
+    "topic": "rules",
+    "visual": "rail",
+    "question": {
+      "en": "If railroad crossing gates are lowered, you should:",
+      "am": "የባቡር ሀዲድ መሻገሪያ መዝጊያዎች ዝቅ ብለው ከሆነ ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Drive around if no train is visible",
+        "am": "ባቡር የማይታይ ከሆነ ዞረው ይለፉ"
+      },
+      {
+        "en": "Stop and never drive around or under the gate",
+        "am": "ይቁሙ፤ በመዝጊያው ዙሪያ ወይም በታች ለማለፍ ፈጽሞ አይሞክሩ"
+      },
+      {
+        "en": "Stop only at night",
+        "am": "በሌሊት ብቻ ይቁሙ"
+      },
+      {
+        "en": "Honk and cross quickly",
+        "am": "ጥሩምባ ነፍተው በፍጥነት ይሻገሩ"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "Never drive through, around, or under a lowered railroad crossing gate.",
+      "am": "ዝቅ የተደረገ የባቡር መሻገሪያ መዝጊያ ካለ በዙሪያው፣ በታች ወይም ጥሶ ለማለፍ መሞከር በፍጹም የተከለከለ ነው።"
+    }
+  },
+  {
+    "id": "q018",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "A good way to check following distance is to count:",
+      "am": "ከፊትዎ ካለ ተሽከርካሪ የሚኖርዎትን የመከተያ ርቀት ለመለካት ጥሩው መንገድ ምንድን ነው?"
+    },
+    "answers": [
+      {
+        "en": "One-thousand-one, one-thousand-two",
+        "am": "አንድ ሺህ አንድ፣ አንድ ሺህ ሁለት (ብሎ መቁጠር)"
+      },
+      {
+        "en": "Only the cars behind you",
+        "am": "ከኋላዎ ያሉትን መኪኖች ብቻ መመልከት"
+      },
+      {
+        "en": "License plate numbers",
+        "am": "የታርጋ ቁጥሮችን መቁጠር"
+      },
+      {
+        "en": "Ten seconds every time",
+        "am": "ሁልጊዜ አስር ሰከንዶች"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Pick a fixed point. If you reach it before finishing the count, you are following too closely. Add more space at night or in bad weather.",
+      "am": "አንድ ቋሚ ምልክት ይምረጡ። ቆጥረው ሳይጨርሱ ምልክቱ ጋር ከደረሱ በጣም ተቀራርበዋል ማለት ነው። በሌሊት ወይም በመጥፎ የአየር ሁኔታ ተጨማሪ ርቀት ይጨምሩ።"
+    }
+  },
+  {
+    "id": "q019",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "When following a motorcycle, Georgia DDS recommends allowing:",
+      "am": "ሞተርሳይክል እየተከተሉ ከሆነ የጆርጂያ DDS ምን ያህል ርቀት እንዲጠብቁ ይመክራል?"
+    },
+    "answers": [
+      {
+        "en": "Less distance than a car",
+        "am": "ከመኪና ያነሰ ርቀት"
+      },
+      {
+        "en": "Three or four seconds",
+        "am": "ሶስት ወይም አራት ሰከንዶች"
+      },
+      {
+        "en": "Exactly one car length",
+        "am": "በትክክል የአንድ መኪና ርዝመት"
+      },
+      {
+        "en": "No special distance",
+        "am": "ልዩ ርቀት አያስፈልግም"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "Allow three or four seconds behind motorcycles because riders may need room to maneuver or stop.",
+      "am": "ሞተርሳይክሎች በድንገት አቅጣጫ ሊቀይሩ ወይም ሊቆሙ ስለሚችሉ ከኋላቸው ከ3 እስከ 4 ሰከንድ የሚሆን ርቀት ይጠብቁ።"
+    }
+  },
+  {
+    "id": "q020",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "You must use headlights in Georgia:",
+      "am": "በጆርጂያ የመኪና መብራት (Headlights) ማብራት ያለብዎት መቼ ነው?"
+    },
+    "answers": [
+      {
+        "en": "Only on highways",
+        "am": "በአውራ ጎዳናዎች ላይ ብቻ"
+      },
+      {
+        "en": "From one-half hour after sunset to one-half hour before sunrise, in rain, or when visibility is limited",
+        "am": "ፀሐይ ከጠለቀች ከግማሽ ሰዓት በኋላ እስከ ፀሐይ ከመውጣቷ ግማሽ ሰዓት በፊት፣ በዝናብ ጊዜ፣ ወይም እይታ ሲገደብ"
+      },
+      {
+        "en": "Only when you feel tired",
+        "am": "ድካም ሲሰማዎት ብቻ"
+      },
+      {
+        "en": "Only in school zones",
+        "am": "በትምህርት ቤት አካባቢ ብቻ"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "Use headlights at night, when raining, and whenever visibility is limited.",
+      "am": "መብራትን በሌሊት፣ በዝናብ ጊዜ እና መንገዱ በደንብ በማይታይበት በማንኛውም ጊዜ መጠቀም ግዴታ ነው።"
+    }
+  },
+  {
+    "id": "q021",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "Dim your high beams when you are within how many feet of an approaching vehicle?",
+      "am": "ከተቃራኒ አቅጣጫ የሚመጣ ተሽከርካሪ በስንት ጫማ ርቀት ውስጥ ሲሆን ረጅም መብራትዎን መቀነስ (Dim) አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "100 feet",
+        "am": "100 ጫማ"
+      },
+      {
+        "en": "200 feet",
+        "am": "200 ጫማ"
+      },
+      {
+        "en": "500 feet",
+        "am": "500 ጫማ"
+      },
+      {
+        "en": "1,000 feet",
+        "am": "1,000 ጫማ"
+      }
+    ],
+    "correctIndex": 2,
+    "reasoning": {
+      "en": "Dim high beams within 500 feet of an approaching vehicle so you do not blind the other driver.",
+      "am": "ሌላውን አሽከርካሪ እንዳያሳውሩ፣ ተቃራኒ መኪና በ500 ጫማ ርቀት ውስጥ ሲሆን ረጅም መብራትዎን ያጥፉ።"
+    }
+  },
+  {
+    "id": "q022",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "Dim your high beams when following another vehicle within:",
+      "am": "ሌላ ተሽከርካሪ እየተከተሉ ከሆነ በስንት ጫማ ርቀት ውስጥ ሲሆኑ ረጅም መብራትዎን መቀነስ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "50 feet",
+        "am": "50 ጫማ"
+      },
+      {
+        "en": "100 feet",
+        "am": "100 ጫማ"
+      },
+      {
+        "en": "200 feet",
+        "am": "200 ጫማ"
+      },
+      {
+        "en": "600 feet",
+        "am": "600 ጫማ"
+      }
+    ],
+    "correctIndex": 2,
+    "reasoning": {
+      "en": "Dim high beams when following closely within 200 feet of another vehicle.",
+      "am": "ከፊትዎ ያለውን አሽከርካሪ በመስተዋት እንዳይረብሹ፣ በ200 ጫማ ርቀት ውስጥ ሲከተሉ ረጅም መብራትዎን ያጥፉ።"
+    }
+  },
+  {
+    "id": "q023",
+    "topic": "rules",
+    "visual": "school",
+    "question": {
+      "en": "Blind pedestrians using guide dogs or white canes must be given:",
+      "am": "መሪ ውሻ ወይም ነጭ ዱላ የሚጠቀሙ አይነ ስውራን እግረኞች ምን መሰጠት አለባቸው?"
+    },
+    "answers": [
+      {
+        "en": "The right of way at all times",
+        "am": "በማንኛውም ጊዜ የመንገድ ቅድሚያ"
+      },
+      {
+        "en": "A horn warning only",
+        "am": "የጥሩምባ ማስጠንቀቂያ ብቻ"
+      },
+      {
+        "en": "Right of way only at night",
+        "am": "በሌሊት ብቻ የመንገድ ቅድሚያ"
+      },
+      {
+        "en": "No special care",
+        "am": "ልዩ ጥንቃቄ አያስፈልግም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Georgia DDS says blind pedestrians using guide dogs or white canes must be given the right of way at all times.",
+      "am": "መሪ ውሻ ወይም ነጭ ዱላ የሚጠቀሙ አይነ ስውራን እግረኞች በጆርጂያ ህግ መሰረት በማንኛውም ጊዜ የመንገድ ቅድሚያ ሊሰጣቸው ይገባል።"
+    }
+  },
+  {
+    "id": "q024",
+    "topic": "rules",
+    "visual": "school",
+    "question": {
+      "en": "When entering a roundabout, you must:",
+      "am": "ወደ አደባባይ (Roundabout) ሲገቡ ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Yield to vehicles already circulating",
+        "am": "በአደባባዩ ውስጥ ለሚዞሩ ተሽከርካሪዎች ቅድሚያ ይስጡ"
+      },
+      {
+        "en": "Stop in the roundabout",
+        "am": "በአደባባዩ ውስጥ ይቁሙ"
+      },
+      {
+        "en": "Drive clockwise",
+        "am": "በሰዓት አቅጣጫ ይንዱ"
+      },
+      {
+        "en": "Change lanes every exit",
+        "am": "በእያንዳንዱ መውጫ ላይ መስመር ይቀይሩ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Yield to circulating traffic before entering. Traffic in a roundabout circulates counterclockwise.",
+      "am": "ወደ አደባባይ ከመግባትዎ በፊት ቀድመው በውስጡ ለሚዞሩ ተሽከርካሪዎች ቅድሚያ ይስጡ። በአደባባይ ውስጥ ትራፊክ የሚዞረው በሰዓት ተቃራኒ አቅጣጫ ነው።"
+    }
+  },
+  {
+    "id": "q025",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "If an emergency vehicle approaches with lights and siren, you should:",
+      "am": "የአደጋ ጊዜ ተሽከርካሪ (አምቡላንስ/ፖሊስ) መብራትና ሳይረን አብርቶ ሲመጣ ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Race ahead of it",
+        "am": "ከፊቱ ፈጥነው ለመሄድ ይሞክሩ"
+      },
+      {
+        "en": "Slow, move right as far as practical, and stop if needed",
+        "am": "ፍጥነትዎን ቀንሰው፣ በተቻለ መጠን ወደ ቀኝ ይለፉ እና አስፈላጊ ከሆነ ይቁሙ"
+      },
+      {
+        "en": "Stop in the middle of an intersection",
+        "am": "በመገናኛ መንገድ መካከል ይቁሙ"
+      },
+      {
+        "en": "Ignore it if the light is green",
+        "am": "መብራቱ አረንጓዴ ከሆነ ችላ ይበሉት"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "Safely move out of the way. Do not block an intersection or prevent the emergency vehicle from turning.",
+      "am": "በጥንቃቄ መንገድ ይልቀቁ። የመንገድ መገናኛዎችን አይዝጉ ወይም የአደጋ ጊዜ ተሽከርካሪው እንዳይታጠፍ አያግዱ።"
+    }
+  },
+  {
+    "id": "q026",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "Georgia law says new residents must obtain a Georgia driver's license within:",
+      "am": "በጆርጂያ ህግ መሰረት፣ አዲስ ነዋሪዎች የጆርጂያ መንጃ ፈቃድ በስንት ቀናት ውስጥ ማውጣት አለባቸው?"
+    },
+    "answers": [
+      {
+        "en": "10 days",
+        "am": "10 ቀናት"
+      },
+      {
+        "en": "30 days",
+        "am": "30 ቀናት"
+      },
+      {
+        "en": "90 days",
+        "am": "90 ቀናት"
+      },
+      {
+        "en": "One year",
+        "am": "አንድ አመት"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "Georgia requires a person wanting to drive to obtain a Georgia license or permit within 30 days of becoming a resident.",
+      "am": "ጆርጂያ ውስጥ ነዋሪ ከሆኑበት ቀን ጀምሮ በ30 ቀናት ውስጥ የጆርጂያ መንጃ ፈቃድ ወይም ፈቃድ (Permit) ማውጣት ይኖርብዎታል።"
+    }
+  },
+  {
+    "id": "q027",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "A Georgia Class C Instructional Permit lets you drive only when accompanied by a licensed Class C driver who is at least:",
+      "am": "የጆርጂያ Class C 'Permit' ሲኖርዎት፣ አብሮዎት የሚቀመጠው ፈቃድ ያለው አሽከርካሪ ቢያንስ እድሜው ስንት መሆን አለበት?"
+    },
+    "answers": [
+      {
+        "en": "16",
+        "am": "16"
+      },
+      {
+        "en": "18",
+        "am": "18"
+      },
+      {
+        "en": "21",
+        "am": "21"
+      },
+      {
+        "en": "25",
+        "am": "25"
+      }
+    ],
+    "correctIndex": 2,
+    "reasoning": {
+      "en": "A Class C permit driver must be accompanied by a licensed Class C driver at least 21 years old, seated beside the driver.",
+      "am": "የClass C ፈቃድ (Permit) ያለው አሽከርካሪ ቢያንስ 21 አመት የሞላው ፈቃድ ያለው አሽከርካሪ ከጎኑ ተቀምጦ መሆን አለበት።"
+    }
+  },
+  {
+    "id": "q028",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "The Georgia Knowledge Exam includes which two parts?",
+      "am": "የጆርጂያ የጽሁፍ ፈተና (Knowledge Exam) የትኞቹን ሁለት ክፍሎች ያካትታል?"
+    },
+    "answers": [
+      {
+        "en": "Parking and insurance",
+        "am": "ተሽከርካሪ ማቆሚያ እና ኢንሹራንስ"
+      },
+      {
+        "en": "Road Signs and Road Rules",
+        "am": "የመንገድ ምልክቶች እና የመንገድ ህጎች"
+      },
+      {
+        "en": "Vision and road skills only",
+        "am": "የአይን ምርመራ እና የተግባር ፈተና ብቻ"
+      },
+      {
+        "en": "Engine repair and maps",
+        "am": "የሞተር ጥገና እና ካርታዎች"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "DDS says the Knowledge Exam includes Road Signs and Road Rules.",
+      "am": "የDDS የጽሁፍ ፈተና የመንገድ ምልክቶችን እና የመንገድ ህጎችን ለይቶ ማወቅን ያካትታል።"
+    }
+  },
+  {
+    "id": "q029",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "To pass each Georgia Knowledge Exam part, you must correctly answer:",
+      "am": "የጆርጂያ የጽሁፍ ፈተና እያንዳንዱን ክፍል ለማለፍ ቢያንስ ስንት ጥያቄዎችን በትክክል መመለስ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "10 out of 20",
+        "am": "ከ20 ጥያቄዎች 10ቱን"
+      },
+      {
+        "en": "12 out of 20",
+        "am": "ከ20 ጥያቄዎች 12ቱን"
+      },
+      {
+        "en": "15 out of 20",
+        "am": "ከ20 ጥያቄዎች 15ቱን"
+      },
+      {
+        "en": "20 out of 20",
+        "am": "ከ20 ጥያቄዎች 20ውንም"
+      }
+    ],
+    "correctIndex": 2,
+    "reasoning": {
+      "en": "DDS says both Road Signs and Road Rules require 15 correct answers out of 20 to pass.",
+      "am": "በሁለቱም የመንገድ ምልክቶች እና የመንገድ ህጎች ፈተናዎች ለማለፍ ከ20 ጥያቄዎች ቢያንስ 15ቱን በትክክል መመለስ ያስፈልጋል።"
+    }
+  },
+  {
+    "id": "q030",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "In winter weather, you should:",
+      "am": "በበረዶማ የአየር ሁኔታ ሲያሽከረክሩ ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Brake suddenly at intersections",
+        "am": "በመንገድ መገናኛዎች ላይ በድንገት ፍሬን ይያዙ"
+      },
+      {
+        "en": "Reduce speed and keep a safe distance",
+        "am": "ፍጥነትዎን ይቀንሱ እና አስተማማኝ ርቀት ይጠብቁ"
+      },
+      {
+        "en": "Use cruise control on ice",
+        "am": "በበረዶ ላይ 'Cruise control' ይጠቀሙ"
+      },
+      {
+        "en": "Follow closer to see better",
+        "am": "በደንብ ለማየት ከፊትዎ ያለውን ተሽከርካሪ ይቅረቡ"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "In winter conditions, reduce speed, avoid sudden braking, and keep more space between vehicles.",
+      "am": "በክረምት ሁኔታዎች ውስጥ ፍጥነትዎን ይቀንሱ፣ በድንገት ፍሬን ከመያዝ ይቆጠቡ እና በተሽከርካሪዎች መካከል ያለውን ርቀት ይጨምሩ።"
+    }
+  },
+  {
+    "id": "q031",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "Carbon monoxide from cars is:",
+      "am": "ከተሽከርካሪዎች የሚወጣው ካርቦን ሞኖክሳይድ (Carbon Monoxide) ጋዝ ምን አይነት ነው?"
+    },
+    "answers": [
+      {
+        "en": "Odorless, colorless, and deadly",
+        "am": "ሽታ የሌለው፣ ቀለም የሌለው እና ገዳይ"
+      },
+      {
+        "en": "Safe if windows are closed",
+        "am": "መስኮቶች ከተዘጉ ደህንነቱ የተጠበቀ ነው"
+      },
+      {
+        "en": "Only dangerous in summer",
+        "am": "አደገኛነቱ በበጋ ወቅት ብቻ ነው"
+      },
+      {
+        "en": "Easy to smell",
+        "am": "በቀላሉ ይሸታል"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Carbon monoxide is odorless, colorless, and deadly. Do not run a car engine in a garage.",
+      "am": "ካርቦን ሞኖክሳይድ ሽታ እና ቀለም የሌለው ገዳይ ጋዝ ነው። መኪናን ጋራዥ ውስጥ ሞተሩን አስነስቶ ማቆየት አደገኛ ነው።"
+    }
+  },
+  {
+    "id": "q032",
+    "topic": "rules",
+    "visual": "orange",
+    "question": {
+      "en": "In a work zone, a flagger has the same authority as:",
+      "am": "በመንገድ ግንባታ ቦታ ላይ ያለ ምልክት አሳይ (Flagger) ከምን ጋር እኩል ስልጣን አለው?"
+    },
+    "answers": [
+      {
+        "en": "A regulatory sign",
+        "am": "ከህግ/መመሪያ ምልክት ጋር"
+      },
+      {
+        "en": "A parked car",
+        "am": "ከቆመ ተሽከርካሪ ጋር"
+      },
+      {
+        "en": "A billboard",
+        "am": "ከማስታወቂያ ሰሌዳ ጋር"
+      },
+      {
+        "en": "A gas station sign",
+        "am": "ከነዳጅ ማደያ ምልክት ጋር"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "DDS says a work-zone flagger has the same authority as a regulatory sign.",
+      "am": "በግንባታ ቀጠና ውስጥ ምልክት የሚሰጡ ሰራተኞች የሚሰጡት መመሪያ እንደ ማንኛውም የትራፊክ ህግ ምልክት መከበር አለበት።"
+    }
+  },
+  {
+    "id": "q033",
+    "topic": "rules",
+    "visual": "diamond",
+    "question": {
+      "en": "If work vehicles display flashing amber lights, you must:",
+      "am": "የግንባታ ተሽከርካሪዎች የሚያብለጨልጭ ቢጫ (Amber) መብራት ካበሩ ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Yield the right of way",
+        "am": "የመንገድ ቅድሚያ ይስጡ"
+      },
+      {
+        "en": "Pass as fast as possible",
+        "am": "በተቻለ ፍጥነት ይለፉ"
+      },
+      {
+        "en": "Stop only if police are present",
+        "am": "ፖሊስ ካለ ብቻ ይቁሙ"
+      },
+      {
+        "en": "Ignore them",
+        "am": "ችላ ይበሏቸው"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Yield to work vehicles and heavy equipment with flashing or revolving amber lights.",
+      "am": "የሚያብለጨልጭ ቢጫ መብራት ላላቸው የግንባታ ተሽከርካሪዎች እና ከባድ ማሽኖች ቅድሚያ ይስጡ።"
+    }
+  },
+  {
+    "id": "q034",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "Opening a vehicle door on the traffic side is allowed only when:",
+      "am": "በትራፊክ አቅጣጫ የመኪና በር መክፈት የሚፈቀደው መቼ ነው?"
+    },
+    "answers": [
+      {
+        "en": "It can be done safely without interfering with traffic, including bicyclists",
+        "am": "ትራፊክን እና ብስክሌተኞችን ሳያስተጓጉሉ በደህንነት መክፈት ሲቻል"
+      },
+      {
+        "en": "Anytime you are parked",
+        "am": "በቆሙበት በማንኛውም ጊዜ"
+      },
+      {
+        "en": "Only if you open it quickly",
+        "am": "በፍጥነት ከከፈቱት ብቻ"
+      },
+      {
+        "en": "Never in Georgia",
+        "am": "በጆርጂያ በፍጹም አይፈቀድም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Do not open a door into moving traffic unless it is safe and will not interfere with others, including bicyclists.",
+      "am": "ለሌሎች ተሽከርካሪዎች ወይም ብስክሌተኞች አደጋ በማይፈጥር ሁኔታ ካልሆነ በቀር ወደ ትራፊክ አቅጣጫ በር መክፈት ክልክል ነው።"
+    }
+  },
+  {
+    "id": "q035",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "Wearing headphones that impair hearing while driving is:",
+      "am": "ሲያሽከረክሩ የመስማት ችሎታን የሚቀንሱ የጆሮ ማዳመጫዎችን (Headphones) መጠቀም ምን ተብሎ ይገለጻል?"
+    },
+    "answers": [
+      {
+        "en": "Legal if music is quiet",
+        "am": "ድምጹ ዝቅተኛ ከሆነ ህጋዊ ነው"
+      },
+      {
+        "en": "Illegal and unsafe",
+        "am": "ህገ-ወጥ እና አደገኛ ነው"
+      },
+      {
+        "en": "Required on highways",
+        "am": "በአውራ ጎዳናዎች ላይ አስፈላጊ ነው"
+      },
+      {
+        "en": "Allowed for new drivers only",
+        "am": "ለአዲስ አሽከርካሪዎች ብቻ ይፈቀዳል"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "Georgia DDS states it is unlawful to wear a device that impairs the driver's ability to hear.",
+      "am": "የአሽከርካሪውን የመስማት ችሎታ የሚጋርድ ማንኛውንም መሳሪያ መጠቀም በጆርጂያ ህግ መሰረት ህገ-ወጥ ነው።"
+    }
+  },
+  {
+    "id": "q036",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "When traffic is merging into your roadway, you should if possible:",
+      "am": "ሌላ ትራፊክ ወደ እርስዎ መንገድ እየተቀላቀለ ከሆነ፣ ከተቻለ ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Change lanes away from the merging traffic or adjust speed safely",
+        "am": "መስመርዎን በመቀየር ለሚገቡት ቦታ ይልቀቁ ወይም ፍጥነትዎን በደህንነት ያስተካክሉ"
+      },
+      {
+        "en": "Block the lane",
+        "am": "መስመሩን ይዝጉ"
+      },
+      {
+        "en": "Speed up to prevent merging",
+        "am": "እንዳይገቡ ፍጥነትዎን ይጨምሩ"
+      },
+      {
+        "en": "Stop suddenly",
+        "am": "በድንገት ይቁሙ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Safely change lanes away from merging traffic if possible. If not, adjust speed and position to allow merging.",
+      "am": "ለሚቀላቀሉ ተሽከርካሪዎች እንዲመች ከተቻለ መስመርዎን ይልቀቁ፣ ካልሆነ ግን ፍጥነትዎን በማስተካከል እንዲገቡ ይርዱ።"
+    }
+  },
+  {
+    "id": "q037",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "If your tire blows out, you should first:",
+      "am": "የመኪናዎ ጎማ በድንገት ቢፈነዳ፣ መጀመሪያ ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Brake hard immediately",
+        "am": "ወዲያውኑ በሃይል ፍሬን ይያዙ"
+      },
+      {
+        "en": "Grip the steering wheel firmly and take your foot off the accelerator",
+        "am": "መሪውን በደንብ አጥብቀው ይያዙ እና እግርዎን ከነዳጅ (Accelerator) ላይ ያንሱ"
+      },
+      {
+        "en": "Turn sharply to the shoulder",
+        "am": "በድንገት ወደ መንገድ ዳር ይጥፉ"
+      },
+      {
+        "en": "Shift to reverse",
+        "am": "ወደ ሪቨርስ (Reverse) ይቀይሩ"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "Hold the wheel firmly and let the car slow. Brake lightly only if necessary and safe.",
+      "am": "መሪውን አጥብቀው በመያዝ መኪናው በራሱ ፍጥነት እንዲቀንስ ያድርጉ። አስፈላጊ ሆኖ ሲገኝ ብቻ ፍሬን ቀስ ብለው ይንኩ።"
+    }
+  },
+  {
+    "id": "q038",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "Bicyclists in Georgia are legally entitled to use:",
+      "am": "በጆርጂያ ብስክሌተኞች በህግ የትኞቹን መንገዶች የመጠቀም መብት አላቸው?"
+    },
+    "answers": [
+      {
+        "en": "Only sidewalks",
+        "am": "የእግረኛ መንገዶችን (Sidewalks) ብቻ"
+      },
+      {
+        "en": "Every road except interstates and interstate-like limited access highways",
+        "am": "ከኢንተር ስቴት እና ፈጣን መንገዶች በስተቀር ሁሉንም መንገዶች"
+      },
+      {
+        "en": "Only bike lanes",
+        "am": "የብስክሌት መስመሮችን ብቻ"
+      },
+      {
+        "en": "No public roads",
+        "am": "ማንኛውንም የህዝብ መንገድ መጠቀም አይችሉም"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "Bicyclists may use every Georgia road except interstates and interstate-like limited access highways.",
+      "am": "ብስክሌተኞች ከኢንተር ስቴት እና መውጫቸው ከተገደበ ፈጣን መንገዶች በስተቀር ሁሉንም የጆርጂያ መንገዶች የመጠቀም መብት አላቸው።"
+    }
+  },
+  {
+    "id": "q039",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "When passing a bicyclist, you should:",
+      "am": "ብስክሌተኛን አልፈው ሲሄዱ ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Leave safe space and pass only when it is safe",
+        "am": "በቂ ርቀት ይተው እና ደህንነቱ የተጠበቀ ሲሆን ብቻ ያልፉ"
+      },
+      {
+        "en": "Honk continuously",
+        "am": "ሳያቋርጡ ጥሩምባ ይንፉ"
+      },
+      {
+        "en": "Pass in the same lane with no space",
+        "am": "ያለ ምንም ክፍተት በዛው መስመር ያልፉ"
+      },
+      {
+        "en": "Force them onto the sidewalk",
+        "am": "ወደ እግረኛ መንገድ እንዲወጡ ያስገድዷቸው"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Treat bicyclists as lawful road users. Pass with care and safe clearance.",
+      "am": "ብስክሌተኞችን እንደ ማንኛውም የመንገድ ተጠቃሚ ይቁጠሯቸው። በቂ ክፍተት በመተው በጥንቃቄ ይለፏቸው።"
+    }
+  },
+  {
+    "id": "q040",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "If a Georgia driver's license has been expired more than two years, renewal requires:",
+      "am": "የጆርጂያ መንጃ ፈቃድ ካለፈበት ከሁለት አመት በላይ ከሆነ፣ ለማደስ ምን ያስፈልጋል?"
+    },
+    "answers": [
+      {
+        "en": "Only paying online",
+        "am": "ኦንላይን መክፈል ብቻ"
+      },
+      {
+        "en": "Vision test, driving test, and knowledge exam",
+        "am": "የአይን ምርመራ፣ የተግባር ፈተና እና የጽሁፍ ፈተና"
+      },
+      {
+        "en": "No tests",
+        "am": "ምንም ፈተና አያስፈልግም"
+      },
+      {
+        "en": "Only a road sign test",
+        "am": "የመንገድ ምልክቶች ፈተና ብቻ"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "DDS says a license expired more than two years requires vision, driving, and knowledge testing.",
+      "am": "መንጃ ፈቃድዎ ካለፈበት ከሁለት አመት በላይ ከሆነ ሁሉንም ፈተናዎች (አይን፣ ጽሁፍ እና ተግባር) በድጋሚ መውሰድ ይኖርብዎታል።"
+    }
+  },
+  {
+    "id": "q041",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "The permit test fee in Georgia is:",
+      "am": "በጆርጂያ የመንጃ ፈቃድ (Permit) የጽሁፍ ፈተና ክፍያ ስንት ነው?"
+    },
+    "answers": [
+      {
+        "en": "Free every time",
+        "am": "ሁልጊዜ ነጻ ነው"
+      },
+      {
+        "en": "$5",
+        "am": "$5"
+      },
+      {
+        "en": "$10",
+        "am": "$10"
+      },
+      {
+        "en": "$50",
+        "am": "$50"
+      }
+    ],
+    "correctIndex": 2,
+    "reasoning": {
+      "en": "DDS lists the knowledge test fee as $10, paid before testing.",
+      "am": "በDDS መመሪያ መሰረት የጽሁፍ ፈተና ከመጀመሩ በፊት የ10 ዶላር ክፍያ መከፈል አለበት።"
+    }
+  },
+  {
+    "id": "q042",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "If a law enforcement officer gives directions that conflict with a traffic light, you should obey:",
+      "am": "የፖሊስ ትእዛዝ ከትራፊክ መብራቱ ጋር ቢቃረን፣ ማንን መታዘዝ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "The traffic light",
+        "am": "የትራፊክ መብራቱን"
+      },
+      {
+        "en": "The law enforcement officer",
+        "am": "የፖሊስ መኮንኑን"
+      },
+      {
+        "en": "The driver behind you",
+        "am": "ከኋላዎ ያለውን አሽከርካሪ"
+      },
+      {
+        "en": "No one",
+        "am": "ማንንም"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "Georgia's basic traffic laws require obeying the directions of law enforcement or firefighters, even if traffic control devices say something else.",
+      "am": "በትራፊክ መገናኛ ላይ ፖሊስ ወይም የእሳት አደጋ ሰራተኛ ካለ፣ ከመብራቱ ይልቅ የእነሱን መመሪያ መከተል ግዴታ ነው።"
+    }
+  },
+  {
+    "id": "q043",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "It is lawful to drive across a median strip:",
+      "am": "የመንገድ መከፋፈያ መስመርን (Median Strip) አቋርጦ መንዳት የሚፈቀደው መቼ ነው?"
+    },
+    "answers": [
+      {
+        "en": "At any point if traffic is light",
+        "am": "ትራፊክ ቀልጣፋ ከሆነ በማንኛውም ቦታ"
+      },
+      {
+        "en": "Only at an authorized opening or crossover",
+        "am": "በተፈቀደ መክፈቻ ወይም መሻገሪያ ቦታ ላይ ብቻ"
+      },
+      {
+        "en": "Whenever making a U-turn",
+        "am": "የዩ-ቅርጽ (U-turn) መታጠፊያ በሚያደርጉበት በማንኛውም ጊዜ"
+      },
+      {
+        "en": "Never, even where marked",
+        "am": "ምልክት ቢኖርበትም በፍጹም አይፈቀድም"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "It is unlawful to drive across a median strip except at an authorized opening or crossover.",
+      "am": "በተለየ ሁኔታ የተዘጋጀ መሻገሪያ ካልሆነ በቀር የመንገድ መከፋፈያዎችን አቋርጦ መንዳት ህገ-ወጥ ነው።"
+    }
+  },
+  {
+    "id": "q044",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "When making a turn, you should signal:",
+      "am": "ለመታጠፍ ምልክት (ሲግናል) መስጠት ያለብዎት መቼ ነው?"
+    },
+    "answers": [
+      {
+        "en": "Only after starting the turn",
+        "am": "መታጠፍ ከጀመሩ በኋላ ብቻ"
+      },
+      {
+        "en": "For an adequate distance before turning",
+        "am": "ከመታጠፍዎ በፊት በቂ ርቀት ሲቀረው"
+      },
+      {
+        "en": "Only when cars are behind you",
+        "am": "ከኋላዎ መኪና ሲኖር ብቻ"
+      },
+      {
+        "en": "Only at night",
+        "am": "በሌሊት ብቻ"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "Give a continuous turn signal for an adequate distance before turning. Do not make last-minute turns.",
+      "am": "መታጠፍ ከመጀመርዎ በፊት ሌሎች አሽከርካሪዎች እንዲያውቁት በቂ ርቀት ሲቀረው ምልክት ማብራት አለብዎት።"
+    }
+  },
+  {
+    "id": "q045",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "Driving too slowly can be dangerous because it:",
+      "am": "በጣም በቀስታ ማሽከርከር አደገኛ ሊሆን የሚችለው ለምንድን ነው?"
+    },
+    "answers": [
+      {
+        "en": "Improves traffic flow",
+        "am": "የትራፊክ ፍሰትን ስለሚያሻሽል"
+      },
+      {
+        "en": "Impede normal and reasonable movement of traffic",
+        "am": "መደበኛውን የትራፊክ እንቅስቃሴ ስለሚያስተጓጉል"
+      },
+      {
+        "en": "Uses less fuel only",
+        "am": "ነዳጅ ስለሚቆጥብ ብቻ"
+      },
+      {
+        "en": "Is never against the law",
+        "am": "በህግ ስለማያስቀጣ"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "Driving too slowly is prohibited when it impedes normal and reasonable traffic movement, except when needed for safety.",
+      "am": "ለደህንነት አስገዳጅ ሁኔታ ካልሆነ በቀር፣ በጣም በቀስታ በማሽከርከር የሌሎችን ጉዞ ማስተጓጎል ክልክል ነው።"
+    }
+  },
+  {
+    "id": "q046",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "On a road with two or more lanes in the same direction, slower vehicles should generally use:",
+      "am": "በአንድ አቅጣጫ ሁለት ወይም ከዚያ በላይ መስመሮች ባሉት መንገድ ላይ፣ ቀርፋፋ ተሽከርካሪዎች የትኛውን መስመር መጠቀም አለባቸው?"
+    },
+    "answers": [
+      {
+        "en": "The right lane",
+        "am": "የቀኝ መስመርን"
+      },
+      {
+        "en": "The left passing lane forever",
+        "am": "የግራውን ማለፊያ መስመር ሁልጊዜ"
+      },
+      {
+        "en": "Any lane while texting",
+        "am": "ሜሴጅ እየጻፉ በማንኛውም መስመር"
+      },
+      {
+        "en": "The shoulder",
+        "am": "የመንገድ ዳርቻውን"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Slower vehicles should use the right lane except when passing or making a left turn.",
+      "am": "ከመታጠፍ ወይም ሌላ መኪና ከማለፍ ውጭ፣ በቀስታ የሚጓዙ ተሽከርካሪዎች ሁልጊዜ የቀኝ መስመርን መጠቀም ይገባቸዋል።"
+    }
+  },
+  {
+    "id": "q047",
+    "topic": "rules",
+    "visual": "school",
+    "question": {
+      "en": "Before backing up in driveways or parking lots, look for:",
+      "am": "ከመኪና መውጫ (Driveway) ወይም ተሽከርካሪ ማቆሚያ ወደ ኋላ ከመንዳትዎ በፊት ምን መመልከት አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Children and other pedestrians behind your car",
+        "am": "ከመኪናዎ ጀርባ ያሉ ህጻናትን እና ሌሎች እግረኞችን"
+      },
+      {
+        "en": "Only large trucks",
+        "am": "ትላልቅ ትራኮችን ብቻ"
+      },
+      {
+        "en": "Only police cars",
+        "am": "የፖሊስ መኪናዎችን ብቻ"
+      },
+      {
+        "en": "Nothing if you have a camera",
+        "am": "ካሜራ ካለዎት ምንም ነገር ማየት አያስፈልግም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Always look behind your vehicle for children or pedestrians before backing up.",
+      "am": "ወደ ኋላ ከመንዳትዎ በፊት ሁልጊዜ ከመኪናዎ ጀርባ ህጻናት ወይም እግረኞች አለመኖራቸውን ያረጋግጡ።"
+    }
+  },
+  {
+    "id": "q048",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "If visibility is reduced to less than 200 feet, you should:",
+      "am": "የመንገዱ እይታ ከ200 ጫማ በታች ከቀነሰ ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Dim high beams",
+        "am": "ረጅም መብራት ካለ ወደ አጭር (Dim) ይቀይሩ"
+      },
+      {
+        "en": "Use high beams always",
+        "am": "ሁልጊዜ ረጅም መብራት ይጠቀሙ"
+      },
+      {
+        "en": "Drive without lights",
+        "am": "ያለ መብራት ይንዱ"
+      },
+      {
+        "en": "Close your windows",
+        "am": "መስኮቶችዎን ይዝጉ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Dim headlights in rain, fog, snow, smoke, or when visibility is reduced to less than 200 feet.",
+      "am": "በዝናብ፣ በጭጋግ፣ በበረዶ ወይም በጭስ ምክንያት እይታ ሲገደብ አጭር መብራት (Low beam) መጠቀም ለደህንነት ይመከራል።"
+    }
+  },
+  {
+    "id": "q049",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "A vehicle overloaded so the driver cannot see or control it properly:",
+      "am": "ሾፌሩ በደንብ ማየት ወይም መቆጣጠር በማይችልበት ሁኔታ እቃ ወይም ሰው የተጫነ ተሽከርካሪን በተመለከተ ህጉ ምን ይላል?"
+    },
+    "answers": [
+      {
+        "en": "Legal for short trips",
+        "am": "ለአጭር ጉዞ ህጋዊ ነው"
+      },
+      {
+        "en": "Cannot be legally driven",
+        "am": "በህግ ሊነዳ አይችልም"
+      },
+      {
+        "en": "Allowed if passengers agree",
+        "am": "ተሳፋሪዎች ከተስማሙ ይፈቀዳል"
+      },
+      {
+        "en": "Required for carpooling",
+        "am": "ለጋራ ጉዞ (Carpooling) አስፈላጊ ነው"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "If passengers or freight obstruct the driver's view or control, the vehicle cannot be legally driven.",
+      "am": "የአሽከርካሪውን እይታ የሚጋርድ ወይም ቁጥጥሩን የሚያስተጓጉል ጭነት ወይም ተሳፋሪ የያዘ ተሽከርካሪን ማሽከርከር ህገ-ወጥ ነው።"
+    }
+  },
+  {
+    "id": "q050",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "Riding in a house trailer while it is moving on a street or highway is:",
+      "am": "የሚጎተት ተንቀሳቃሽ ቤት (House Trailer) በመንገድ ላይ እየተጓዘ እያለ በውስጡ መቆየት ምን ተብሎ ይገለጻል?"
+    },
+    "answers": [
+      {
+        "en": "Allowed if seated",
+        "am": "ከተቀመጡ ይፈቀዳል"
+      },
+      {
+        "en": "Not allowed",
+        "am": "አይፈቀድም"
+      },
+      {
+        "en": "Allowed only on highways",
+        "am": "በአውራ ጎዳናዎች ላይ ብቻ ይፈቀዳል"
+      },
+      {
+        "en": "Required for children",
+        "am": "ለህጻናት ግዴታ ነው"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "Riding in a house trailer or other drawn trailer is not allowed while it is moving on a street or highway.",
+      "am": "ማንኛውም ተጎታች ቤት ወይም ተሽከርካሪ በመንገድ ላይ እየተጓዘ እያለ በውስጡ ሰው መቆየት አይፈቀድም።"
+    }
+  },
+  {
+    "id": "q051",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "On a one-way street, driving opposite the posted direction is:",
+      "am": "በአንድ አቅጣጫ መንገድ (One-way) ላይ ከተፈቀደው ተቃራኒ መንዳት ምን ተብሎ ይገለጻል?"
+    },
+    "answers": [
+      {
+        "en": "Unlawful unless directed by authorized personnel or traffic control",
+        "am": "በትራፊክ ፖሊስ ካልታዘዘ በቀር ህገ-ወጥ ነው"
+      },
+      {
+        "en": "Allowed when late",
+        "am": "ሲዘገዩ ይፈቀዳል"
+      },
+      {
+        "en": "Allowed for all drivers",
+        "am": "ለሁሉም አሽከርካሪዎች ይፈቀዳል"
+      },
+      {
+        "en": "Safe in daylight",
+        "am": "በቀን ብርሃን ደህንነቱ የተጠበቀ ነው"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Do not drive contrary to a one-way street direction unless directed by traffic control or authorized personnel.",
+      "am": "ከባለስልጣናት ልዩ ትእዛዝ ካልተሰጠ በቀር፣ በአንድ አቅጣጫ መንገድ ላይ ዘልቆ መግባት ወይም በተቃራኒ ማሽከርከር ክልክል ነው።"
+    }
+  },
+  {
+    "id": "q052",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "For a Real ID, Georgia DDS generally requires how many Georgia residency documents?",
+      "am": "ለ'Real ID' መንጃ ፈቃድ፣ የጆርጂያ DDS ብዙውን ጊዜ ስንት የመኖሪያ ማረጋገጫ ሰነዶችን ይጠይቃል?"
+    },
+    "answers": [
+      {
+        "en": "One",
+        "am": "አንድ"
+      },
+      {
+        "en": "Two",
+        "am": "ሁለት"
+      },
+      {
+        "en": "Four",
+        "am": "አራት"
+      },
+      {
+        "en": "None",
+        "am": "ምንም"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "DDS lists two documents showing Georgia residence, dated within the last six months.",
+      "am": "ባለፉት ስድስት ወራት ውስጥ የተሰጡ ሁለት የጆርጂያ ነዋሪነትን የሚያረጋግጡ ሰነዶች (ለምሳሌ የቤት ወይም የመብራት ክፍያ ደረሰኝ) ያስፈልጋሉ።"
+    }
+  },
+  {
+    "id": "q053",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "Road signs on the actual Georgia test are conducted in:",
+      "am": "በጆርጂያ የመንጃ ፈቃድ ፈተና ላይ የመንገድ ምልክቶች የሚሰጡት በምን ቋንቋ ነው?"
+    },
+    "answers": [
+      {
+        "en": "English only",
+        "am": "በእንግሊዝኛ ብቻ"
+      },
+      {
+        "en": "Amharic only",
+        "am": "በአማርኛ ብቻ"
+      },
+      {
+        "en": "Any language",
+        "am": "በማንኛውም ቋንቋ"
+      },
+      {
+        "en": "No language is used",
+        "am": "ቋንቋ ጥቅም ላይ አይውልም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "DDS says road signs and the actual driving test are conducted in English only, so this app keeps the English visible.",
+      "am": "በDDS ህግ መሰረት የመንገድ ምልክቶች እና የተግባር ፈተናው የሚሰጡት በእንግሊዝኛ ብቻ ነው።"
+    }
+  },
+  {
+    "id": "q054",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "Aggressive driving includes behavior like:",
+      "am": "ጠበኛ የመንዳት ባህሪ (Aggressive driving) የሚባለው የትኛውን ያካትታል?"
+    },
+    "answers": [
+      {
+        "en": "Tailgating or blocking others from changing lanes",
+        "am": "ሌላን መኪና በጣም ተቀራርቦ መከተል ወይም ሌሎች መስመር እንዳይቀይሩ መከልከል"
+      },
+      {
+        "en": "Checking mirrors",
+        "am": "መስተዋቶችን መመልከት"
+      },
+      {
+        "en": "Signaling early",
+        "am": "ቀድሞ መታጠፊያ ምልክት መስጠት"
+      },
+      {
+        "en": "Stopping for pedestrians",
+        "am": "ለእግረኞች መቆም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "DDS examples of aggressive driving include tailgating, cutting in front of another driver, and blocking passing or lane changes.",
+      "am": "ሌላን አሽከርካሪ መረበሽ፣ መስመር መከልከል ወይም በድንገት ከፊት መግባት እንደ ጠበኛ ማሽከርከር ይቆጠራሉ።"
+    }
+  },
+  {
+    "id": "q055",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "If a crash or roadway closure blocks a road, you should:",
+      "am": "አደጋ ወይም የመንገድ መዘጋት መንገዱን ከዘጋው ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Drive around barricades if your car fits",
+        "am": "መኪናዎ የሚያልፍ ከሆነ በመከላከያዎቹ ዙሪያ ይለፉ"
+      },
+      {
+        "en": "Never drive on a roadway officially closed",
+        "am": "በይፋ በተዘጋ መንገድ ላይ በፍጹም አያሽከርክሩ"
+      },
+      {
+        "en": "Use the shoulder at full speed",
+        "am": "በመንገድ ዳርቻ ላይ በከፍተኛ ፍጥነት ይንዱ"
+      },
+      {
+        "en": "Follow the closest car",
+        "am": "ከፊትዎ ያለውን መኪና ይከተሉ"
+      }
+    ],
+    "correctIndex": 1,
+    "reasoning": {
+      "en": "One of Georgia's basic traffic laws is to never drive on a roadway that has been officially closed.",
+      "am": "በይፋ የተዘጋ መንገድን ጥሶ መግባት ወይም መከላከያዎችን አልፎ መሄድ ህገ-ወጥ ነው።"
+    }
+  },
+  {
+    "id": "q056",
+    "topic": "rules",
+    "visual": "yield",
+    "question": {
+      "en": "At a yield sign, if you must stop, stop:",
+      "am": "በመንገድ መልቀቂያ (Yield) ምልክት ላይ መቆም ካለብዎት፣ የት መቆም ይኖርብዎታል?"
+    },
+    "answers": [
+      {
+        "en": "At a marked stop line if there is one",
+        "am": "የተሰመረ የ'ቁም' ምልክት ካለ በዛ ላይ"
+      },
+      {
+        "en": "In the middle of the intersection",
+        "am": "በመንገድ መገናኛው መካከል"
+      },
+      {
+        "en": "Only after entering traffic",
+        "am": "ወደ ትራፊኩ ከገቡ በኋላ ብቻ"
+      },
+      {
+        "en": "Beside another stopped car",
+        "am": "ከቆመ ሌላ መኪና ጎን"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "If stopping at a yield sign is necessary, stop at the marked stop line if one exists.",
+      "am": "በመንገድ መልቀቂያ ምልክት ላይ መቆም አስፈላጊ ሆኖ ሲገኝ፣ የተሰመረ የ'ቁም' መስመር ካለ እዛ ላይ መቆም አለብዎት።"
+    }
+  },
+  {
+    "id": "q057",
+    "topic": "rules",
+    "visual": "stop",
+    "question": {
+      "en": "At a stop sign with no stop line and no crosswalk, stop:",
+      "am": "የ'ቁም' ምልክት ባለበት ቦታ የመስመር ምልክት ወይም የእግረኛ መሻገሪያ ከሌለ፣ የት ይቆማሉ?"
+    },
+    "answers": [
+      {
+        "en": "Where you can best see oncoming traffic",
+        "am": "የሚመጣውን ትራፊክ በደንብ ማየት በሚችሉበት ቦታ ላይ"
+      },
+      {
+        "en": "Past the intersection",
+        "am": "መገናኛውን ካለፉ በኋላ"
+      },
+      {
+        "en": "Only where another driver points",
+        "am": "ሌላ አሽከርካሪ በጠቆመዎት ቦታ ብቻ"
+      },
+      {
+        "en": "Anywhere on the road",
+        "am": "በመንገዱ ላይ በማንኛውም ቦታ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "If there is no stop line or crosswalk, stop at the point where you can best see oncoming traffic.",
+      "am": "መስመር ባልተሰመረባቸው ቦታዎች፣ ትራፊኩን በደንብ ማየት እስከሚችሉበት የመገናኛው ጫፍ ድረስ መጥተው መቆም አለብዎት።"
+    }
+  },
+  {
+    "id": "q058",
+    "topic": "signs",
+    "visual": "rule",
+    "question": {
+      "en": "A black and white sign that says SPEED LIMIT is what type of sign?",
+      "am": "ጥቁርና ነጭ ሆኖ 'SPEED LIMIT' የሚል ምልክት ምን አይነት ምልክት ነው?"
+    },
+    "answers": [
+      {
+        "en": "Regulatory",
+        "am": "የህግ/መመሪያ ምልክት (Regulatory)"
+      },
+      {
+        "en": "Warning",
+        "am": "የማስጠንቀቂያ ምልክት"
+      },
+      {
+        "en": "Guide",
+        "am": "የአቅጣጫ መጠቆሚያ (Guide)"
+      },
+      {
+        "en": "Service",
+        "am": "የአገልግሎት ምልክት"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Speed limit signs are regulatory signs. They state the legal maximum speed under normal conditions.",
+      "am": "የፍጥነት ገደብ ምልክቶች ህጋዊ መመሪያዎች ናቸው፤ ይህም ማለት በተለመደ ሁኔታ ማሽከርከር የሚችሉትን ከፍተኛ ፍጥነት ይወስናሉ።"
+    }
+  },
+  {
+    "id": "q059",
+    "topic": "signs",
+    "visual": "orange",
+    "question": {
+      "en": "Orange signs in a work zone usually mean:",
+      "am": "በመንገድ ግንባታ አካባቢ የሚታዩ ብርቱካናማ ምልክቶች ምን ማለት ናቸው?"
+    },
+    "answers": [
+      {
+        "en": "Construction or maintenance warning",
+        "am": "የግንባታ ወይም የጥገና ስራ ማስጠንቀቂያ"
+      },
+      {
+        "en": "Hospital nearby",
+        "am": "አቅራቢያ ሆስፒታል አለ"
+      },
+      {
+        "en": "Recreation area",
+        "am": "የመዝናኛ ቦታ"
+      },
+      {
+        "en": "No parking only",
+        "am": "መቆም ክልክል ነው ብቻ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Orange signs warn of construction, maintenance, and temporary traffic-control conditions.",
+      "am": "ብርቱካናማ ቀለም ለመንገድ ስራ፣ ለጥገና ወይም ለጊዜያዊ የትራፊክ ለውጦች ማስጠንቀቂያነት ያገለግላል።"
+    }
+  },
+  {
+    "id": "q060",
+    "topic": "signs",
+    "visual": "rule",
+    "question": {
+      "en": "A red circle with a slash through a symbol means:",
+      "am": "ቀይ ክብ ሆኖ በምልክት ላይ ሰረዝ (Slash) ሲኖር ምን ማለት ነው?"
+    },
+    "answers": [
+      {
+        "en": "The action is not allowed",
+        "am": "ያ ተግባር ወይም እንቅስቃሴ አይፈቀድም"
+      },
+      {
+        "en": "The action is required",
+        "am": "ያ ተግባር ግዴታ ነው"
+      },
+      {
+        "en": "The road is scenic",
+        "am": "መንገዱ ለመዝናኛ ነው"
+      },
+      {
+        "en": "A service is nearby",
+        "am": "አገልግሎት በአቅራቢያ አለ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "A red circle and slash means do not do the action shown by the symbol.",
+      "am": "ቀይ ክብ እና ሰረዝ በምስሉ ላይ የሚታየውን ነገር ማድረግ ክልክል መሆኑን ይገልጻል።"
+    }
+  },
+  {
+    "id": "q061",
+    "topic": "signs",
+    "visual": "rule",
+    "question": {
+      "en": "A sign that says ONE WAY means traffic may travel:",
+      "am": "'ONE WAY' የሚል ምልክት ትራፊኩ በምን አቅጣጫ መሄድ እንዳለበት ይገልጻል?"
+    },
+    "answers": [
+      {
+        "en": "Only in the direction shown",
+        "am": "በተጠቆመው አቅጣጫ ብቻ"
+      },
+      {
+        "en": "In both directions",
+        "am": "በሁለቱም አቅጣጫዎች"
+      },
+      {
+        "en": "Only for buses",
+        "am": "ለአውቶቡሶች ብቻ"
+      },
+      {
+        "en": "Only during rain",
+        "am": "በዝናብ ጊዜ ብቻ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "One-way signs tell drivers the only lawful direction of travel on that street.",
+      "am": "የአንድ አቅጣጫ ምልክት አሽከርካሪዎች በዛ መንገድ ላይ ሊሄዱበት የሚችሉትን ብቸኛ ህጋዊ አቅጣጫ ይገልጻል።"
+    }
+  },
+  {
+    "id": "q062",
+    "topic": "signs",
+    "visual": "diamond",
+    "question": {
+      "en": "A sign showing two arrows merging into one lane means:",
+      "am": "ሁለት ቀስቶች ወደ አንድ መስመር ሲቀላቀሉ የሚያሳይ ምልክት ምን ማለት ነው?"
+    },
+    "answers": [
+      {
+        "en": "Traffic may merge ahead",
+        "am": "ከፊት ትራፊክ ሊቀላቀል ይችላል"
+      },
+      {
+        "en": "No turns allowed",
+        "am": "መታጠፍ አይፈቀድም"
+      },
+      {
+        "en": "Railroad crossing",
+        "am": "የባቡር ሀዲድ መሻገሪያ"
+      },
+      {
+        "en": "Hospital zone",
+        "am": "የሆስፒታል አካባቢ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Merge signs warn that traffic streams or lanes are joining. Adjust speed and position safely.",
+      "am": "የመቀላቀያ ምልክት ሁለት መንገዶች ወደ አንድ እየመጡ መሆኑን ያስጠነቅቃል፤ ፍጥነትዎን ያስተካክሉ።"
+    }
+  },
+  {
+    "id": "q063",
+    "topic": "signs",
+    "visual": "diamond",
+    "question": {
+      "en": "A slippery when wet sign warns drivers to:",
+      "am": "'Slippery when wet' (መንገዱ ሲረጥብ ይንሸራትታል) የሚለው ምልክት ምን ያስጠነቅቃል?"
+    },
+    "answers": [
+      {
+        "en": "Slow down when the road is wet",
+        "am": "መንገዱ ሲረጥብ ፍጥነት መቀነስ"
+      },
+      {
+        "en": "Speed up through water",
+        "am": "በውሃ ላይ ፍጥነት መጨመር"
+      },
+      {
+        "en": "Use parking lights only",
+        "am": "የመቆሚያ መብራቶችን ብቻ መጠቀም"
+      },
+      {
+        "en": "Stop in the lane",
+        "am": "በመስመሩ ላይ መቆም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Wet roads reduce traction. Slow down and avoid sudden braking or steering.",
+      "am": "የረጠበ መንገድ የመኪና ጎማዎችን ስለሚያንሸራትት፣ ፍጥነት መቀነስ እና ድንገተኛ ፍሬን ከመያዝ መቆጠብ ያስፈልጋል።"
+    }
+  },
+  {
+    "id": "q064",
+    "topic": "signs",
+    "visual": "diamond",
+    "question": {
+      "en": "A divided highway begins sign means:",
+      "am": "'Divided highway begins' (የተከፈለ አውራ ጎዳና ይጀምራል) የሚለው ምልክት ትርጉሙ ምንድን ነው?"
+    },
+    "answers": [
+      {
+        "en": "A median or barrier will separate traffic ahead",
+        "am": "ከፊት የመንገድ መከፋፈያ ወይም መከላከያ ይኖራል"
+      },
+      {
+        "en": "The road ends",
+        "am": "መንገዱ ያበቃል"
+      },
+      {
+        "en": "You must stop",
+        "am": "መቆም አለብዎት"
+      },
+      {
+        "en": "Pedestrians only",
+        "am": "ለእግረኞች ብቻ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Divided highway signs warn of a change in road design, usually with a median or barrier.",
+      "am": "ይህ ምልክት መንገዱ ለሁለት እንደሚከፈል እና በመካከላቸው መከፋፈያ እንደሚኖር ይጠቁማል።"
+    }
+  },
+  {
+    "id": "q065",
+    "topic": "signs",
+    "visual": "diamond",
+    "question": {
+      "en": "A lane ends sign means you should:",
+      "am": "'Lane ends' (መስመሩ ያበቃል) የሚል ምልክት ሲያዩ ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Prepare to merge safely",
+        "am": "በጥንቃቄ ወደ ሌላኛው መስመር ለመቀላቀል መዘጋጀት"
+      },
+      {
+        "en": "Stop immediately",
+        "am": "ወዲያውኑ መቆም"
+      },
+      {
+        "en": "Drive on the shoulder",
+        "am": "በመንገድ ዳርቻ ላይ ማሽከርከር"
+      },
+      {
+        "en": "Turn around",
+        "am": "ተመልሰው መታጠፍ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "A lane ends warning gives time to adjust speed and merge safely.",
+      "am": "የያዙት መስመር ወደፊት እንደሚያልቅ ስለሚያመለክት፣ ፍጥነትዎን አስተካክለው ወደሚቀጥለው መስመር ይግቡ።"
+    }
+  },
+  {
+    "id": "q066",
+    "topic": "signs",
+    "visual": "school",
+    "question": {
+      "en": "A fluorescent yellow-green sign is commonly used for:",
+      "am": "ደማቅ ቢጫ-አረንጓዴ ቀለም ያላቸው ምልክቶች ብዙውን ጊዜ ለምን ያገለግላሉ?"
+    },
+    "answers": [
+      {
+        "en": "School, pedestrian, and bicycle warnings",
+        "am": "ለትምህርት ቤት፣ ለእግረኛ እና ለብስክሌት ማስጠንቀቂያዎች"
+      },
+      {
+        "en": "Gas stations",
+        "am": "ለነዳጅ ማደያዎች"
+      },
+      {
+        "en": "County lines",
+        "am": "ለካውንቲ ድንበሮች"
+      },
+      {
+        "en": "No passing zones only",
+        "am": "ለማለፍ ለተከለከሉ ቦታዎች ብቻ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Fluorescent yellow-green signs are used for school, pedestrian, and bicycle warnings.",
+      "am": "ይህ ልዩ ደማቅ ቀለም በብዛት ለትምህርት ቤት አካባቢዎች እና እግረኞች ለሚበዙባቸው ቦታዎች ማስጠንቀቂያነት ይውላል።"
+    }
+  },
+  {
+    "id": "q067",
+    "topic": "signs",
+    "visual": "rule",
+    "question": {
+      "en": "A sign with a red background is most often used for:",
+      "am": "ቀይ ዳራ (Background) ያላቸው ምልክቶች በብዛት ምንን ይገልጻሉ?"
+    },
+    "answers": [
+      {
+        "en": "Stop, yield, or prohibition",
+        "am": "ቁም፣ ቅድሚያ ስጥ ወይም ክልከላ"
+      },
+      {
+        "en": "Motorist services",
+        "am": "ለአሽከርካሪዎች አገልግሎቶች"
+      },
+      {
+        "en": "Parks",
+        "am": "ለፓርኮች"
+      },
+      {
+        "en": "Mile markers",
+        "am": "የማይል ርቀት መለኪያ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Red is used for stop, yield, and signs that prohibit certain movements.",
+      "am": "ቀይ ቀለም 'ቁም'፣ 'መንገድ ልቀቅ' እና አደገኛ ወይም ክልክል የሆኑ እንቅስቃሴዎችን ለማሳየት ያገለግላል።"
+    }
+  },
+  {
+    "id": "q068",
+    "topic": "signs",
+    "visual": "rule",
+    "question": {
+      "en": "Green guide signs usually provide:",
+      "am": "አረንጓዴ የአቅጣጫ መጠቆሚያ (Guide) ምልክቶች ብዙውን ጊዜ ምን መረጃ ይሰጣሉ?"
+    },
+    "answers": [
+      {
+        "en": "Directions and distances",
+        "am": "አቅጣጫዎችን እና ርቀቶችን"
+      },
+      {
+        "en": "Work zone fines",
+        "am": "የግንባታ አካባቢ ቅጣቶችን"
+      },
+      {
+        "en": "Speed laws only",
+        "am": "የፍጥነት ህጎችን ብቻ"
+      },
+      {
+        "en": "Railroad warnings",
+        "am": "የባቡር ሀዲድ ማስጠንቀቂያዎችን"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Green signs guide drivers to destinations, exits, and distances.",
+      "am": "አረንጓዴ ምልክቶች ወደ መድረሻ ከተሞች፣ መውጫዎች እና የርቀት መረጃዎችን ለመስጠት ያገለግላሉ።"
+    }
+  },
+  {
+    "id": "q069",
+    "topic": "signs",
+    "visual": "rule",
+    "question": {
+      "en": "Blue signs usually tell drivers about:",
+      "am": "ሰማያዊ ምልክቶች ብዙውን ጊዜ ለአሽከርካሪዎች ምን ይነግሯቸዋል?"
+    },
+    "answers": [
+      {
+        "en": "Services such as gas, food, or hospitals",
+        "am": "እንደ ነዳጅ፣ ምግብ ወይም ሆስፒታል ያሉ አገልግሎቶችን"
+      },
+      {
+        "en": "Stop signs",
+        "am": "የቁም ምልክቶችን"
+      },
+      {
+        "en": "No passing zones",
+        "am": "ለማለፍ የተከለከሉ ቦታዎችን"
+      },
+      {
+        "en": "Sharp curves only",
+        "am": "አደገኛ ኩርባዎችን ብቻ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Blue signs are commonly used for road-user services and traveler information.",
+      "am": "ሰማያዊ ምልክቶች ለመንገድ ተጠቃሚዎች አስፈላጊ የሆኑ እንደ ምግብ፣ ነዳጅ እና ህክምና ያሉ አገልግሎቶችን ለመጠቆም ያገለግላሉ።"
+    }
+  },
+  {
+    "id": "q070",
+    "topic": "signs",
+    "visual": "diamond",
+    "question": {
+      "en": "A deer crossing sign means:",
+      "am": "የአጋዘን መሻገሪያ (Deer crossing) ምልክት ምን ማለት ነው?"
+    },
+    "answers": [
+      {
+        "en": "Animals may enter the roadway",
+        "am": "እንስሳት ወደ መንገዱ ሊገቡ ይችላሉ"
+      },
+      {
+        "en": "Zoo entrance",
+        "am": "የእንስሳት ማቆያ መግቢያ"
+      },
+      {
+        "en": "No hunting",
+        "am": "አደን ክልክል ነው"
+      },
+      {
+        "en": "Animal hospital",
+        "am": "የእንስሳት ሆስፒታል"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Animal crossing signs warn that animals may unexpectedly enter the road.",
+      "am": "እንስሳት በድንገት ወደ መንገድ ሊገቡ ስለሚችሉ በጥንቃቄ ማሽከርከር እንዳለብዎ ያስጠነቅቃል።"
+    }
+  },
+  {
+    "id": "q071",
+    "topic": "signs",
+    "visual": "diamond",
+    "question": {
+      "en": "A low clearance sign is especially important for:",
+      "am": "'Low clearance' (ዝቅተኛ ከፍታ) ምልክት በተለይ ለማን አስፈላጊ ነው?"
+    },
+    "answers": [
+      {
+        "en": "Tall vehicles",
+        "am": "ረጅም ወይም ከፍተኛ ለሆኑ ተሽከርካሪዎች"
+      },
+      {
+        "en": "Only motorcycles",
+        "am": "ለሞተርሳይክሎች ብቻ"
+      },
+      {
+        "en": "Only pedestrians",
+        "am": "ለእግረኞች ብቻ"
+      },
+      {
+        "en": "Only bicycles",
+        "am": "ለብስክሌቶች ብቻ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Low clearance signs warn drivers of tall vehicles about bridges or structures with limited height.",
+      "am": "ይህ ምልክት ከፊት ያለው ድልድይ ወይም ግንባታ ዝቅተኛ ከፍታ ስላለው ረጅም ተሽከርካሪዎች እንዳይጋጩ ያስጠነቅቃል።"
+    }
+  },
+  {
+    "id": "q072",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "When approaching a steady yellow traffic light, you should:",
+      "am": "ቢጫ የትራፊክ መብራት ሲያዩ ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Stop if you can do so safely",
+        "am": "በደህንነት መቆም የሚችሉ ከሆነ ይቁሙ"
+      },
+      {
+        "en": "Always speed up",
+        "am": "ሁልጊዜ ፍጥነት ይጨምሩ"
+      },
+      {
+        "en": "Ignore it",
+        "am": "ችላ ይበሉት"
+      },
+      {
+        "en": "Stop after the intersection",
+        "am": "መገናኛው መንገድን ካለፉ በኋላ ይቁሙ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "A steady yellow light warns that the signal is changing. Stop if it is safe to do so.",
+      "am": "ቢጫ መብራት ወደ ቀይ ሊቀየር መሆኑን ማስጠንቀቂያ ነው። በደህንነት መቆም የሚችሉ ከሆነ መቆም ይገባዎታል።"
+    }
+  },
+  {
+    "id": "q073",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "A flashing red traffic signal should be treated like:",
+      "am": "የሚያብለጨልጭ ቀይ መብራት ሲያዩ ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "A stop sign",
+        "am": "እንደ 'ቁም' ምልክት መቆጠር አለበት"
+      },
+      {
+        "en": "A green light",
+        "am": "እንደ አረንጓዴ መብራት"
+      },
+      {
+        "en": "A yield sign only",
+        "am": "እንደ መንገዱ መልቀቂያ ምልክት ብቻ"
+      },
+      {
+        "en": "No rule",
+        "am": "ምንም ህግ የለውም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "A flashing red signal means stop, then proceed only when it is safe.",
+      "am": "የሚያብለጨልጭ ቀይ መብራት ልክ እንደ ቁም ምልክት ነው፤ ቆመው ካረጋገጡ በኋላ ደህንነቱ የተጠበቀ ሲሆን ማለፍ ይችላሉ።"
+    }
+  },
+  {
+    "id": "q074",
+    "topic": "rules",
+    "visual": "yield",
+    "question": {
+      "en": "A flashing yellow traffic signal means:",
+      "am": "የሚያብለጨልጭ ቢጫ መብራት ምን ማለት ነው?"
+    },
+    "answers": [
+      {
+        "en": "Slow down and proceed with caution",
+        "am": "ፍጥነት ቀንሰው በጥንቃቄ ያልፉ"
+      },
+      {
+        "en": "Stop and stay stopped",
+        "am": "ቆመው እዛው ይቆዩ"
+      },
+      {
+        "en": "Road closed",
+        "am": "መንገድ ተዘግቷል"
+      },
+      {
+        "en": "Turn only left",
+        "am": "ወደ ግራ ብቻ ይታጠፉ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "A flashing yellow light means proceed carefully after slowing and checking for hazards.",
+      "am": "የሚያብለጨልጭ ቢጫ መብራት ሲያዩ ፍጥነትዎን ቀንሰውና አካባቢውን በጥንቃቄ አስተውለው ማለፍ ይችላሉ።"
+    }
+  },
+  {
+    "id": "q075",
+    "topic": "rules",
+    "visual": "school",
+    "question": {
+      "en": "At a crosswalk, drivers must yield to:",
+      "am": "በእግረኛ መሻገሪያ ላይ፣ አሽከርካሪዎች ለማን ቅድሚያ መስጠት አለባቸው?"
+    },
+    "answers": [
+      {
+        "en": "Pedestrians in the crosswalk",
+        "am": "በመሻገሪያው ላይ ላሉ እግረኞች"
+      },
+      {
+        "en": "Only fast cars",
+        "am": "ለፈጣን መኪናዎች ብቻ"
+      },
+      {
+        "en": "Only buses",
+        "am": "ለአውቶቡሶች ብቻ"
+      },
+      {
+        "en": "No one if late",
+        "am": "ከዘገዩ ለማንም ቅድሚያ አይሰጥም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Drivers must yield to pedestrians who are lawfully in crosswalks.",
+      "am": "በእግረኛ መሻገሪያ ላይ ያሉ እግረኞች ሁልጊዜ የመንገድ ቅድሚያ አላቸው።"
+    }
+  },
+  {
+    "id": "q076",
+    "topic": "rules",
+    "visual": "school",
+    "question": {
+      "en": "When a school bus has stopped with red lights flashing and stop arm extended, drivers generally must:",
+      "am": "የትምህርት ቤት አውቶቡስ ቀይ መብራት አብርቶና የ'ቁም' ምልክት አውጥቶ ሲቆም፣ አሽከርካሪዎች ምን ማድረግ አለባቸው?"
+    },
+    "answers": [
+      {
+        "en": "Stop",
+        "am": "መቆም"
+      },
+      {
+        "en": "Pass quickly",
+        "am": "በፍጥነት ማለፍ"
+      },
+      {
+        "en": "Honk and continue",
+        "am": "ጥሩምባ ነፍቶ መቀጠል"
+      },
+      {
+        "en": "Turn off headlights",
+        "am": "መብራት ማጥፋት"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Stop for a school bus loading or unloading children when red lights flash and the stop arm is extended, unless a legal exception applies.",
+      "am": "ህጋዊ ልዩ ሁኔታ ካልተጠቀሰ በቀር፣ የትምህርት ቤት አውቶቡስ ህጻናትን ለማውረድ ወይም ለመጫን ሲቆም የግድ መቆም አለብዎት።"
+    }
+  },
+  {
+    "id": "q077",
+    "topic": "rules",
+    "visual": "school",
+    "question": {
+      "en": "On a divided highway with a physical median, drivers going the opposite direction from a stopped school bus:",
+      "am": "በመካከላቸው መከፋፈያ ባለበት አውራ ጎዳና ላይ፣ ከቆመ የትምህርት ቤት አውቶቡስ በተቃራኒ አቅጣጫ የሚሄዱ አሽከርካሪዎች ምን ማድረግ አለባቸው?"
+    },
+    "answers": [
+      {
+        "en": "May continue with caution if separated by the median",
+        "am": "በመከፋፈያው ከተለያዩ በጥንቃቄ ጉዟቸውን መቀጠል ይችላሉ"
+      },
+      {
+        "en": "Must always stop forever",
+        "am": "ሁልጊዜ መቆም አለባቸው"
+      },
+      {
+        "en": "Must pass on the shoulder",
+        "am": "በመንገድ ዳርቻው ማለፍ አለባቸው"
+      },
+      {
+        "en": "Must turn around",
+        "am": "ተመልሰው መታጠፍ አለባቸው"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Georgia school-bus rules differ when the opposing lanes are separated by a physical median or barrier.",
+      "am": "በጆርጂያ ህግ መሰረት፣ በመንገዱ መካከል መከፋፈያ ካለ በተቃራኒ በኩል ያሉ ተሽከርካሪዎች መቆም ግዴታ የለባቸውም።"
+    }
+  },
+  {
+    "id": "q078",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "Before changing lanes, you should:",
+      "am": "መስመር ከመቀየርዎ በፊት ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Signal, check mirrors, and check blind spots",
+        "am": "ሲግናል ማብራት፣ መስተዋቶችን ማየት እና የማይታዩ ቀጠናዎችን (Blind spots) መፈተሽ"
+      },
+      {
+        "en": "Close your eyes briefly",
+        "am": "አይንዎን ለጥቂት ጊዜ መጨፈን"
+      },
+      {
+        "en": "Only speed up",
+        "am": "ፍጥነት መጨመር ብቻ"
+      },
+      {
+        "en": "Never signal",
+        "am": "ምልክት በፍጹም አለመስጠት"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Safe lane changes require signaling and checking mirrors and blind spots before moving.",
+      "am": "በደህንነት መስመር ለመቀየር ሲግናል ማብራት፣ በመስተዋት ማየት እና ዞር ብለው የማይታዩ ቀጠናዎችን ማረጋገጥ ያስፈልጋል።"
+    }
+  },
+  {
+    "id": "q079",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "A solid yellow line on your side of the center line means:",
+      "am": "በመንገዱ መከፋፈያ መስመር ላይ በእርስዎ በኩል ያለው መስመር ሙሉ ቢጫ (Solid yellow) ከሆነ ምን ማለት ነው?"
+    },
+    "answers": [
+      {
+        "en": "Do not pass",
+        "am": "ማለፍ (Overtake) ክልክል ነው"
+      },
+      {
+        "en": "Passing is always allowed",
+        "am": "ማለፍ ሁልጊዜ ይፈቀዳል"
+      },
+      {
+        "en": "Road closed",
+        "am": "መንገድ ተዘግቷል"
+      },
+      {
+        "en": "Pedestrians only",
+        "am": "ለእግረኞች ብቻ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "A solid yellow line on your side means passing is not allowed from your lane.",
+      "am": "ሙሉ ቢጫ መስመር በእርስዎ በኩል ካለ፣ ከፊትዎ ያለን ተሽከርካሪ ቀድሞ ማለፍ ክልክል መሆኑን ይገልጻል።"
+    }
+  },
+  {
+    "id": "q080",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "Broken yellow center lines usually mean:",
+      "am": "የተቆራረጠ ቢጫ መስመር በመንገድ መካከል ሲኖር ትርጉሙ ምንድን ነው?"
+    },
+    "answers": [
+      {
+        "en": "Passing may be allowed when safe",
+        "am": "ደህንነቱ የተጠበቀ ሲሆን ማለፍ ይቻላል"
+      },
+      {
+        "en": "No passing ever",
+        "am": "በፍጹም ማለፍ አይፈቀድም"
+      },
+      {
+        "en": "Stop ahead",
+        "am": "ከፊት መቆሚያ አለ"
+      },
+      {
+        "en": "Bike lane only",
+        "am": "የብስክሌት መስመር ብቻ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Broken yellow lines separate opposite directions and may allow passing when the lane is clear and it is lawful.",
+      "am": "የተቆራረጠ ቢጫ መስመር ተቃራኒ አቅጣጫዎችን የሚለይ ሲሆን፣ መንገዱ ክፍት ሲሆን ማለፍ እንደሚቻል ይገልጻል።"
+    }
+  },
+  {
+    "id": "q081",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "Double solid yellow lines mean:",
+      "am": "ሁለት ጎን ለጎን ያሉ ሙሉ ቢጫ መስመሮች ምን ማለት ናቸው?"
+    },
+    "answers": [
+      {
+        "en": "Traffic in both directions may not pass",
+        "am": "በሁለቱም አቅጣጫዎች የሚጓዙ ተሽከርካሪዎች ማለፍ (Overtake) አይችሉም"
+      },
+      {
+        "en": "Passing is required",
+        "am": "ማለፍ ግዴታ ነው"
+      },
+      {
+        "en": "Parking allowed",
+        "am": "ተሽከርካሪ ማቆም ይፈቀዳል"
+      },
+      {
+        "en": "Road ends",
+        "am": "መንገዱ ያበቃል"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Double solid yellow lines generally prohibit passing for traffic moving in either direction.",
+      "am": "ድርብ ሙሉ ቢጫ መስመሮች በሁለቱም አቅጣጫ ለሚመጡ አሽከርካሪዎች ማለፍ ክልክል መሆኑን ያመለክታሉ።"
+    }
+  },
+  {
+    "id": "q082",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "A solid white lane line means:",
+      "am": "ሙሉ ነጭ መስመር በመንገድ ላይ ምንን ያመለክታል?"
+    },
+    "answers": [
+      {
+        "en": "Lane changes are discouraged",
+        "am": "መስመር መቀየር አይመከርም"
+      },
+      {
+        "en": "You must stop",
+        "am": "መቆም አለብዎት"
+      },
+      {
+        "en": "Opposite traffic ahead",
+        "am": "ተቃራኒ ትራፊክ ከፊት አለ"
+      },
+      {
+        "en": "Railroad crossing",
+        "am": "የባቡር ሀዲድ መሻገሪያ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Solid white lines separate lanes moving in the same direction and discourage lane changes.",
+      "am": "ሙሉ ነጭ መስመሮች በአንድ አቅጣጫ የሚሄዱ መስመሮችን የሚለዩ ሲሆን፣ መስመር መቀየር አደገኛ መሆኑን ይጠቁማሉ።"
+    }
+  },
+  {
+    "id": "q083",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "When parking uphill with a curb, turn your front wheels:",
+      "am": "ወደ ላይ አቀበት መንገድ ላይ ከጎን ግንብ (Curb) ባለበት ሲያቆሙ፣ የፊት ጎማዎን ወዴት ማዞር አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Away from the curb",
+        "am": "ከግንቡ (Curb) ራቅ አድርገው"
+      },
+      {
+        "en": "Toward the curb",
+        "am": "ወደ ግንቡ (Curb) አዙረው"
+      },
+      {
+        "en": "Straight only",
+        "am": "ቀጥ አድርገው ብቻ"
+      },
+      {
+        "en": "Toward traffic",
+        "am": "ወደ ትራፊኩ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Uphill with a curb, turn wheels away from the curb so the curb can stop the vehicle if it rolls.",
+      "am": "አቀበት ላይ ግንብ ካለ፣ መኪናው ቢንሸራተት ግንቡ እንዲያስቆመው ጎማዎን ከግንቡ ራቅ አድርገው (ወደ መንገድ መሃል) ያዙሩ።"
+    }
+  },
+  {
+    "id": "q084",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "When parking downhill with a curb, turn your front wheels:",
+      "am": "ቁልቁለት መንገድ ላይ ከጎን ግንብ (Curb) ባለበት ሲያቆሙ፣ የፊት ጎማዎን ወዴት ማዞር አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Toward the curb",
+        "am": "ወደ ግንቡ (Curb) አዙረው"
+      },
+      {
+        "en": "Away from the curb",
+        "am": "ከግንቡ ራቅ አድርገው"
+      },
+      {
+        "en": "Toward the road center",
+        "am": "ወደ መንገድ መሃል"
+      },
+      {
+        "en": "It does not matter",
+        "am": "ምንም ልዩነት የለውም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Downhill, turn wheels toward the curb so the vehicle rolls into the curb if brakes fail.",
+      "am": "ቁልቁለት ላይ ፍሬን ቢለቅ መኪናው ወደ ግንቡ ተጋፍቶ እንዲቆም፣ ጎማዎን ወደ ግንቡ አዙረው ያቁሙ።"
+    }
+  },
+  {
+    "id": "q085",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "Parking is prohibited in front of:",
+      "am": "ከምን ፊት ለፊት ተሽከርካሪ ማቆም የተከለከለ ነው?"
+    },
+    "answers": [
+      {
+        "en": "A driveway",
+        "am": "ከቤት ወይም ህንጻ መውጫ መንገድ (Driveway) ፊት ለፊት"
+      },
+      {
+        "en": "A legal parking meter",
+        "am": "ከፓርኪንግ ሜትር ጎን"
+      },
+      {
+        "en": "Your own house only",
+        "am": "ከራስዎ ቤት ፊት ለፊት ብቻ"
+      },
+      {
+        "en": "A green guide sign",
+        "am": "ከአረንጓዴ የአቅጣጫ ምልክት ፊት ለፊት"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Do not park where you block a driveway, crosswalk, fire hydrant area, or other prohibited place.",
+      "am": "የሰውን መውጫ መንገድ፣ የእግረኛ መሻገሪያን ወይም የእሳት አደጋ ውሃ መውጫን መከልከል ክልክል ነው።"
+    }
+  },
+  {
+    "id": "q086",
+    "topic": "rules",
+    "visual": "rail",
+    "question": {
+      "en": "If your vehicle stalls on railroad tracks, you should:",
+      "am": "መኪናዎ በባቡር ሀዲድ ላይ ቢቆምብዎ ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Get everyone out and away from the tracks",
+        "am": "ሁሉንም ሰው ከመኪናው አውጥተው ከሀዲዱ ራቅ ወዳለ ቦታ ይውሰዱ"
+      },
+      {
+        "en": "Stay inside and wait",
+        "am": "ውስጥ ሆነው ይጠብቁ"
+      },
+      {
+        "en": "Push only if train is near",
+        "am": "ባቡር ሲመጣ ብቻ ይግፉት"
+      },
+      {
+        "en": "Turn on cruise control",
+        "am": "ክሩዝ ኮንትሮል (Cruise control) ያብሩ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "If stuck on tracks, leave the vehicle immediately and move away from the tracks.",
+      "am": "ሀዲድ ላይ መኪና ቢቆም፣ ህይወትን ለማዳን ወዲያውኑ ወጥቶ ከሀዲዱ መራቅ ብቸኛው አማራጭ ነው።"
+    }
+  },
+  {
+    "id": "q087",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "The most dangerous time to drive on wet pavement is often:",
+      "am": "በተረጠበ አስፋልት ላይ ለመንዳት በጣም አደገኛው ጊዜ ብዙውን ጊዜ መቼ ነው?"
+    },
+    "answers": [
+      {
+        "en": "The first few minutes after rain begins",
+        "am": "ዝናብ በጀመረ በመጀመሪያዎቹ ጥቂት ደቂቃዎች ውስጥ"
+      },
+      {
+        "en": "Only after midnight",
+        "am": "ከእኩለ ሌሊት በኋላ ብቻ"
+      },
+      {
+        "en": "Only when sunny",
+        "am": "ፀሐይ ሲወጣ ብቻ"
+      },
+      {
+        "en": "Never",
+        "am": "በፍጹም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Oil and dirt can mix with new rain and make the road especially slippery at first.",
+      "am": "ዝናብ እንደጀመረ በአስፋልቱ ላይ ያለው ዘይትና አቧራ ከውሃ ጋር ስለሚቀላቀል መንገዱን በጣም አንዳላጭ ያደርገዋል።"
+    }
+  },
+  {
+    "id": "q088",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "Hydroplaning happens when:",
+      "am": "'Hydroplaning' (በውሃ ላይ መንሸራተት) የሚከሰተው መቼ ነው?"
+    },
+    "answers": [
+      {
+        "en": "Tires ride on water and lose contact with the road",
+        "am": "የመኪና ጎማዎች በውሃ ላይ ሲንሳፈፉና ከአስፋልቱ ጋር ሲላቀቁ"
+      },
+      {
+        "en": "The engine overheats",
+        "am": "ሞተሩ ሲሞቅ"
+      },
+      {
+        "en": "The horn fails",
+        "am": "ጥሩምባው ሲበላሽ"
+      },
+      {
+        "en": "Lights turn green",
+        "am": "መብራት አረንጓዴ ሲሆን"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Hydroplaning reduces steering and braking control. Slow down before water and avoid sudden moves.",
+      "am": "ሃይድሮፕላኒንግ ሲከሰት መሪውና ፍሬኑ ላይ ቁጥጥር ያጣሉ፤ ስለዚህ ውሃ በቆመበት ቦታ ፍጥነት መቀነስ ያስፈልጋል።"
+    }
+  },
+  {
+    "id": "q089",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "If your vehicle begins to skid, you should generally:",
+      "am": "መኪናዎ መንሸራተት ቢጀምር፣ ምን ማድረግ ይኖርብዎታል?"
+    },
+    "answers": [
+      {
+        "en": "Ease off the accelerator and steer where you want to go",
+        "am": "እግርዎን ከነዳጅ ላይ ያንሱ እና ወደሚፈልጉት አቅጣጫ መሪውን ያዙሩ"
+      },
+      {
+        "en": "Brake hard and turn sharply",
+        "am": "በሃይል ፍሬን ይያዙ እና በድንገት ይታጠፉ"
+      },
+      {
+        "en": "Close your eyes",
+        "am": "አይንዎን ይጨፍኑ"
+      },
+      {
+        "en": "Shift to park",
+        "am": "ወደ ማቆሚያ (Park) ይቀይሩ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "In a skid, avoid sudden braking. Ease off the gas and steer toward the path you want.",
+      "am": "መኪናው ሲንሸራተት በድንገት ፍሬን አይያዙ። ነዳጅ በመልቀቅ መኪናው እንዲረጋጋ ያድርጉና ወደሚፈልጉት አቅጣጫ ይምሩ።"
+    }
+  },
+  {
+    "id": "q090",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "If brakes fail, one helpful action is to:",
+      "am": "የመኪናዎ ፍሬን ቢበላሽ፣ ሊረዳ የሚችል ተግባር የትኛው ነው?"
+    },
+    "answers": [
+      {
+        "en": "Pump the brake pedal and shift to a lower gear",
+        "am": "ፍሬኑን ደጋግመው ይርገጡ እና ወደ ዝቅተኛ ጊር (Lower gear) ይቀይሩ"
+      },
+      {
+        "en": "Turn off steering",
+        "am": "መሪውን ያጥፉ"
+      },
+      {
+        "en": "Speed up",
+        "am": "ፍጥነት ይጨምሩ"
+      },
+      {
+        "en": "Open all doors",
+        "am": "ሁሉንም በሮች ይክፈቱ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "If brakes fail, pump the pedal, shift lower, use the parking brake carefully, and look for a safe escape path.",
+      "am": "ፍሬን ሲበላሽ ፔዳሉን በመርገጥ ግፊት ለመፍጠር ይሞክሩ፣ ጊር ይቀንሱ እና የእጅ ፍሬን (Handbrake) በጥንቃቄ ይጠቀሙ።"
+    }
+  },
+  {
+    "id": "q091",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "If your accelerator sticks, you should:",
+      "am": "የመኪናዎ ነዳጅ (Accelerator) ተጭኖ ቢቀር ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Shift to neutral and brake steadily",
+        "am": "ወደ ኒውትራል (Neutral) ይቀይሩ እና ፍሬኑን በእርጋታ ይያዙ"
+      },
+      {
+        "en": "Turn sharply left",
+        "am": "በድንገት ወደ ግራ ይታጠፉ"
+      },
+      {
+        "en": "Keep driving normally",
+        "am": "እንደተለመደው ማሽከርከርዎን ይቀጥሉ"
+      },
+      {
+        "en": "Stand on the accelerator",
+        "am": "ነዳጁን ይበልጥ ይጫኑት"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Shift to neutral, apply brakes, keep eyes on the road, and move off the roadway safely.",
+      "am": "ነዳጁ ተጭኖ ከቀረ ሞተሩ ጉልበት እንዳያገኝ ወደ ኒውትራል በመቀየር በጥንቃቄ ከመንገድ ወጥተው ይቁሙ።"
+    }
+  },
+  {
+    "id": "q092",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "When driving in fog, use:",
+      "am": "በጭጋግ ውስጥ ሲያሽከረክሩ የትኛውን መብራት መጠቀም አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Low-beam headlights",
+        "am": "አጭር መብራት (Low-beam)"
+      },
+      {
+        "en": "High beams only",
+        "am": "ረጅም መብራት ብቻ"
+      },
+      {
+        "en": "No lights",
+        "am": "ያለ መብራት"
+      },
+      {
+        "en": "Hazards at highway speed",
+        "am": "አደጋ ጊዜ መብራት በከፍተኛ ፍጥነት"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Low beams help you see and be seen in fog. High beams can reflect back and reduce visibility.",
+      "am": "ጭጋግ ውስጥ ረጅም መብራት አይጠቅምም፤ ይልቁንም ብርሃኑ ተመልሶ አይንዎን ስለሚጋርድ አጭር መብራት መጠቀም ይሻላል።"
+    }
+  },
+  {
+    "id": "q093",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "Fatigue can affect driving similarly to:",
+      "am": "ድካም ወይም እንቅልፍ ማጣት ማሽከርከር ላይ የሚያመጣው ተጽእኖ ከምን ጋር ይመሳሰላል?"
+    },
+    "answers": [
+      {
+        "en": "Alcohol or drugs",
+        "am": "ከአልኮል ወይም ከአደንዛዥ እጽ ጋር"
+      },
+      {
+        "en": "A clean windshield",
+        "am": "ከንጹህ መስታወት ጋር"
+      },
+      {
+        "en": "A seat belt",
+        "am": "ከመቀመጫ ቀበቶ ጋር"
+      },
+      {
+        "en": "Good mirrors",
+        "am": "ከጥሩ መስተዋቶች ጋር"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Drowsy driving slows reaction time and judgment, much like impairment.",
+      "am": "እንቅልፍ የጫነው አሽከርካሪ ልክ እንደሰከረ ሰው ውሳኔ የመስጠትና የመንቀሳቀስ ችሎታው ይቀንሳል።"
+    }
+  },
+  {
+    "id": "q094",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "Texting while driving is dangerous because it takes away:",
+      "am": "ሲያሽከረክሩ ሜሴጅ መጻፍ አደገኛ የሆነው ለምንድን ነው?"
+    },
+    "answers": [
+      {
+        "en": "Eyes, hands, and attention",
+        "am": "አይንን፣ እጅን እና ትኩረትን ስለሚሰርቅ"
+      },
+      {
+        "en": "Only fuel",
+        "am": "ነዳጅ ብቻ ስለሚጨርስ"
+      },
+      {
+        "en": "Only air conditioning",
+        "am": "ኤር ኮንዲሽነር ብቻ ስለሚቀንስ"
+      },
+      {
+        "en": "Nothing important",
+        "am": "ምንም አስፈላጊ ነገር አይቀንስም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Texting is especially dangerous because it is visual, manual, and mental distraction at the same time.",
+      "am": "ሜሴጅ መጻፍ አይንዎን ከመንገድ፣ እጅዎን ከመሪ እና አእምሮዎን ከትኩረት ስለሚያስወጣ በጣም አደገኛ ነው።"
+    }
+  },
+  {
+    "id": "q095",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "Seat belts should be worn:",
+      "am": "የመቀመጫ ቀበቶ (Seat belt) መታሰር ያለበት መቼ ነው?"
+    },
+    "answers": [
+      {
+        "en": "Every trip, by every occupant",
+        "am": "በማንኛውም ጉዞ ላይ፣ በሁሉም ተሳፋሪ"
+      },
+      {
+        "en": "Only on long trips",
+        "am": "በረጅም ጉዞዎች ላይ ብቻ"
+      },
+      {
+        "en": "Only by passengers",
+        "am": "በተሳፋሪዎች ብቻ"
+      },
+      {
+        "en": "Only in rain",
+        "am": "በዝናብ ጊዜ ብቻ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Seat belts reduce injury risk and should be worn on every trip.",
+      "am": "አጭርም ሆነ ረጅም በማንኛውም ጉዞ ላይ ሁሉም ተሳፋሪዎች ቀበቶ ማሰር አደጋን ለመቀነስ ይረዳል።"
+    }
+  },
+  {
+    "id": "q096",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "Children should be secured in:",
+      "am": "ህጻናት በመኪና ውስጥ እንዴት መቀመጥ አለባቸው?"
+    },
+    "answers": [
+      {
+        "en": "The proper child restraint for their age and size",
+        "am": "ለእድሜያቸውና ለክብደታቸው በሚመጥን የህጻናት መቀመጫ"
+      },
+      {
+        "en": "The driver's lap",
+        "am": "በአሽከርካሪው እቅፍ ውስጥ"
+      },
+      {
+        "en": "The cargo area",
+        "am": "በእቃ መጫኛ ቦታ ላይ"
+      },
+      {
+        "en": "No restraint if close to home",
+        "am": "ቤት ቅርብ ከሆነ ምንም አይነት መቀመጫ አያስፈልግም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Children need proper child restraints or seat belts based on age, weight, height, and law.",
+      "am": "ህጻናት እንደ እድሜያቸውና መጠናቸው የህጻናት መቀመጫ (Car seat) መጠቀም አለባቸው።"
+    }
+  },
+  {
+    "id": "q097",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "Georgia's Hands-Free law generally prohibits drivers from:",
+      "am": "የጆርጂያ 'Hands-Free' ህግ አሽከርካሪዎችን ምን እንዳያደርጉ ይከለክላል?"
+    },
+    "answers": [
+      {
+        "en": "Holding a phone while driving",
+        "am": "ሲያሽከረክሩ ስልክ በእጅ መያዝን"
+      },
+      {
+        "en": "Using seat belts",
+        "am": "ቀበቶ ማሰርን"
+      },
+      {
+        "en": "Checking mirrors",
+        "am": "መስተዋቶችን ማየትን"
+      },
+      {
+        "en": "Using turn signals",
+        "am": "ሲግናል መጠቀምን"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Georgia's Hands-Free law restricts holding or supporting a wireless device while driving.",
+      "am": "በጆርጂያ ህግ መሰረት ማንኛውንም ስልክ ወይም ኤሌክትሮኒክስ መሳሪያ በእጅ መያዝ ወይም በሰውነት መደገፍ ክልክል ነው።"
+    }
+  },
+  {
+    "id": "q098",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "Georgia drivers must carry and display their license when:",
+      "am": "የጆርጂያ አሽከርካሪዎች መንጃ ፈቃዳቸውን መያዝና ማሳየት ያለባቸው መቼ ነው?"
+    },
+    "answers": [
+      {
+        "en": "Driving and asked by law enforcement",
+        "am": "ሲያሽከረክሩ እና በትራፊክ ፖሊስ ሲጠየቁ"
+      },
+      {
+        "en": "Only when buying gas",
+        "am": "ነዳጅ ሲገዙ ብቻ"
+      },
+      {
+        "en": "Only outside Georgia",
+        "am": "ከጆርጂያ ውጭ ሲሆኑ ብቻ"
+      },
+      {
+        "en": "Never",
+        "am": "ፈጽሞ አያስፈልግም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "DDS says you must have the proper license or permit while driving and display it to law enforcement upon request.",
+      "am": "ሲያሽከረክሩ ሁልጊዜ ህጋዊ መንጃ ፈቃድ መያዝ እና ፖሊስ ሲጠይቅዎ ማሳየት ግዴታ ነው።"
+    }
+  },
+  {
+    "id": "q099",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "A Class C Instructional Permit is valid for up to:",
+      "am": "የClass C ፈቃድ (Instructional Permit) እስከ ስንት አመት ያገለግላል?"
+    },
+    "answers": [
+      {
+        "en": "2 years",
+        "am": "ለ2 አመት"
+      },
+      {
+        "en": "30 days",
+        "am": "ለ30 ቀናት"
+      },
+      {
+        "en": "6 months",
+        "am": "ለ6 ወራት"
+      },
+      {
+        "en": "10 years",
+        "am": "ለ10 አመት"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "DDS lists Class C Instructional Permits as valid for up to 2 years.",
+      "am": "በጆርጂያ ህግ መሰረት የልምምድ ፈቃድ (Permit) ለሁለት አመታት ያገለግላል።"
+    }
+  },
+  {
+    "id": "q100",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "A first-time Georgia Class C license applicant age 18 or older must generally certify supervised driving of:",
+      "am": "እድሜው 18 ወይም ከዚያ በላይ ሆኖ ለመጀመሪያ ጊዜ የጆርጂያ መንጃ ፈቃድ የሚያወጣ ሰው፣ ቢያንስ ስንት ሰአት እንደተለማመደ ማረጋገጥ አለበት?"
+    },
+    "answers": [
+      {
+        "en": "40 hours including 6 night hours",
+        "am": "40 ሰአታት (6 ሰአት የሌሊት ልምምድን ጨምሮ)"
+      },
+      {
+        "en": "5 hours only",
+        "am": "5 ሰአት ብቻ"
+      },
+      {
+        "en": "100 hours all at night",
+        "am": "100 ሰአት ሁሉም በሌሊት"
+      },
+      {
+        "en": "No driving practice",
+        "am": "ምንም አይነት ልምምድ አያስፈልግም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "DDS describes a 40-hour supervised-driving affidavit, including 6 hours at night, for first-time Class C applicants.",
+      "am": "ለመጀመሪያ ጊዜ መንጃ ፈቃድ ለማውጣት ቢያንስ 40 ሰአታት መለማመድና ከዛ ውስጥ 6 ሰአት በሌሊት መሆኑን በፊርማ ማረጋገጥ ያስፈልጋል።"
+    }
+  },
+  {
+    "id": "q101",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "The Georgia vision standard mentioned by DDS requires at least:",
+      "am": "በጆርጂያ DDS መመሪያ መሰረት፣ የአይን ምርመራ ዝቅተኛው መስፈርት ምንድን ነው?"
+    },
+    "answers": [
+      {
+        "en": "20/60 vision in one eye and 140-degree field of vision",
+        "am": "በአንድ አይን 20/60 እይታ እና 140 ዲግሪ የጎን እይታ"
+      },
+      {
+        "en": "Perfect 20/20 only",
+        "am": "ፍጹም 20/20 እይታ ብቻ"
+      },
+      {
+        "en": "No vision test",
+        "am": "ምንም አይነት የአይን ምርመራ የለም"
+      },
+      {
+        "en": "Only color vision",
+        "am": "ቀለም የመለየት ችሎታ ብቻ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "DDS testing information lists minimum vision and field-of-vision standards for licensing.",
+      "am": "አሽከርካሪዎች ቢያንስ በአንድ አይናቸው 20/60 ማየት መቻል እና በቂ የሆነ የጎንዮሽ እይታ ሊኖራቸው ይገባል።"
+    }
+  },
+  {
+    "id": "q102",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "If you fail any part of the Georgia permit knowledge test, the $10 test fee is:",
+      "am": "የጆርጂያ የጽሁፍ ፈተናን ብትወድቁ፣ የከፈሉት የ10 ዶላር ክፍያ ምን ይሆናል?"
+    },
+    "answers": [
+      {
+        "en": "Not refunded",
+        "am": "ተመላሽ አይሆንም"
+      },
+      {
+        "en": "Doubled back to you",
+        "am": "እጥፍ ሆኖ ይመለስልዎታል"
+      },
+      {
+        "en": "Refunded immediately",
+        "am": "ወዲያውኑ ይመለሳል"
+      },
+      {
+        "en": "Used for insurance",
+        "am": "ለኢንሹራንስ ይውላል"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "DDS says the test fee is paid before testing and is not refunded if any part is failed.",
+      "am": "የጽሁፍ ፈተና ክፍያ ተመላሽ የማይሆን (Non-refundable) ክፍያ ነው።"
+    }
+  },
+  {
+    "id": "q103",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "Knowledge exams at DDS Customer Service Centers are generally given:",
+      "am": "በDDS አገልግሎት መስጫ ማእከላት የጽሁፍ ፈተና የሚሰጠው በምን አይነት መንገድ ነው?"
+    },
+    "answers": [
+      {
+        "en": "On a walk-in basis",
+        "am": "ያለ ቀጠሮ በመሄድ (Walk-in)"
+      },
+      {
+        "en": "Only by mail",
+        "am": "በፖስታ ብቻ"
+      },
+      {
+        "en": "Only at midnight",
+        "am": "በእኩለ ሌሊት ብቻ"
+      },
+      {
+        "en": "Only after owning a car",
+        "am": "መኪና ካለዎት በኋላ ብቻ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "DDS says knowledge exams are given on a walk-in basis at DDS Customer Service Centers.",
+      "am": "የጽሁፍ ፈተና ለመውሰድ በአካል ወደ DDS ቢሮ መሄድ ይቻላል፤ ነገር ግን ሰአቱ ከማለቁ በፊት መገኘት ያስፈልጋል።"
+    }
+  },
+  {
+    "id": "q104",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "During the knowledge exam, cell phones and wireless devices are:",
+      "am": "በጽሁፍ ፈተና ወቅት፣ ስልኮች እና ሌሎች የኤሌክትሮኒክስ መሳሪያዎች አጠቃቀም ምን ይመስላል?"
+    },
+    "answers": [
+      {
+        "en": "Prohibited in the testing area",
+        "am": "በፈተናው ቦታ መያዝ ክልክል ነው"
+      },
+      {
+        "en": "Required",
+        "am": "ግዴታ ነው"
+      },
+      {
+        "en": "Allowed for searching answers",
+        "am": "መልስ ለመፈለግ ይፈቀዳሉ"
+      },
+      {
+        "en": "Allowed only for photos",
+        "am": "ፎቶ ለማንሳት ብቻ ይፈቀዳሉ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "DDS prohibits cell phones, texting devices, and wireless devices in the testing area.",
+      "am": "ፈተና በሚወስዱበት ቦታ ስልክ ወይም ማንኛውንም የግንኙነት መሳሪያ መያዝ በፍጹም አይፈቀድም።"
+    }
+  },
+  {
+    "id": "q105",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "Speaking to anyone other than the examiner during the knowledge test can be counted as:",
+      "am": "በፈተና ወቅት ከፈታኙ ውጭ ከሌላ ሰው ጋር ማውራት ምን ተብሎ ይቆጠራል?"
+    },
+    "answers": [
+      {
+        "en": "Misconduct and a failure",
+        "am": "እንደ ደንብ መጣስ እና እንደ መውደቅ"
+      },
+      {
+        "en": "Extra credit",
+        "am": "እንደ ተጨማሪ ነጥብ"
+      },
+      {
+        "en": "A free retake",
+        "am": "እንደ ነጻ ድጋሚ ፈተና"
+      },
+      {
+        "en": "A warning only always",
+        "am": "ሁልጊዜ ማስጠንቀቂያ ብቻ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "DDS rules say misconduct during the knowledge exam can cause the exam session to be counted as a failure.",
+      "am": "በፈተና ሰአት ከሌላ ሰው ጋር መነጋገር ማጭበርበር ተብሎ ስለሚታሰብ ከፈተና ያሳግዳል።"
+    }
+  },
+  {
+    "id": "q106",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "Road rules tests may be available in some non-English languages, but road signs are tested:",
+      "am": "የመንገድ ህጎች ፈተና በተለያዩ ቋንቋዎች ሊሰጥ ቢችልም፣ የመንገድ ምልክቶች ፈተና ግን የሚሰጠው በምን ቋንቋ ነው?"
+    },
+    "answers": [
+      {
+        "en": "In English",
+        "am": "በእንግሊዝኛ"
+      },
+      {
+        "en": "Only in Amharic",
+        "am": "በአማርኛ ብቻ"
+      },
+      {
+        "en": "Without words ever",
+        "am": "ያለ ቃላት ብቻ"
+      },
+      {
+        "en": "Only in Spanish",
+        "am": "በስፓኒሽ ብቻ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "DDS says road signs are conducted in English only, which is why this app keeps English visible.",
+      "am": "ጆርጂያ ውስጥ የመንገድ ምልክቶች በእንግሊዝኛ ብቻ ስለሚጻፉ፣ ፈተናውም የሚወሰደው በእንግሊዝኛ ብቻ ነው።"
+    }
+  },
+  {
+    "id": "q107",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "If you move within Georgia, you must update your DDS address:",
+      "am": "ጆርጂያ ውስጥ የመኖሪያ አድራሻዎን ከቀየሩ፣ ለDDS ማሳወቅ ያለብዎት መቼ ነው?"
+    },
+    "answers": [
+      {
+        "en": "Anytime your address changes",
+        "am": "አድራሻዎ በሚቀየርበት በማንኛውም ጊዜ"
+      },
+      {
+        "en": "Only every 10 years",
+        "am": "በየ10 አመቱ አንዴ ብቻ"
+      },
+      {
+        "en": "Only if police ask",
+        "am": "ፖሊስ ሲጠይቅ ብቻ"
+      },
+      {
+        "en": "Never",
+        "am": "አያስፈልግም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "DDS says you must update your record anytime your address changes.",
+      "am": "አድራሻዎ በተቀየረ ቁጥር በመንጃ ፈቃድዎ ላይ ያለውን መረጃ ማደስ ግዴታ ነው።"
+    }
+  },
+  {
+    "id": "q108",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "DDS correspondence after an address change:",
+      "am": "አድራሻዎን ለDDS ካላሳወቁ፣ ከነሱ የሚላክ ደብዳቤ ምን ይሆናል?"
+    },
+    "answers": [
+      {
+        "en": "Will not be forwarded by the U.S. Postal Service",
+        "am": "በፖስታ ቤት በኩል ወደ አዲሱ አድራሻዎ አይላክም"
+      },
+      {
+        "en": "Is always forwarded forever",
+        "am": "ሁልጊዜ ወደ አዲሱ አድራሻ ይላካል"
+      },
+      {
+        "en": "Goes to your employer",
+        "am": "ወደ ስራ ቦታዎ ይላካል"
+      },
+      {
+        "en": "Is deleted immediately",
+        "am": "ወዲያውኑ ይሰረዛል"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "DDS warns that its correspondence will not be forwarded to new addresses by USPS.",
+      "am": "ከDDS የሚላኩ ደብዳቤዎች ወደ ሌላ አድራሻ እንዲተላለፉ (Forward) ስለማይደረጉ፣ አድራሻዎን ወዲያውኑ ማስተካከል አስፈላጊ ነው።"
+    }
+  },
+  {
+    "id": "q109",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "For Real ID name changes, DDS generally requires:",
+      "am": "ለ'Real ID' የስም ለውጥ ለማድረግ፣ DDS ብዙውን ጊዜ ምን ይጠይቃል?"
+    },
+    "answers": [
+      {
+        "en": "Certified legal name-change documents",
+        "am": "ህጋዊ የስም ለውጥ ማረጋገጫ ሰነዶች"
+      },
+      {
+        "en": "A handwritten note only",
+        "am": "በእጅ የተጻፈ ማስታወሻ ብቻ"
+      },
+      {
+        "en": "A selfie",
+        "am": "ፎቶ (Selfie)"
+      },
+      {
+        "en": "Nothing",
+        "am": "ምንም አያስፈልግም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "DDS requires certified documents for legal name changes when identity documents do not match the current name.",
+      "am": "ስምዎን በጋብቻ ወይም በሌላ ህጋዊ መንገድ ከቀየሩ፣ ዋናውን የስም ለውጥ ሰነድ ማቅረብ ይኖርብዎታል።"
+    }
+  },
+  {
+    "id": "q110",
+    "topic": "safety",
+    "visual": "orange",
+    "question": {
+      "en": "When approaching emergency scenes, construction zones, or workers, the safest habit is to:",
+      "am": "የአደጋ ቦታዎች፣ የመንገድ ስራዎች ወይም ሰራተኞች ወዳሉበት አካባቢ ሲጠጉ ደህንነቱ የተጠበቀው ተግባር ምንድን ነው?"
+    },
+    "answers": [
+      {
+        "en": "Slow down, move over when safe, and stay alert",
+        "am": "ፍጥነት መቀነስ፣ ደህንነቱ የተጠበቀ ሲሆን መስመር መለወጥ እና በትኩረት መከታተል"
+      },
+      {
+        "en": "Look at your phone",
+        "am": "ስልክዎን መመልከት"
+      },
+      {
+        "en": "Keep speed and stare",
+        "am": "በነበሩበት ፍጥነት መቀጠል"
+      },
+      {
+        "en": "Stop in the travel lane",
+        "am": "በመንገዱ መሃል ላይ መቆም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Workers, responders, and stopped vehicles need extra space. Slow down and move over when safe.",
+      "am": "በመንገድ ላይ ለሚሰሩ ሰራተኞችና ለአደጋ ጊዜ ሰራተኞች ደህንነት ሲባል፣ ፍጥነትዎን ቀንሰውና መስመርዎን ለውጠው ማለፍ አለብዎት።"
+    }
+  },
+  {
+    "id": "q111",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "The safest response to road rage from another driver is to:",
+      "am": "ሌላ አሽከርካሪ በመንገድ ላይ ቁጣ ወይም ጠበኝነት ካሳየዎት፣ ደህንነቱ የተጠበቀው ምላሽ የትኛው ነው?"
+    },
+    "answers": [
+      {
+        "en": "Avoid eye contact, do not engage, and create space",
+        "am": "አይኑን ከማየት ይቆጠቡ፣ አብረውት አይከራከሩ እና ርቀትዎን ይጠብቁ"
+      },
+      {
+        "en": "Argue back",
+        "am": "መልሰው መከራከር"
+      },
+      {
+        "en": "Block them",
+        "am": "መንገዱን መዝጋትባቸው"
+      },
+      {
+        "en": "Chase them",
+        "am": "ተከትሎ መሄድ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Avoid escalating aggressive driving. Create space and seek help if needed.",
+      "am": "ከጠበኛ አሽከርካሪዎች ጋር ንክኪ አለመፍጠር አደጋን ለመቀነስ ይረዳል።"
+    }
+  },
+  {
+    "id": "q112",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "Scanning ahead while driving helps you:",
+      "am": "ሲያሽከረክሩ ከፊትዎ ያለውን መንገድ ራቅ አድርገው ማስተዋል ምን ይጠቅምዎታል?"
+    },
+    "answers": [
+      {
+        "en": "See hazards early and react smoothly",
+        "am": "አደጋዎችን ቀድመው ለማየትና በእርጋታ እርምጃ ለመውሰድ"
+      },
+      {
+        "en": "Drive with no mirrors",
+        "am": "ያለ መስተዋት ለመንዳት"
+      },
+      {
+        "en": "Ignore signs",
+        "am": "ምልክቶችን ችላ ለማለት"
+      },
+      {
+        "en": "Follow closer",
+        "am": "ተቀራርቦ ለመከተል"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Good drivers look ahead, to the sides, and behind so they can anticipate problems.",
+      "am": "አስተዋይ አሽከርካሪ ከፊት፣ ከኋላና በጎን ያለውን ነገር ሁልጊዜ በመከታተል ሊከሰቱ የሚችሉ ችግሮችን ቀድሞ ያስቀራል።"
+    }
+  },
+  {
+    "id": "q113",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "When being passed by another vehicle, you should:",
+      "am": "ሌላ ተሽከርካሪ እየቀደመዎት (Overtake እያደረገዎት) ከሆነ፣ ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Maintain speed or slow slightly and let them pass safely",
+        "am": "ባሉበት ፍጥነት መቀጠል ወይም ትንሽ ቀነስ አድርገው በደህንነት እንዲያልፉ መፍቀድ"
+      },
+      {
+        "en": "Speed up to block them",
+        "am": "እንዳይቀድሙዎት ፍጥነት መጨመር"
+      },
+      {
+        "en": "Move left suddenly",
+        "am": "በድንገት ወደ ግራ መታጠፍ"
+      },
+      {
+        "en": "Honk continuously",
+        "am": "ሳያቋርጡ ጥሩምባ መምታት"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Do not race a passing vehicle. Let it pass safely.",
+      "am": "ሊቀድምዎት የመጣን ተሽከርካሪ ለመከልከል ፍጥነት መጨመር አደገኛና ህገ-ወጥ ነው።"
+    }
+  },
+  {
+    "id": "q114",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "Large trucks have large blind spots called:",
+      "am": "ትላልቅ ትራኮች በዙሪያቸው የማይታዩባቸው ትላልቅ ቦታዎች ምን ይባላሉ?"
+    },
+    "answers": [
+      {
+        "en": "No-zones",
+        "am": "ኖ-ዞንስ (No-zones)"
+      },
+      {
+        "en": "Fast zones",
+        "am": "ፈጣን ቀጠናዎች"
+      },
+      {
+        "en": "Park zones",
+        "am": "የማቆሚያ ቀጠናዎች"
+      },
+      {
+        "en": "Safe circles",
+        "am": "የደህንነት ክብ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Truck blind spots are often called no-zones. Avoid lingering beside, behind, or immediately in front of large trucks.",
+      "am": "የከባድ መኪና አሽከርካሪዎች በጎናቸውና በስተጀርባ ያሉትን መኪኖች ማየት የማይችሉባቸው ቦታዎች 'No-zones' ይባላሉ።"
+    }
+  },
+  {
+    "id": "q115",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "When following a large truck, you should:",
+      "am": "ትልቅ ትራክ እየተከተሉ ከሆነ፣ ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Keep extra distance so the driver can see you",
+        "am": "አሽከርካሪው በመስተዋት እንዲያይዎት ተጨማሪ ርቀት ይጠብቁ"
+      },
+      {
+        "en": "Tailgate closely",
+        "am": "በጣም ተቀራርበው ይከተሉ"
+      },
+      {
+        "en": "Turn off headlights at night",
+        "am": "በሌሊት መብራት ያጥፉ"
+      },
+      {
+        "en": "Drive in the truck's blind spot",
+        "am": "አሽከርካሪው ማየት በማይችልበት ቀጠና (Blind spot) ውስጥ ይንዱ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Large vehicles need more room and have big blind spots. Leave extra following distance.",
+      "am": "ከትላልቅ መኪኖች ጀርባ ሲሆኑ፣ አሽከርካሪው በመስተዋት እንዲያይዎት ራቅ ብለው መከተል ይኖርብዎታል።"
+    }
+  },
+  {
+    "id": "q116",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "If traffic signals are not working at an intersection, drivers should generally:",
+      "am": "የትራፊክ መብራት በማይሰራበት የመንገድ መገናኛ ላይ፣ አሽከርካሪዎች ምን ማድረግ አለባቸው?"
+    },
+    "answers": [
+      {
+        "en": "Treat it carefully like an all-way stop unless directed otherwise",
+        "am": "ሌላ መመሪያ ካልተሰጠ በቀር፣ እንደ አራት አቅጣጫ የ'ቁም' ምልክት አድርገው ይቁሙ"
+      },
+      {
+        "en": "Speed through",
+        "am": "በፍጥነት ማለፍ"
+      },
+      {
+        "en": "Ignore other traffic",
+        "am": "ሌላውን ትራፊክ ችላ ማለት"
+      },
+      {
+        "en": "Only turn right",
+        "am": "ወደ ቀኝ ብቻ መታጠፍ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "When signals fail, use extreme caution and follow right-of-way rules or officer directions.",
+      "am": "መብራት ካልሰራ፣ እንደ ቁም ምልክት በመቁጠር ቅድሚያ ለሚገባው እየለቀቁ በጥንቃቄ ማለፍ ያስፈልጋል።"
+    }
+  },
+  {
+    "id": "q117",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "A green arrow means you may:",
+      "am": "አረንጓዴ ቀስት ምን ማለት ነው?"
+    },
+    "answers": [
+      {
+        "en": "Move in the direction of the arrow after yielding to anyone lawfully in the intersection",
+        "am": "በመገናኛው ላይ ላሉ እግረኞችና ተሽከርካሪዎች ቅድሚያ ከሰጡ በኋላ በቀስቱ አቅጣጫ መሄድ"
+      },
+      {
+        "en": "Go any direction",
+        "am": "በማንኛውም አቅጣጫ መሄድ"
+      },
+      {
+        "en": "Stop forever",
+        "am": "ለረጅም ጊዜ መቆም"
+      },
+      {
+        "en": "Park in the intersection",
+        "am": "በመገናኛው መካከል ተሽከርካሪ ማቆም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "A green arrow permits movement in the arrow direction, but drivers must still avoid pedestrians and vehicles lawfully in the intersection.",
+      "am": "አረንጓዴ ቀስት ወደ ተጠቆመው አቅጣጫ መሄድ እንደሚቻል ይገልጻል፤ ነገር ግን አሁንም ለእግረኞች ቅድሚያ መስጠት አለብዎት።"
+    }
+  },
+  {
+    "id": "q118",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "Before entering a roadway from a driveway, alley, or private road, you must:",
+      "am": "ከቤት መውጫ (Driveway) ወይም ከጠባብ መንገድ ወደ ዋናው መንገድ ከመግባትዎ በፊት ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Stop and yield to pedestrians and vehicles",
+        "am": "ቆመው ለእግረኞችና ለተሽከርካሪዎች ቅድሚያ መስጠት"
+      },
+      {
+        "en": "Enter without looking",
+        "am": "ሳይመለከቱ መግባት"
+      },
+      {
+        "en": "Only honk",
+        "am": "ጥሩምባ መምታት ብቻ"
+      },
+      {
+        "en": "Block the sidewalk",
+        "am": "የእግረኛ መንገዱን መዝጋት"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "DDS right-of-way guidance says to stop and yield before entering or crossing a roadway from private areas.",
+      "am": "ከግል ይዞታ ወይም ከመውጫ መንገዶች ወደ አውራ ጎዳና ሲገቡ፣ ቆመው በዋናው መንገድ ላይ ላሉ ቅድሚያ መስጠት ግዴታ ነው።"
+    }
+  },
+  {
+    "id": "q119",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "If you have a green light but the intersection is blocked, you should:",
+      "am": "መብራቱ አረንጓዴ ቢሆንም ነገር ግን መገናኛ መንገዱ በትራፊክ ተዘግቶ ከሆነ ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Wait until there is room to clear the intersection",
+        "am": "መንገዱ ክፍት እስኪሆንና መሻገር እስኪችሉ ድረስ መጠበቅ"
+      },
+      {
+        "en": "Enter and block it",
+        "am": "ገብተው መንገዱን መዝጋት"
+      },
+      {
+        "en": "Honk until cars move",
+        "am": "መኪኖች እስኪንቀሳቀሱ ጥሩምባ መምታት"
+      },
+      {
+        "en": "Drive on sidewalk",
+        "am": "በእግረኛ መንገድ ላይ መንዳት"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Do not enter an intersection unless you can get through it without blocking cross traffic.",
+      "am": "የመገናኛ መንገዱን ሙሉ በሙሉ አልፈው ለመውጣት በቂ ቦታ ከሌለ፣ መብራት አረንጓዴ ቢሆንም እንኳ መንገዱን ዘግተው መቆም የለብዎትም።"
+    }
+  },
+  {
+    "id": "q120",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "When an officer or firefighter directs traffic, you must:",
+      "am": "የፖሊስ መኮንን ወይም የእሳት አደጋ ሰራተኛ ትራፊክ በሚመራበት ጊዜ ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Obey their directions",
+        "am": "መመሪያቸውን መታዘዝ"
+      },
+      {
+        "en": "Obey only traffic lights",
+        "am": "የትራፊክ መብራቱን ብቻ መታዘዝ"
+      },
+      {
+        "en": "Ignore hand signals",
+        "am": "የእጅ ምልክቶችን ችላ ማለት"
+      },
+      {
+        "en": "Stop only if raining",
+        "am": "ከዘነበ ብቻ መቆም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Georgia's basic traffic laws require obeying law enforcement or firefighter directions.",
+      "am": "ከባለስልጣናት የሚሰጥ የትራፊክ መመሪያ ከማንኛውም ምልክት ወይም መብራት በላይ ተፈጻሚነት አለው።"
+    }
+  },
+  {
+    "id": "q121",
+    "topic": "rules",
+    "visual": "orange",
+    "question": {
+      "en": "In a construction zone, fines and penalties may be:",
+      "am": "በመንገድ ግንባታ አካባቢ የሚፈጸሙ የትራፊክ ጥፋቶች ቅጣት ምን ሊሆን ይችላል?"
+    },
+    "answers": [
+      {
+        "en": "Higher than normal",
+        "am": "ከመደበኛው ቅጣት ከፍ ያለ"
+      },
+      {
+        "en": "Always free",
+        "am": "ሁልጊዜ ነጻ"
+      },
+      {
+        "en": "Paid by workers",
+        "am": "በሰራተኞቹ የሚከፈል"
+      },
+      {
+        "en": "Ignored",
+        "am": "ችላ የሚባል"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Work zones are high-risk areas. Fines and penalties can be increased.",
+      "am": "የሰራተኞችን ደህንነት ለመጠበቅ ሲባል፣ በግንባታ ቀጠና ውስጥ የሚደረጉ ጥፋቶች ቅጣት እጥፍ ሊሆን ይችላል።"
+    }
+  },
+  {
+    "id": "q122",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "A driver turning right should be especially careful of:",
+      "am": "ወደ ቀኝ የሚታጠፍ አሽከርካሪ በተለይ ስለማን መጠንቀቅ አለበት?"
+    },
+    "answers": [
+      {
+        "en": "Pedestrians and bicyclists crossing on the right",
+        "am": "በቀኝ በኩል ለሚሻገሩ እግረኞችና ብስክሌተኞች"
+      },
+      {
+        "en": "Only airplanes",
+        "am": "ለአውሮፕላኖች ብቻ"
+      },
+      {
+        "en": "Only parked cars far away",
+        "am": "ራቅ ብለው ለቆሙ መኪኖች ብቻ"
+      },
+      {
+        "en": "No one",
+        "am": "ስለማንም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Check crosswalks and bike lanes before turning right.",
+      "am": "ወደ ቀኝ በሚታጠፉበት ጊዜ በእርስዎ ጎን የሚጓዙ እግረኞች ወይም ብስክሌተኞች ሊኖሩ ስለሚችሉ በጥንቃቄ ማየት አለብዎት።"
+    }
+  },
+  {
+    "id": "q123",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "At night, you should drive at a speed that lets you stop:",
+      "am": "በሌሊት በምን አይነት ፍጥነት ማሽከርከር ይኖርብዎታል?"
+    },
+    "answers": [
+      {
+        "en": "Within the distance you can see ahead",
+        "am": "ከፊትዎ ማየት በሚችሉት ርቀት ውስጥ መቆም በሚያስችል ፍጥነት"
+      },
+      {
+        "en": "Faster than headlights allow",
+        "am": "መብራትዎ ከሚያሳየው ርቀት በበለጠ ፍጥነት"
+      },
+      {
+        "en": "With parking lights only",
+        "am": "በመቆሚያ መብራቶች ብቻ"
+      },
+      {
+        "en": "Without looking ahead",
+        "am": "ከፊት ሳይመለከቱ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Never overdrive your headlights. You need enough distance to see, react, and stop.",
+      "am": "በሌሊት መብራትዎ ከሚያሳየው ርቀት በላይ በፍጥነት አይንዱ፤ ምክንያቱም አደጋ ሲያጋጥም ቆመው ለማምለጥ በቂ ቦታ አይኖርዎትም።"
+    }
+  },
+  {
+    "id": "q124",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "When driving near pedestrians, drivers should:",
+      "am": "እግረኞች ባሉበት አካባቢ ሲያሽከረክሩ፣ አሽከርካሪዎች ምን ማድረግ አለባቸው?"
+    },
+    "answers": [
+      {
+        "en": "Slow down and be prepared to stop",
+        "am": "ፍጥነት መቀነስና ለመቆም መዘጋጀት"
+      },
+      {
+        "en": "Speed up",
+        "am": "ፍጥነት መጨመር"
+      },
+      {
+        "en": "Drive onto sidewalk",
+        "am": "ወደ እግረኛ መንገድ መውጣት"
+      },
+      {
+        "en": "Only watch the radio",
+        "am": "ሬዲዮ ብቻ መከታተል"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Pedestrians can be unpredictable. Slow down and be ready to stop, especially near schools, parks, and bus stops.",
+      "am": "እግረኞች በድንገት መንገድ ላይ ሊወጡ ስለሚችሉ፣ ሁልጊዜ ፍጥነትዎን ቀንሰው ለመቆም ዝግጁ መሆን አለብዎት።"
+    }
+  },
+  {
+    "id": "q125",
+    "topic": "rules",
+    "visual": "school",
+    "question": {
+      "en": "Near schools, parks, and bus stops, drivers should expect:",
+      "am": "በትምህርት ቤቶች፣ በፓርኮችና በአውቶቡስ መቆሚያዎች አካባቢ አሽከርካሪዎች ምን መጠበቅ አለባቸው?"
+    },
+    "answers": [
+      {
+        "en": "Children and pedestrians may enter the roadway",
+        "am": "ህጻናትና እግረኞች በድንገት ወደ መንገድ ሊገቡ እንደሚችሉ"
+      },
+      {
+        "en": "No people ever",
+        "am": "ሰዎች በዛ አካባቢ አይኖሩም"
+      },
+      {
+        "en": "Only trucks",
+        "am": "ትላልቅ መኪኖች ብቻ"
+      },
+      {
+        "en": "No traffic laws",
+        "am": "ምንም አይነት የትራፊክ ህግ የለም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "DDS advises watching for pedestrians near schools, parks, bus stops, and intersections.",
+      "am": "እነዚህ አካባቢዎች ህጻናት በብዛት የሚገኙባቸው ስለሆነ ልዩ ጥንቃቄና ትኩረት ያስፈልጋቸዋል።"
+    }
+  },
+  {
+    "id": "q126",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "Under Georgia DUI law, at what BAC is a driver under 21 considered under the influence?",
+      "am": "በጆርጂያ የሰካራምነት (DUI) ሕግ መሠረት፣ ዕድሜው ከ21 ዓመት በታች የሆነ አሽከርካሪ በደሙ ውስጥ ያለው የአልኮል መጠን (BAC) ስንት ሲሆን በሰካራምነት ይቀጣል?"
+    },
+    "answers": [
+      {
+        "en": "0.02% or higher",
+        "am": "0.02% ወይም ከዚያ በላይ"
+      },
+      {
+        "en": "0.08% only",
+        "am": "0.08% ብቻ"
+      },
+      {
+        "en": "0.15% or higher",
+        "am": "0.15% ወይም ከዚያ በላይ"
+      },
+      {
+        "en": "Any amount only after midnight",
+        "am": "ከእኩለ ሌሊት በኋላ ማንኛውም መጠን"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "For drivers under 21, Georgia uses a lower DUI BAC threshold of 0.02% or higher.",
+      "am": "ዕድሜያቸው ከ21 ዓመት በታች ለሆኑ ወጣቶች ጆርጂያ በጣም አነስተኛ የአልኮል መጠን (0.02%) ቢገኝባቸውም እንደ ጥፋት ትቆጥራለች።"
+    }
+  },
+  {
+    "id": "q127",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "What is Georgia's Basic Speed Law?",
+      "am": "የጆርጂያ መሠረታዊ የፍጥነት ሕግ (Basic Speed Law) ምንድን ነው?"
+    },
+    "answers": [
+      {
+        "en": "Never drive faster than is safe for current conditions",
+        "am": "ከአሁኑ የመንገዱ ሁኔታ ጋር ተመጣጣኝ ካልሆነ ፍጥነት በላይ በፍጹም አይንዱ"
+      },
+      {
+        "en": "Always drive the posted speed",
+        "am": "ሁልጊዜ በምልክት የተጠቀሰውን ፍጥነት ብቻ ይንዱ"
+      },
+      {
+        "en": "Drive 10 mph over if traffic is light",
+        "am": "ትራፊክ ከሌለ ከፍጥነቱ ገደብ በላይ 10 mph ይጨምሩ"
+      },
+      {
+        "en": "Speed limits do not apply in rain",
+        "am": "በዝናብ ጊዜ የፍጥነት ገደብ አይሠራም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "The basic speed rule means the posted limit is not permission to drive too fast for weather, traffic, visibility, or road conditions.",
+      "am": "ይህ ሕግ ማለት ምንም እንኳ የፍጥነት ገደብ ቢኖርም፣ እንደ ዝናብ ወይም ጭጋግ ባሉ ሁኔታዎች ወቅት ፍጥነትን ቀንሶ በጥንቃቄ መንዳት ግዴታ መሆኑን ያሳያል።"
+    }
+  },
+  {
+    "id": "q128",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "How far before turning should you signal?",
+      "am": "ለመታጠፍ ቢያንስ ስንት ጫማ (feet) ሲቀረው ምልክት (ሲግናል) ማብራት አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "At least 100 feet",
+        "am": "ቢያንስ 100 ጫማ"
+      },
+      {
+        "en": "Only while turning",
+        "am": "በሚታጠፉበት ጊዜ ብቻ"
+      },
+      {
+        "en": "At least 5 feet",
+        "am": "ቢያንስ 5 ጫማ"
+      },
+      {
+        "en": "Only if another car honks",
+        "am": "ሌላ መኪና ጥሩምባ ሲነፋ ብቻ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Signal at least 100 feet before turning or changing direction so others have time to react.",
+      "am": "ሌሎች አሽከርካሪዎች እንዲጠነቀቁና እንዲያውቁት ከመታጠፍዎ በፊት ቢያንስ 100 ጫማ ሲቀረው ምልክት ማብራት አለብዎት።"
+    }
+  },
+  {
+    "id": "q129",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "When is it legal to pass on the right?",
+      "am": "በቀኝ በኩል ቀድሞ ማለፍ (Overtake) የሚፈቀደው መቼ ነው?"
+    },
+    "answers": [
+      {
+        "en": "When the vehicle ahead is turning left and there is a clear paved lane to the right",
+        "am": "ከፊት ያለው መኪና ወደ ግራ ለመታጠፍ ሲዘጋጅና በቀኝ በኩል ክፍት የሆነ አስፋልት መንገድ ሲኖር"
+      },
+      {
+        "en": "Anytime on the shoulder",
+        "am": "በማንኛውም ጊዜ በመንገድ ዳርቻው ላይ"
+      },
+      {
+        "en": "When traffic is angry",
+        "am": "ትራፊክ ሲጨናነቅ"
+      },
+      {
+        "en": "Never, even with a legal lane",
+        "am": "በፍጹም አይፈቀድም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Passing on the right is allowed only in specific safe and lawful situations, such as a clear paved lane when the vehicle ahead is turning left.",
+      "am": "ከፊት ያለው መኪና ወደ ግራ ለመታጠፍ ምልክት ሰጥቶ ሲቆም፣ በቀኝ በኩል አስተማማኝና አስፋልት የሆነ መስመር ካለ ማለፍ ይፈቀዳል።"
+    }
+  },
+  {
+    "id": "q130",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "What is the two-second rule?",
+      "am": "የሁለት ሰከንድ ሕግ (Two-second rule) ምንድን ነው?"
+    },
+    "answers": [
+      {
+        "en": "Keep at least two seconds of following distance",
+        "am": "ከፊትዎ ካለው መኪና ጋር ቢያንስ የሁለት ሰከንድ የመከተያ ርቀት ይጠብቁ"
+      },
+      {
+        "en": "Answer texts within two seconds",
+        "am": "በሁለት ሰከንድ ውስጥ መልዕክት መመለስ"
+      },
+      {
+        "en": "Stop for only two seconds at red lights",
+        "am": "በቀይ መብራት ላይ ለሁለት ሰከንድ ብቻ መቆም"
+      },
+      {
+        "en": "Drive two cars at once",
+        "am": "ሁለት መኪና በአንድ ጊዜ መንዳት"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Use at least a two-second following distance in good conditions. Add more time at higher speeds, at night, or in rain.",
+      "am": "ይህ ሕግ አደጋን ለመቀነስ የሚረዳ ሲሆን፣ ከፊት ካለው መኪና ጋር በቂ ርቀት እንዲኖርዎት ያደርጋል።"
+    }
+  },
+  {
+    "id": "q131",
+    "topic": "signs",
+    "visual": "crossbuck",
+    "question": {
+      "en": "What does a crossbuck sign indicate?",
+      "am": "የባቡር ሀዲድ መሻገሪያ (Crossbuck) ምልክት ምንን ያመለክታል?"
+    },
+    "answers": [
+      {
+        "en": "A railroad crossing",
+        "am": "የባቡር ሀዲድ መሻገሪያ"
+      },
+      {
+        "en": "A school crossing",
+        "am": "የትምህርት ቤት መሻገሪያ"
+      },
+      {
+        "en": "A hospital",
+        "am": "ሆስፒታል"
+      },
+      {
+        "en": "A one-way road",
+        "am": "የአንድ አቅጣጫ መንገድ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "A crossbuck marks a railroad crossing. Slow down, look both ways, and be ready to stop.",
+      "am": "ይህ ምልክት የባቡር ሀዲድ መሻገሪያ መሆኑን ስለሚጠቁም፣ ፍጥነትዎን ቀንሰውና ግራና ቀኝ አይተው ለመቆም መዘጋጀት አለብዎት።"
+    }
+  },
+  {
+    "id": "q132",
+    "topic": "signs",
+    "visual": "slow",
+    "question": {
+      "en": "What does a slow-moving vehicle emblem mean?",
+      "am": "በተሽከርካሪ ጀርባ የሚለጠፍ ብርቱካናማ የሦስት ማዕዘን ምልክት ምን ማለት ነው?"
+    },
+    "answers": [
+      {
+        "en": "The vehicle travels 25 mph or less",
+        "am": "ተሽከርካሪው በ25 mph ወይም ከዚያ በታች የሚጓዝ ነው"
+      },
+      {
+        "en": "The vehicle must speed up",
+        "am": "ተሽከርካሪው ፍጥነት መጨመር አለበት"
+      },
+      {
+        "en": "The road is closed",
+        "am": "መንገዱ ተዘግቷል"
+      },
+      {
+        "en": "Only motorcycles may pass",
+        "am": "ሞተርሳይክሎች ብቻ ሊያልፉ ይችላሉ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "The orange slow-moving vehicle triangle warns that the vehicle moves slowly, usually 25 mph or less.",
+      "am": "ይህ ምልክት ተሽከርካሪው በጣም በቀስታ የሚጓዝ መሆኑን ስለሚገልጽ፣ ከኋላ የሚመጡ አሽከርካሪዎች ፍጥነታቸውን እንዲያስተካክሉ ያስጠነቅቃል።"
+    }
+  },
+  {
+    "id": "q133",
+    "topic": "signs",
+    "visual": "lanes",
+    "question": {
+      "en": "What do white dashed lane lines mean?",
+      "am": "የተቆራረጡ ነጭ የመንገድ መስመሮች ምንን ያመለክታሉ?"
+    },
+    "answers": [
+      {
+        "en": "You may change lanes if it is safe",
+        "am": "ደህንነቱ የተጠበቀ ሲሆን መስመር መቀየር ይችላሉ"
+      },
+      {
+        "en": "Do not change lanes ever",
+        "am": "በፍጹም መስመር አይቀይሩ"
+      },
+      {
+        "en": "Railroad crossing ahead",
+        "am": "የባቡር ሀዲድ መሻገሪያ ከፊት አለ"
+      },
+      {
+        "en": "School bus stop",
+        "am": "የትምህርት ቤት አውቶቡስ መቆሚያ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Dashed white lines separate lanes moving in the same direction and allow lane changes when safe.",
+      "am": "የተቆራረጡ ነጭ መስመሮች በአንድ አቅጣጫ በሚሄዱ ተሽከርካሪዎች መካከል ያሉ ሲሆን፣ ጥንቃቄ በማድረግ መስመር መቀየር እንደሚቻል ይገልጻሉ።"
+    }
+  },
+  {
+    "id": "q134",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "When should you use high-beam headlights?",
+      "am": "ረጅም መብራት (High-beam) መጠቀም ያለብዎት መቼ ነው?"
+    },
+    "answers": [
+      {
+        "en": "In open country at night when no other vehicles are nearby",
+        "am": "በሌሊት ክፍት በሆኑ መንገዶች ላይ ሌሎች ተሽከርካሪዎች በሌሉበት"
+      },
+      {
+        "en": "In fog",
+        "am": "በጭጋግ ውስጥ"
+      },
+      {
+        "en": "When following another car closely",
+        "am": "ሌላ መኪና በቅርብ ሲከተሉ"
+      },
+      {
+        "en": "At all times in the city",
+        "am": "በከተማ ውስጥ ሁልጊዜ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "High beams help on dark open roads, but dim them for oncoming traffic and when following another vehicle.",
+      "am": "ረጅም መብራት በጨለማና ሌሎች ተሽከርካሪዎች በሌሉበት መንገድ ላይ እይታን ለማሻሻል ይጠቅማል።"
+    }
+  },
+  {
+    "id": "q135",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "What should you do if you begin to hydroplane?",
+      "am": "መኪናዎ በውኃ ላይ መንሸራተት (Hydroplane) ከጀመረ ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Take your foot off the gas, avoid braking, and steer straight until control returns",
+        "am": "እግርዎን ከነዳጅ ላይ ያንሱ፣ ፍሬን አይያዙ እና መሪውን ቀጥ አድርገው ይያዙ"
+      },
+      {
+        "en": "Brake hard",
+        "am": "በኃይል ፍሬን ይያዙ"
+      },
+      {
+        "en": "Turn sharply",
+        "am": "በድንገት ይታጠፉ"
+      },
+      {
+        "en": "Speed up",
+        "am": "ፍጥነት ይጨምሩ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Hydroplaning means your tires are riding on water. Ease off the gas and avoid sudden braking or steering.",
+      "am": "መንሸራተት ሲጀምሩ ፍሬን ከያዙ መኪናው ሊገለበጥ ይችላል፤ ስለዚህ ነዳጅ በመልቀቅ መኪናው በራሱ ፍጥነት እንዲረጋጋ ማድረግ አለብዎት።"
+    }
+  },
+  {
+    "id": "q136",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "What is the maximum speed limit on an unpaved county road unless otherwise posted?",
+      "am": "ሌላ ምልክት ካልተለጠፈ በቀር፣ አስፋልት ባልሆነ (ጠጠር) የገጠር መንገድ ላይ ከፍተኛው የፍጥነት ገደብ ስንት ነው?"
+    },
+    "answers": [
+      {
+        "en": "35 mph",
+        "am": "35 mph"
+      },
+      {
+        "en": "25 mph",
+        "am": "25 mph"
+      },
+      {
+        "en": "55 mph",
+        "am": "55 mph"
+      },
+      {
+        "en": "70 mph",
+        "am": "70 mph"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Georgia's general speed limits include 35 mph on unpaved county roads unless otherwise posted.",
+      "am": "በጆርጂያ ሕግ መሠረት ሌላ ምልክት በሌለባቸው ጠጠር መንገዶች ላይ ከፍተኛው ፍጥነት 35 mph ነው።"
+    }
+  },
+  {
+    "id": "q137",
+    "topic": "ga",
+    "visual": "rule",
+    "question": {
+      "en": "What is the Hands-Free Georgia Act?",
+      "am": "የጆርጂያ 'Hands-Free' ሕግ ምንድን ነው?"
+    },
+    "answers": [
+      {
+        "en": "It is illegal to hold or support a phone with your body while driving",
+        "am": "ሲያሽከረክሩ ስልክ በእጅ መያዝ ወይም በሰውነት መደገፍ ሕገወጥ ነው"
+      },
+      {
+        "en": "It requires two hands on the radio",
+        "am": "ሬዲዮ ለመጠቀም ሁለት እጅ ያስፈልጋል"
+      },
+      {
+        "en": "It allows texting at stop signs",
+        "am": "በቁም ምልክት ላይ መልዕክት መጻፍ ይፈቀዳል"
+      },
+      {
+        "en": "It applies only to passengers",
+        "am": "ለተሳፋሪዎች ብቻ የሚሠራ ሕግ ነው"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Georgia's hands-free law prohibits holding or supporting a wireless device while operating a vehicle.",
+      "am": "ይህ ሕግ አሽከርካሪዎች ሙሉ ትኩረታቸው በመንገዱ ላይ እንዲሆንና ስልክ በመያዝ እንዳይዘናጉ የተደነገገ ነው።"
+    }
+  },
+  {
+    "id": "q138",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "Can you turn left on red in Georgia?",
+      "am": "በጆርጂያ በቀይ መብራት ወደ ግራ መታጠፍ ይቻላል?"
+    },
+    "answers": [
+      {
+        "en": "Only from a one-way street onto another one-way street, after stopping and yielding",
+        "am": "ከአንድ አቅጣጫ መንገድ ወደ ሌላ አንድ አቅጣጫ መንገድ ብቻ (ቆመው ቅድሚያ ከሰጡ በኋላ)"
+      },
+      {
+        "en": "Always",
+        "am": "ሁልጊዜ"
+      },
+      {
+        "en": "Never under any condition",
+        "am": "በማንኛውም ሁኔታ በፍጹም አይቻልም"
+      },
+      {
+        "en": "Only from a driveway",
+        "am": "ከቤት መውጫ መንገድ ላይ ብቻ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Georgia allows left on red only from a one-way street onto another one-way street, unless prohibited, after stopping and yielding.",
+      "am": "በቀይ መብራት ወደ ግራ መታጠፍ የሚቻለው ሁለቱም መንገዶች አንድ አቅጣጫ (One-way) ከሆኑና የሚከለክል ምልክት ከሌለ ብቻ ነው።"
+    }
+  },
+  {
+    "id": "q139",
+    "topic": "rules",
+    "visual": "diamond",
+    "question": {
+      "en": "What is a gore area?",
+      "am": "ጎር ኤሪያ (Gore area) በመንገድ ላይ የትኛው ቦታ ነው?"
+    },
+    "answers": [
+      {
+        "en": "The triangular area between a highway and an exit ramp",
+        "am": "በአውራ ጎዳና እና በመውጫ መንገድ መካከል ያለው የሦስት ማዕዘን ቦታ"
+      },
+      {
+        "en": "A parking space",
+        "am": "ተሽከርካሪ ማቆሚያ"
+      },
+      {
+        "en": "A school crossing",
+        "am": "የትምህርት ቤት መሻገሪያ"
+      },
+      {
+        "en": "A gas station entrance",
+        "am": "የነዳጅ ማደያ መግቢያ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "A gore is the triangular area at an exit or entrance ramp. Do not drive across it.",
+      "am": "በመውጫ መንገዶች ላይ የሚገኘውን ነጭ የተሰመረበትን የሦስት ማዕዘን ቦታ አቋርጦ መንዳት ክልክል ነው።"
+    }
+  },
+  {
+    "id": "q140",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "If you miss your interstate exit, what should you do?",
+      "am": "በአውራ ጎዳና ላይ መውጫዎ (Exit) ቢያልፍዎት ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Continue to the next exit",
+        "am": "እስከ ቀጣዩ መውጫ ድረስ ጉዞዎን መቀጠል"
+      },
+      {
+        "en": "Back up on the interstate",
+        "am": "በአውራ ጎዳናው ላይ ወደ ኋላ መንዳት"
+      },
+      {
+        "en": "Stop in the lane",
+        "am": "በመስመሩ ላይ መቆም"
+      },
+      {
+        "en": "Cross the gore",
+        "am": "መከፋፈያውን (Gore) አቋርጦ መግባት"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Never stop or back up to reach a missed exit. Continue to the next exit.",
+      "am": "መውጫ ቢያልፍዎት በፍጹም መቆም ወይም ወደ ኋላ መመለስ የለብዎትም፤ ይልቁንም ወደሚቀጥለው መውጫ መሄድ አለብዎት።"
+    }
+  },
+  {
+    "id": "q141",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "How much space should you give a bicyclist when passing?",
+      "am": "ብስክሌተኛን አልፈው ሲሄዱ ቢያንስ ምን ያህል ክፍተት መስጠት አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "At least 3 feet",
+        "am": "ቢያንስ 3 ጫማ"
+      },
+      {
+        "en": "6 inches",
+        "am": "6 ኢንች"
+      },
+      {
+        "en": "No space if you honk",
+        "am": "ጥሩምባ ከነፉ ቦታ አያስፈልግም"
+      },
+      {
+        "en": "Only 1 foot at night",
+        "am": "በሌሊት 1 ጫማ ብቻ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Georgia drivers should give bicyclists at least 3 feet of clearance when passing.",
+      "am": "በጆርጂያ ሕግ መሠረት ብስክሌተኞችን አልፈው ሲሄዱ ለደህንነታቸው ሲባል ቢያንስ የ3 ጫማ ክፍተት መስጠት ግዴታ ነው።"
+    }
+  },
+  {
+    "id": "q142",
+    "topic": "rules",
+    "visual": "school",
+    "question": {
+      "en": "Must you stop for a school bus on a two-lane road without a median?",
+      "am": "መከፋፈያ በሌለው የሁለት መስመር መንገድ ላይ የትምህርት ቤት አውቶቡስ ሲቆም መቆም አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Yes, traffic in both directions must stop",
+        "am": "አዎ፣ በሁለቱም አቅጣጫ የሚመጡ ተሽከርካሪዎች መቆም አለባቸው"
+      },
+      {
+        "en": "Only traffic behind the bus",
+        "am": "ከአውቶቡሱ ጀርባ ያለው ትራፊክ ብቻ"
+      },
+      {
+        "en": "No one stops",
+        "am": "ማንም መቆም የለበትም"
+      },
+      {
+        "en": "Only trucks stop",
+        "am": "ትላልቅ መኪናዎች ብቻ ይቆማሉ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "On a two-lane road without a median, traffic from both directions must stop for a school bus with flashing red lights.",
+      "am": "መካከለኛ መከፋፈያ በሌለበት መንገድ ላይ አውቶቡሱ ቀይ መብራት አብርቶ ሲቆም፣ በሁለቱም አቅጣጫ ያላችሁ አሽከርካሪዎች መቆም አለባችሁ።"
+    }
+  },
+  {
+    "id": "q143",
+    "topic": "rules",
+    "visual": "school",
+    "question": {
+      "en": "On a highway with a grass median, must you stop for a school bus on the opposite side?",
+      "am": "በሳር ወይም በግንብ የተከፈለ አውራ ጎዳና ላይ፣ በተቃራኒ አቅጣጫ የቆመ አውቶቡስ ቢኖር መቆም አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "No, only traffic traveling in the same direction as the bus must stop",
+        "am": "አይ፣ ከአውቶቡሱ ጋር በተመሳሳይ አቅጣጫ የሚጓዙ ተሽከርካሪዎች ብቻ መቆም አለባቸው"
+      },
+      {
+        "en": "Yes, all lanes always stop",
+        "am": "አዎ፣ ሁሉም መስመሮች ሁልጊዜ መቆም አለባቸው"
+      },
+      {
+        "en": "Only bicycles stop",
+        "am": "ብስክሌቶች ብቻ ይቆማሉ"
+      },
+      {
+        "en": "Only if the bus driver waves",
+        "am": "የአውቶቡሱ ሹፌር በእጁ ካመለከተ ብቻ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "When a grass median or physical divider separates directions, opposite-direction traffic generally does not stop, but same-direction traffic must.",
+      "am": "በመንገዱ መካከል ግልጽ የሆነ መከፋፈያ ካለ፣ በተቃራኒ በኩል ያላችሁ አሽከርካሪዎች መቆም የለባችሁም፤ ነገር ግን ከአውቶቡሱ ጀርባ ያላችሁ የግድ መቆም አለባችሁ።"
+    }
+  },
+  {
+    "id": "q144",
+    "topic": "rules",
+    "visual": "rule",
+    "question": {
+      "en": "How far must you park from a fire hydrant?",
+      "am": "ከእሳት አደጋ ውኃ መውጫ (Fire hydrant) ቢያንስ በስንት ጫማ ርቀት ላይ ማቆም አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "At least 15 feet",
+        "am": "ቢያንስ 15 ጫማ"
+      },
+      {
+        "en": "1 foot",
+        "am": "1 ጫማ"
+      },
+      {
+        "en": "3 feet",
+        "am": "3 ጫማ"
+      },
+      {
+        "en": "Only far enough to open the door",
+        "am": "በር ለመክፈት ብቻ የሚበቃ ርቀት"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Do not park within 15 feet of a fire hydrant.",
+      "am": "የእሳት አደጋ ሰራተኞች ውኃውን በቀላሉ እንዲያገኙ፣ ከቧንቧው በ15 ጫማ ርቀት ውስጥ መኪና ማቆም ክልክል ነው።"
+    }
+  },
+  {
+    "id": "q145",
+    "topic": "rules",
+    "visual": "hand-right",
+    "question": {
+      "en": "What is the hand signal for a right turn?",
+      "am": "ወደ ቀኝ ለመታጠፍ የሚሰጥ የእጅ ምልክት የትኛው ነው?"
+    },
+    "answers": [
+      {
+        "en": "Left arm bent upward at a 90-degree angle",
+        "am": "የግራ እጅ በ90 ዲግሪ ወደ ላይ ታጥፎ ሲያሳይ"
+      },
+      {
+        "en": "Left arm straight out",
+        "am": "የግራ እጅ ቀጥ ብሎ ሲዘረጋ"
+      },
+      {
+        "en": "Left arm downward",
+        "am": "የግራ እጅ ወደ ታች ሲዘረጋ"
+      },
+      {
+        "en": "Both arms up",
+        "am": "ሁለቱም እጆች ወደ ላይ ሲሆኑ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "The standard hand signal for a right turn is the left arm bent upward.",
+      "am": "የመኪናዎ መታጠፊያ መብራት ካልሠራ፣ የግራ እጅዎን ወደ ላይ በማጠፍ ወደ ቀኝ ለመታጠፍ ለሌሎች ማመልከት ይችላሉ።"
+    }
+  },
+  {
+    "id": "q146",
+    "topic": "rules",
+    "visual": "hand-stop",
+    "question": {
+      "en": "What is the hand signal for slowing or stopping?",
+      "am": "ፍጥነት ለመቀነስ ወይም ለመቆም የሚሰጥ የእጅ ምልክት የትኛው ነው?"
+    },
+    "answers": [
+      {
+        "en": "Left arm extended downward",
+        "am": "የግራ እጅ ወደ ታች ዝቅ ብሎ ሲዘረጋ"
+      },
+      {
+        "en": "Left arm bent upward",
+        "am": "የግራ እጅ ወደ ላይ ታጥፎ"
+      },
+      {
+        "en": "Right arm straight out",
+        "am": "የቀኝ እጅ ቀጥ ብሎ ሲዘረጋ"
+      },
+      {
+        "en": "No hand signal",
+        "am": "ምንም ዓይነት የእጅ ምልክት የለም"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "The hand signal for slowing or stopping is the left arm extended downward.",
+      "am": "ፍጥነት ለመቀነስ ወይም ለመቆም፣ የግራ እጅን በመስኮት በኩል አውጥቶ ወደ ታች በመዘርጋት ለሌሎች አሽከርካሪዎች ማሳወቅ ይቻላል።"
+    }
+  },
+  {
+    "id": "q147",
+    "topic": "rules",
+    "visual": "hand-left",
+    "question": {
+      "en": "What is the hand signal for a left turn?",
+      "am": "ወደ ግራ ለመታጠፍ የሚሰጥ የእጅ ምልክት የትኛው ነው?"
+    },
+    "answers": [
+      {
+        "en": "Left arm extended straight out",
+        "am": "የግራ እጅ ቀጥ ብሎ ወደ ውጭ ሲዘረጋ"
+      },
+      {
+        "en": "Left arm downward",
+        "am": "የግራ እጅ ወደ ታች"
+      },
+      {
+        "en": "Left arm bent upward",
+        "am": "የግራ እጅ ወደ ላይ ታጥፎ"
+      },
+      {
+        "en": "Right arm downward only",
+        "am": "የቀኝ እጅ ወደ ታች ብቻ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "The hand signal for a left turn is the left arm extended straight out.",
+      "am": "ወደ ግራ ለመታጠፍ የግራ እጅን በመስኮት በኩል ቀጥ አድርጎ ወደ ውጭ መዘርጋት ትክክለኛው የእጅ ምልክት ነው።"
+    }
+  },
+  {
+    "id": "q148",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "If you are in a crash where someone is injured, what must you do?",
+      "am": "ሰው በተጎዳበት አደጋ (Accident) ውስጥ ከነበሩ ምን ማድረግ አለብዎት?"
+    },
+    "answers": [
+      {
+        "en": "Stop, render aid, and call the police immediately",
+        "am": "ቆመው እርዳታ መስጠት እና ወዲያውኑ ፖሊስ መጥራት"
+      },
+      {
+        "en": "Leave quickly",
+        "am": "በፍጥነት ጥሎ መሄድ"
+      },
+      {
+        "en": "Move injured people without checking",
+        "am": "የተጎዱ ሰዎችን ሳያረጋግጡ ማንቀሳቀስ"
+      },
+      {
+        "en": "Only exchange social media",
+        "am": "ሶሻል ሚዲያ ብቻ መለዋወጥ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "After an injury crash, stop, help as reasonably possible, and contact police or emergency services.",
+      "am": "በአደጋ ወቅት ጉዳት ከደረሰ ቆመው አስፈላጊውን እርዳታ መስጠትና ለፖሊስ ወይም ለአምቡላንስ መደወል የሕግ ግዴታ ነው።"
+    }
+  },
+  {
+    "id": "q149",
+    "topic": "safety",
+    "visual": "rule",
+    "question": {
+      "en": "When can vehicles in a minor fender bender be moved from the roadway?",
+      "am": "ቀላል የአደጋ ግጭት (Minor fender bender) ሲያጋጥም ተሽከርካሪዎችን ከመንገድ ማንቀሳቀስ የሚቻለው መቼ ነው?"
+    },
+    "answers": [
+      {
+        "en": "When there are no injuries and the vehicle is blocking traffic on a major highway",
+        "am": "ምንም ዓይነት ጉዳት ከሌለ እና ተሽከርካሪው በአውራ ጎዳና ላይ ትራፊክ የዘጋ ከሆነ"
+      },
+      {
+        "en": "Anytime someone is injured badly",
+        "am": "ሰው በከፍተኛ ሁኔታ በተጎዳበት በማንኛውም ጊዜ"
+      },
+      {
+        "en": "Never, even if blocking traffic",
+        "am": "ትራፊክ ቢዘጋም እንኳ በፍጹም አይቻልም"
+      },
+      {
+        "en": "Only at night",
+        "am": "በሌሊት ብቻ"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "For minor crashes with no injuries, vehicles may be moved out of traffic when they can be moved safely.",
+      "am": "ጉዳት የሌለው ቀላል ግጭት ከሆነና ተሽከርካሪው ትራፊክ የሚዘጋ ከሆነ፣ ለሌሎች ደህንነት ሲባል መኪናውን ወደ ዳር ማውጣት ይፈቀዳል።"
+    }
+  }
+]
