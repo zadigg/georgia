@@ -54,6 +54,255 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+function svg(inner, viewBox = "0 0 120 120") {
+  return `<svg class="road-sign-svg" viewBox="${viewBox}" aria-hidden="true">${inner}</svg>`;
+}
+
+function diamond(fill, inner) {
+  return svg(`
+    <rect x="18" y="18" width="84" height="84" rx="2" fill="${fill}" stroke="#151515" stroke-width="3" transform="rotate(45 60 60)"></rect>
+    ${inner}
+  `);
+}
+
+function textLine(text, x, y, size = 13, weight = 800, fill = "#151515") {
+  return `<text x="${x}" y="${y}" text-anchor="middle" font-size="${size}" font-weight="${weight}" fill="${fill}" font-family="Arial, sans-serif">${text}</text>`;
+}
+
+function schoolSymbol() {
+  return `
+    <circle cx="44" cy="34" r="6" fill="#151515"></circle>
+    <circle cx="72" cy="29" r="8" fill="#151515"></circle>
+    <path d="M39 45 L49 45 L55 68 L49 68 L46 94 L38 94 L41 68 L32 68 Z" fill="#151515"></path>
+    <path d="M66 43 L80 43 L87 74 L79 74 L75 96 L65 96 L69 74 L58 74 Z" fill="#151515"></path>
+    <path d="M49 50 L65 58 M37 49 L26 62 M79 47 L94 58" stroke="#151515" stroke-width="5" stroke-linecap="round"></path>
+  `;
+}
+
+const signImages = {
+  stop: {
+    label: "STOP (R1-1)",
+    svg: () => svg(`
+      <polygon points="41,6 79,6 114,41 114,79 79,114 41,114 6,79 6,41" fill="#c73535" stroke="white" stroke-width="5"></polygon>
+      ${textLine("STOP", 60, 68, 25, 900, "white")}
+    `)
+  },
+  yield: {
+    label: "YIELD (R1-2)",
+    svg: () => svg(`
+      <polygon points="60,112 8,10 112,10" fill="#c73535"></polygon>
+      <polygon points="60,91 26,22 94,22" fill="white"></polygon>
+      ${textLine("YIELD", 60, 46, 13, 900, "#c73535")}
+    `)
+  },
+  warningDiamond: {
+    label: "Warning sign",
+    svg: () => diamond("#f2c94c", `${textLine("WARNING", 60, 64, 11)}`)
+  },
+  orangeWork: {
+    label: "Work-zone warning",
+    svg: () => diamond("#e8873d", `
+      ${textLine("WORK", 60, 52, 13)}
+      ${textLine("ZONE", 60, 69, 13)}
+    `)
+  },
+  railroadAdvance: {
+    label: "Railroad advance (W10-1)",
+    svg: () => svg(`
+      <circle cx="60" cy="60" r="50" fill="#f2c94c" stroke="#151515" stroke-width="4"></circle>
+      <path d="M31 31 L89 89 M89 31 L31 89" stroke="#151515" stroke-width="7" stroke-linecap="round"></path>
+      ${textLine("R", 40, 66, 24)}
+      ${textLine("R", 80, 66, 24)}
+    `)
+  },
+  school: {
+    label: "School / school crossing (S1-1)",
+    svg: () => svg(`
+      <polygon points="60,8 108,44 90,108 30,108 12,44" fill="#d7f253" stroke="#151515" stroke-width="3"></polygon>
+      ${schoolSymbol()}
+    `)
+  },
+  speedLimit: {
+    label: "Speed limit",
+    svg: () => svg(`
+      <rect x="27" y="11" width="66" height="98" rx="2" fill="white" stroke="#151515" stroke-width="3"></rect>
+      ${textLine("SPEED", 60, 35, 13)}
+      ${textLine("LIMIT", 60, 51, 13)}
+      ${textLine("55", 60, 84, 31, 900)}
+    `)
+  },
+  noRightTurn: {
+    label: "No right turn",
+    svg: () => svg(`
+      <rect x="16" y="16" width="88" height="88" fill="white" stroke="#151515" stroke-width="2"></rect>
+      <path d="M38 68 H70 V49 L87 66 L70 83 V73 H38 Z" fill="#151515"></path>
+      <circle cx="60" cy="60" r="43" fill="none" stroke="#c73535" stroke-width="8"></circle>
+      <path d="M31 89 L89 31" stroke="#c73535" stroke-width="8" stroke-linecap="round"></path>
+    `)
+  },
+  oneWayRight: {
+    label: "ONE WAY",
+    svg: () => svg(`
+      <rect x="8" y="37" width="104" height="46" rx="4" fill="#151515"></rect>
+      ${textLine("ONE WAY", 52, 66, 15, 900, "white")}
+      <path d="M91 48 L108 60 L91 72 Z" fill="white"></path>
+    `)
+  },
+  oneWayLeft: {
+    label: "ONE WAY",
+    svg: () => svg(`
+      <rect x="8" y="37" width="104" height="46" rx="4" fill="#151515"></rect>
+      ${textLine("ONE WAY", 68, 66, 15, 900, "white")}
+      <path d="M29 48 L12 60 L29 72 Z" fill="white"></path>
+    `)
+  },
+  mergeRight: {
+    label: "Merge",
+    svg: () => diamond("#f2c94c", `
+      <path d="M49 94 V27" stroke="#151515" stroke-width="12" stroke-linecap="butt"></path>
+      <path d="M82 94 C79 74 64 64 50 57" stroke="#151515" stroke-width="10" fill="none" stroke-linecap="butt"></path>
+    `)
+  },
+  mergeLeft: {
+    label: "Merge",
+    svg: () => diamond("#f2c94c", `
+      <path d="M71 94 V27" stroke="#151515" stroke-width="12" stroke-linecap="butt"></path>
+      <path d="M38 94 C41 74 56 64 70 57" stroke="#151515" stroke-width="10" fill="none" stroke-linecap="butt"></path>
+    `)
+  },
+  slippery: {
+    label: "Slippery when wet",
+    svg: () => diamond("#f2c94c", `
+      <path d="M36 43 H80 L88 59 H30 Z" fill="#151515"></path>
+      <circle cx="42" cy="64" r="5" fill="#151515"></circle>
+      <circle cx="76" cy="64" r="5" fill="#151515"></circle>
+      <path d="M31 83 C43 73 52 93 64 83 S84 73 94 83" fill="none" stroke="#151515" stroke-width="5" stroke-linecap="round"></path>
+      <path d="M25 96 C37 86 47 106 59 96 S80 86 94 96" fill="none" stroke="#151515" stroke-width="5" stroke-linecap="round"></path>
+    `)
+  },
+  dividedHighwayBegins: {
+    label: "Divided highway begins",
+    svg: () => diamond("#f2c94c", `
+      <path d="M35 95 V25 H50 V95 Z" fill="#151515"></path>
+      <path d="M70 95 V25 H85 V95 Z" fill="#151515"></path>
+      <path d="M56 86 V34 C56 26 64 26 64 34 V86 C64 94 56 94 56 86 Z" fill="#f2c94c" stroke="#151515" stroke-width="3"></path>
+    `)
+  },
+  laneEndsRight: {
+    label: "Right lane ends (W4-2R)",
+    svg: () => diamond("#f2c94c", `
+      <path d="M38 96 V26" stroke="#151515" stroke-width="13" stroke-linecap="butt"></path>
+      <path d="M80 26 V52 C80 70 65 82 57 96" stroke="#151515" stroke-width="13" fill="none" stroke-linecap="butt"></path>
+      <path d="M59 55 V85" stroke="#f2c94c" stroke-width="4" stroke-dasharray="8 6"></path>
+    `)
+  },
+  laneEndsLeft: {
+    label: "Left lane ends (W4-2L)",
+    svg: () => diamond("#f2c94c", `
+      <path d="M82 96 V26" stroke="#151515" stroke-width="13" stroke-linecap="butt"></path>
+      <path d="M40 26 V52 C40 70 55 82 63 96" stroke="#151515" stroke-width="13" fill="none" stroke-linecap="butt"></path>
+      <path d="M61 55 V85" stroke="#f2c94c" stroke-width="4" stroke-dasharray="8 6"></path>
+    `)
+  },
+  laneEndsMergeLeft: {
+    label: "LANE ENDS MERGE LEFT (W9-2)",
+    svg: () => diamond("#f2c94c", `
+      ${textLine("LANE ENDS", 60, 42, 10)}
+      ${textLine("MERGE", 60, 60, 13)}
+      ${textLine("LEFT", 60, 79, 16)}
+    `)
+  },
+  laneEndsMergeRight: {
+    label: "LANE ENDS MERGE RIGHT (W9-2)",
+    svg: () => diamond("#f2c94c", `
+      ${textLine("LANE ENDS", 60, 42, 10)}
+      ${textLine("MERGE", 60, 60, 13)}
+      ${textLine("RIGHT", 60, 79, 14)}
+    `)
+  },
+  pedestrian: {
+    label: "Pedestrian crossing",
+    svg: () => diamond("#d7f253", `
+      <circle cx="60" cy="32" r="7" fill="#151515"></circle>
+      <path d="M55 45 L66 45 L74 72 L66 72 L62 96 L52 96 L57 72 L45 72 Z" fill="#151515"></path>
+      <path d="M55 50 L41 66 M66 50 L84 61" stroke="#151515" stroke-width="5" stroke-linecap="round"></path>
+    `)
+  },
+  bicycle: {
+    label: "Bicycle warning",
+    svg: () => diamond("#d7f253", `
+      <circle cx="39" cy="77" r="14" fill="none" stroke="#151515" stroke-width="5"></circle>
+      <circle cx="82" cy="77" r="14" fill="none" stroke="#151515" stroke-width="5"></circle>
+      <path d="M39 77 L56 51 L70 77 L52 77 L62 62 M56 51 H75" fill="none" stroke="#151515" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+      <circle cx="55" cy="35" r="6" fill="#151515"></circle>
+    `)
+  },
+  greenGuide: {
+    label: "Guide sign",
+    svg: () => svg(`
+      <rect x="8" y="24" width="104" height="72" rx="4" fill="#25765c" stroke="white" stroke-width="3"></rect>
+      ${textLine("ATLANTA", 60, 50, 15, 900, "white")}
+      ${textLine("EXIT 12", 60, 73, 17, 900, "white")}
+    `)
+  },
+  blueServices: {
+    label: "Motorist services",
+    svg: () => svg(`
+      <rect x="8" y="24" width="104" height="72" rx="4" fill="#2457a6" stroke="white" stroke-width="3"></rect>
+      ${textLine("H", 31, 55, 22, 900, "white")}
+      ${textLine("GAS", 69, 53, 14, 900, "white")}
+      ${textLine("FOOD", 68, 78, 14, 900, "white")}
+    `)
+  },
+  deer: {
+    label: "Deer crossing",
+    svg: () => diamond("#f2c94c", `
+      <path d="M34 71 L48 49 L70 48 L88 63 L79 64 L70 56 L54 58 L47 73 Z" fill="#151515"></path>
+      <path d="M50 71 L45 97 M67 65 L70 97 M78 63 L84 92" stroke="#151515" stroke-width="5" stroke-linecap="round"></path>
+      <path d="M88 63 L97 56 M90 58 L93 44 M94 55 L104 48" stroke="#151515" stroke-width="4" stroke-linecap="round"></path>
+    `)
+  },
+  lowClearance: {
+    label: "Low clearance",
+    svg: () => diamond("#f2c94c", `
+      ${textLine("LOW", 60, 42, 13)}
+      ${textLine("CLEARANCE", 60, 59, 10)}
+      ${textLine("12'-6\\\"", 60, 80, 18)}
+    `)
+  },
+  crossbuck: {
+    label: "Railroad crossing crossbuck",
+    svg: () => svg(`
+      <g transform="rotate(45 60 60)">
+        <rect x="12" y="47" width="96" height="26" fill="white" stroke="#151515" stroke-width="3"></rect>
+      </g>
+      <g transform="rotate(-45 60 60)">
+        <rect x="12" y="47" width="96" height="26" fill="white" stroke="#151515" stroke-width="3"></rect>
+      </g>
+      <rect x="33" y="49" width="54" height="22" fill="rgba(255,255,255,.92)"></rect>
+      ${textLine("RAILROAD", 60, 57, 8)}
+      ${textLine("CROSSING", 60, 68, 8)}
+    `)
+  },
+  slowMoving: {
+    label: "Slow-moving vehicle",
+    svg: () => svg(`
+      <polygon points="60,12 108,102 12,102" fill="#c73535"></polygon>
+      <polygon points="60,29 91,91 29,91" fill="#e8873d"></polygon>
+    `)
+  },
+  whiteDashedLanes: {
+    label: "White dashed lane lines",
+    svg: () => svg(`
+      <rect x="18" y="8" width="84" height="104" rx="4" fill="#383d43" stroke="#151515" stroke-width="3"></rect>
+      <rect x="56" y="14" width="8" height="16" fill="white"></rect>
+      <rect x="56" y="42" width="8" height="16" fill="white"></rect>
+      <rect x="56" y="70" width="8" height="16" fill="white"></rect>
+      <rect x="56" y="98" width="8" height="10" fill="white"></rect>
+    `)
+  }
+};
+
 function setVisual(question) {
   const labels = {
     stop: "STOP",
@@ -69,23 +318,23 @@ function setVisual(question) {
     "hand-stop": "STOP",
     "hand-left": "LEFT"
   };
-  els.signVisual.className = `sign-visual sign-${question.visual || "rule"}`;
-  if (question.visual === "school") {
-    els.signVisual.innerHTML = `
-      <svg class="school-icon" viewBox="0 0 120 120" aria-hidden="true">
-        <circle cx="44" cy="30" r="9"></circle>
-        <circle cx="74" cy="25" r="11"></circle>
-        <path d="M38 46 L50 46 L58 75 L49 75 L45 100 L35 100 L40 75 L30 75 Z"></path>
-        <path d="M66 42 L82 42 L91 78 L80 78 L76 104 L64 104 L69 78 L58 78 Z"></path>
-        <path d="M50 51 L68 60"></path>
-        <path d="M36 50 L22 66"></path>
-        <path d="M82 46 L102 60"></path>
-      </svg>
-    `;
+  const visualKeys = question.visuals || [question.visual || "rule"];
+  if (visualKeys.some((key) => signImages[key])) {
+    els.signVisual.className = `sign-visual sign-set sign-count-${visualKeys.length}`;
+    els.signVisual.innerHTML = visualKeys
+      .filter((key) => signImages[key])
+      .map((key) => `
+        <figure class="sign-tile">
+          ${signImages[key].svg()}
+          <figcaption>${escapeHtml(signImages[key].label)}</figcaption>
+        </figure>
+      `)
+      .join("");
   } else {
+    els.signVisual.className = `sign-visual sign-${question.visual || "rule"}`;
     els.signVisual.innerHTML = ["diamond", "orange", "crossbuck", "slow"].includes(question.visual)
-    ? `<span>${labels[question.visual]}</span>`
-    : labels[question.visual || "rule"];
+      ? `<span>${labels[question.visual]}</span>`
+      : labels[question.visual || "rule"];
   }
   const topicNames = {
     signs: "Road signs",
@@ -259,7 +508,7 @@ els.speakBtn.addEventListener("click", () => {
 
 async function loadQuestions() {
   try {
-    const response = await fetch("./questions.json?v=json1");
+    const response = await fetch("./questions.json?v=signs3");
     if (!response.ok) throw new Error(`Unable to load questions: ${response.status}`);
     questions = await response.json();
     pool = shuffle([...questions]);

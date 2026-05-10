@@ -351,6 +351,46 @@ button:disabled {
   text-align: center;
 }
 
+.sign-set {
+  width: 100%;
+  height: auto;
+  min-height: 160px;
+  grid-template-columns: repeat(2, minmax(106px, 1fr));
+  align-items: start;
+  gap: 12px;
+  color: var(--ink);
+}
+
+.sign-count-1 {
+  grid-template-columns: minmax(130px, 172px);
+  justify-content: center;
+}
+
+.sign-tile {
+  display: grid;
+  place-items: center;
+  gap: 6px;
+  margin: 0;
+}
+
+.road-sign-svg {
+  width: min(128px, 100%);
+  height: auto;
+  display: block;
+}
+
+.sign-count-1 .road-sign-svg {
+  width: min(154px, 100%);
+}
+
+.sign-tile figcaption {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 750;
+  line-height: 1.2;
+  min-height: 1.8em;
+}
+
 .sign-stop {
   background: var(--red);
   clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);

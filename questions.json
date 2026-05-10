@@ -29,7 +29,10 @@
     "reasoning": {
       "en": "An octagon always means stop. Stop at the line, crosswalk, or the safest point where you can see traffic.",
       "am": "ስምንት ጎን (Octagon) ያለው ምልክት ሁልጊዜ 'ቁም' ማለት ነው። በመስመሩ ላይ፣ በእግረኛ ማቋረጫው ወይም ትራፊክን በደንብ ማየት በሚችሉበት አስተማማኝ ቦታ ላይ መቆም አለብዎት።"
-    }
+    },
+    "visuals": [
+      "stop"
+    ]
   },
   {
     "id": "q002",
@@ -61,7 +64,10 @@
     "reasoning": {
       "en": "A yield sign means slow to a safe speed and stop if needed before entering.",
       "am": "የመንገድ መልቀቂያ (Yield) ምልክት ማለት ወደ መንገዱ ከመግባትዎ በፊት ፍጥነትዎን ቀንሰው በጥንቃቄ ማሽከርከር እና አስፈላጊ ሆኖ ሲገኝ መቆም ማለት ነው።"
-    }
+    },
+    "visuals": [
+      "yield"
+    ]
   },
   {
     "id": "q003",
@@ -93,7 +99,13 @@
     "reasoning": {
       "en": "Diamond signs warn about existing or possible hazards, such as curves, merging traffic, or slippery roads.",
       "am": "የአልማዝ ቅርጽ ያላቸው ምልክቶች እንደ ኩርባ መንገድ፣ የሚቀላቀሉ ተሽከርካሪዎች ወይም ተንሸራታች መንገዶችን የመሰሉ ሊያጋጥሙ የሚችሉ አደጋዎችን ለመጠቆም ያገለግላሉ።"
-    }
+    },
+    "visuals": [
+      "warningDiamond",
+      "mergeRight",
+      "slippery",
+      "deer"
+    ]
   },
   {
     "id": "q004",
@@ -125,7 +137,10 @@
     "reasoning": {
       "en": "A round sign warns that you are approaching railroad tracks. Slow down, look, listen, and be ready to stop.",
       "am": "ክብ ቢጫ ምልክት ወደ ባቡር ሀዲድ እየተጠጉ መሆኑን ያሳያል። ፍጥነትዎን ቀንሰው፣ ግራና ቀኝ ተመልክተውና አድምጠው ለመቆም መዘጋጀት አለብዎት።"
-    }
+    },
+    "visuals": [
+      "railroadAdvance"
+    ]
   },
   {
     "id": "q005",
@@ -157,7 +172,10 @@
     "reasoning": {
       "en": "Pentagon signs are used for school zones and school crossings.",
       "am": "አምስት ጎን ያላቸው ምልክቶች ለትምህርት ቤት አካባቢዎች እና ለትምህርት ቤት የእግረኛ መሻገሪያዎች ያገለግላሉ።"
-    }
+    },
+    "visuals": [
+      "school"
+    ]
   },
   {
     "id": "q006",
@@ -189,7 +207,11 @@
     "reasoning": {
       "en": "Vertical rectangle signs usually regulate traffic and tell drivers what they must or must not do.",
       "am": "ቀጥ ያሉ አራት ማዕዘን ምልክቶች ብዙውን ጊዜ የትራፊክ ደንቦችን የሚገልጹ ሲሆን አሽከርካሪዎች ምን ማድረግ እንዳለባቸው ወይም እንደሌለባቸው ይነግሯቸዋል።"
-    }
+    },
+    "visuals": [
+      "speedLimit",
+      "noRightTurn"
+    ]
   },
   {
     "id": "q007",
@@ -1853,7 +1875,10 @@
     "reasoning": {
       "en": "Speed limit signs are regulatory signs. They state the legal maximum speed under normal conditions.",
       "am": "የፍጥነት ገደብ ምልክቶች ህጋዊ መመሪያዎች ናቸው፤ ይህም ማለት በተለመደ ሁኔታ ማሽከርከር የሚችሉትን ከፍተኛ ፍጥነት ይወስናሉ።"
-    }
+    },
+    "visuals": [
+      "speedLimit"
+    ]
   },
   {
     "id": "q059",
@@ -1885,7 +1910,10 @@
     "reasoning": {
       "en": "Orange signs warn of construction, maintenance, and temporary traffic-control conditions.",
       "am": "ብርቱካናማ ቀለም ለመንገድ ስራ፣ ለጥገና ወይም ለጊዜያዊ የትራፊክ ለውጦች ማስጠንቀቂያነት ያገለግላል።"
-    }
+    },
+    "visuals": [
+      "orangeWork"
+    ]
   },
   {
     "id": "q060",
@@ -1917,7 +1945,10 @@
     "reasoning": {
       "en": "A red circle and slash means do not do the action shown by the symbol.",
       "am": "ቀይ ክብ እና ሰረዝ በምስሉ ላይ የሚታየውን ነገር ማድረግ ክልክል መሆኑን ይገልጻል።"
-    }
+    },
+    "visuals": [
+      "noRightTurn"
+    ]
   },
   {
     "id": "q061",
@@ -1949,7 +1980,11 @@
     "reasoning": {
       "en": "One-way signs tell drivers the only lawful direction of travel on that street.",
       "am": "የአንድ አቅጣጫ ምልክት አሽከርካሪዎች በዛ መንገድ ላይ ሊሄዱበት የሚችሉትን ብቸኛ ህጋዊ አቅጣጫ ይገልጻል።"
-    }
+    },
+    "visuals": [
+      "oneWayRight",
+      "oneWayLeft"
+    ]
   },
   {
     "id": "q062",
@@ -1981,7 +2016,11 @@
     "reasoning": {
       "en": "Merge signs warn that traffic streams or lanes are joining. Adjust speed and position safely.",
       "am": "የመቀላቀያ ምልክት ሁለት መንገዶች ወደ አንድ እየመጡ መሆኑን ያስጠነቅቃል፤ ፍጥነትዎን ያስተካክሉ።"
-    }
+    },
+    "visuals": [
+      "mergeRight",
+      "mergeLeft"
+    ]
   },
   {
     "id": "q063",
@@ -2013,7 +2052,10 @@
     "reasoning": {
       "en": "Wet roads reduce traction. Slow down and avoid sudden braking or steering.",
       "am": "የረጠበ መንገድ የመኪና ጎማዎችን ስለሚያንሸራትት፣ ፍጥነት መቀነስ እና ድንገተኛ ፍሬን ከመያዝ መቆጠብ ያስፈልጋል።"
-    }
+    },
+    "visuals": [
+      "slippery"
+    ]
   },
   {
     "id": "q064",
@@ -2045,7 +2087,10 @@
     "reasoning": {
       "en": "Divided highway signs warn of a change in road design, usually with a median or barrier.",
       "am": "ይህ ምልክት መንገዱ ለሁለት እንደሚከፈል እና በመካከላቸው መከፋፈያ እንደሚኖር ይጠቁማል።"
-    }
+    },
+    "visuals": [
+      "dividedHighwayBegins"
+    ]
   },
   {
     "id": "q065",
@@ -2077,7 +2122,13 @@
     "reasoning": {
       "en": "A lane ends warning gives time to adjust speed and merge safely.",
       "am": "የያዙት መስመር ወደፊት እንደሚያልቅ ስለሚያመለክት፣ ፍጥነትዎን አስተካክለው ወደሚቀጥለው መስመር ይግቡ።"
-    }
+    },
+    "visuals": [
+      "laneEndsRight",
+      "laneEndsLeft",
+      "laneEndsMergeLeft",
+      "laneEndsMergeRight"
+    ]
   },
   {
     "id": "q066",
@@ -2109,7 +2160,12 @@
     "reasoning": {
       "en": "Fluorescent yellow-green signs are used for school, pedestrian, and bicycle warnings.",
       "am": "ይህ ልዩ ደማቅ ቀለም በብዛት ለትምህርት ቤት አካባቢዎች እና እግረኞች ለሚበዙባቸው ቦታዎች ማስጠንቀቂያነት ይውላል።"
-    }
+    },
+    "visuals": [
+      "school",
+      "pedestrian",
+      "bicycle"
+    ]
   },
   {
     "id": "q067",
@@ -2141,7 +2197,12 @@
     "reasoning": {
       "en": "Red is used for stop, yield, and signs that prohibit certain movements.",
       "am": "ቀይ ቀለም 'ቁም'፣ 'መንገድ ልቀቅ' እና አደገኛ ወይም ክልክል የሆኑ እንቅስቃሴዎችን ለማሳየት ያገለግላል።"
-    }
+    },
+    "visuals": [
+      "stop",
+      "yield",
+      "noRightTurn"
+    ]
   },
   {
     "id": "q068",
@@ -2173,7 +2234,10 @@
     "reasoning": {
       "en": "Green signs guide drivers to destinations, exits, and distances.",
       "am": "አረንጓዴ ምልክቶች ወደ መድረሻ ከተሞች፣ መውጫዎች እና የርቀት መረጃዎችን ለመስጠት ያገለግላሉ።"
-    }
+    },
+    "visuals": [
+      "greenGuide"
+    ]
   },
   {
     "id": "q069",
@@ -2205,7 +2269,10 @@
     "reasoning": {
       "en": "Blue signs are commonly used for road-user services and traveler information.",
       "am": "ሰማያዊ ምልክቶች ለመንገድ ተጠቃሚዎች አስፈላጊ የሆኑ እንደ ምግብ፣ ነዳጅ እና ህክምና ያሉ አገልግሎቶችን ለመጠቆም ያገለግላሉ።"
-    }
+    },
+    "visuals": [
+      "blueServices"
+    ]
   },
   {
     "id": "q070",
@@ -2237,7 +2304,10 @@
     "reasoning": {
       "en": "Animal crossing signs warn that animals may unexpectedly enter the road.",
       "am": "እንስሳት በድንገት ወደ መንገድ ሊገቡ ስለሚችሉ በጥንቃቄ ማሽከርከር እንዳለብዎ ያስጠነቅቃል።"
-    }
+    },
+    "visuals": [
+      "deer"
+    ]
   },
   {
     "id": "q071",
@@ -2269,7 +2339,10 @@
     "reasoning": {
       "en": "Low clearance signs warn drivers of tall vehicles about bridges or structures with limited height.",
       "am": "ይህ ምልክት ከፊት ያለው ድልድይ ወይም ግንባታ ዝቅተኛ ከፍታ ስላለው ረጅም ተሽከርካሪዎች እንዳይጋጩ ያስጠነቅቃል።"
-    }
+    },
+    "visuals": [
+      "lowClearance"
+    ]
   },
   {
     "id": "q072",
@@ -4189,7 +4262,10 @@
     "reasoning": {
       "en": "A crossbuck marks a railroad crossing. Slow down, look both ways, and be ready to stop.",
       "am": "ይህ ምልክት የባቡር ሀዲድ መሻገሪያ መሆኑን ስለሚጠቁም፣ ፍጥነትዎን ቀንሰውና ግራና ቀኝ አይተው ለመቆም መዘጋጀት አለብዎት።"
-    }
+    },
+    "visuals": [
+      "crossbuck"
+    ]
   },
   {
     "id": "q132",
@@ -4221,7 +4297,10 @@
     "reasoning": {
       "en": "The orange slow-moving vehicle triangle warns that the vehicle moves slowly, usually 25 mph or less.",
       "am": "ይህ ምልክት ተሽከርካሪው በጣም በቀስታ የሚጓዝ መሆኑን ስለሚገልጽ፣ ከኋላ የሚመጡ አሽከርካሪዎች ፍጥነታቸውን እንዲያስተካክሉ ያስጠነቅቃል።"
-    }
+    },
+    "visuals": [
+      "slowMoving"
+    ]
   },
   {
     "id": "q133",
@@ -4253,7 +4332,10 @@
     "reasoning": {
       "en": "Dashed white lines separate lanes moving in the same direction and allow lane changes when safe.",
       "am": "የተቆራረጡ ነጭ መስመሮች በአንድ አቅጣጫ በሚሄዱ ተሽከርካሪዎች መካከል ያሉ ሲሆን፣ ጥንቃቄ በማድረግ መስመር መቀየር እንደሚቻል ይገልጻሉ።"
-    }
+    },
+    "visuals": [
+      "whiteDashedLanes"
+    ]
   },
   {
     "id": "q134",
