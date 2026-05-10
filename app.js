@@ -1,5 +1,7 @@
 let questions = [];
 let signAssets = {};
+const progressStorageKey = "gaDriverProgressV1";
+const legacyMissedStorageKey = "gaDriverMissed";
 const els = {
   mode: document.querySelector("#mode"),
   score: document.querySelector("#score"),
@@ -23,14 +25,65 @@ const els = {
   topicHelp: document.querySelector("#topicHelp")
 };
 
+const savedProgress = loadProgress();
 let pool = shuffle([...questions]);
 let current = null;
 let answeredCurrent = false;
-let score = 0;
-let answered = 0;
-let streak = 0;
-let missed = JSON.parse(localStorage.getItem("gaDriverMissed") || "[]");
+let score = savedProgress.score;
+let answered = savedProgress.answered;
+let streak = savedProgress.streak;
+let missed = savedProgress.missed;
 let testQueue = null;
+
+function safeJsonArray(key) {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(key) || "[]");
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+function positiveInteger(value) {
+  const number = Number(value);
+  return Number.isFinite(number) && number > 0 ? Math.floor(number) : 0;
+}
+
+function loadProgress() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(progressStorageKey) || "{}");
+    return {
+      score: positiveInteger(saved.score),
+      answered: positiveInteger(saved.answered),
+      streak: positiveInteger(saved.streak),
+      missed: Array.isArray(saved.missed) ? saved.missed : safeJsonArray(legacyMissedStorageKey)
+    };
+  } catch {
+    return {
+      score: 0,
+      answered: 0,
+      streak: 0,
+      missed: safeJsonArray(legacyMissedStorageKey)
+    };
+  }
+}
+
+function saveProgress() {
+  const progress = {
+    score,
+    answered,
+    streak,
+    missed,
+    savedAt: new Date().toISOString()
+  };
+  localStorage.setItem(progressStorageKey, JSON.stringify(progress));
+  localStorage.setItem(legacyMissedStorageKey, JSON.stringify(missed));
+}
+
+function clearProgress() {
+  localStorage.removeItem(progressStorageKey);
+  localStorage.removeItem(legacyMissedStorageKey);
+}
 
 function shuffle(items) {
   return items
@@ -433,7 +486,7 @@ function chooseAnswer(index) {
     streak = 0;
     if (!missed.includes(current.id)) missed.push(current.id);
   }
-  localStorage.setItem("gaDriverMissed", JSON.stringify(missed));
+  saveProgress();
   updateStats();
 
   [...els.answers.children].forEach((button, buttonIndex) => {
@@ -487,8 +540,11 @@ function resetStats() {
   score = 0;
   answered = 0;
   streak = 0;
+  missed = [];
   testQueue = null;
   els.nextBtn.textContent = "Next question";
+  if (els.mode.value === "missed") els.mode.value = "all";
+  clearProgress();
   pool = shuffle([...filteredPool()]);
   updateStats();
   renderQuestion();
@@ -529,6 +585,7 @@ els.testBtn.addEventListener("click", () => {
   score = 0;
   answered = 0;
   streak = 0;
+  saveProgress();
   updateStats();
   testQueue = shuffle([...questions]).slice(0, 20);
   els.nextBtn.textContent = "Next question";
