@@ -14,6 +14,7 @@ const els = {
   answers: document.querySelector("#answers"),
   feedback: document.querySelector("#feedback"),
   questionCard: document.querySelector(".question-card"),
+  backBtn: document.querySelector("#backBtn"),
   nextBtn: document.querySelector("#nextBtn"),
   reviewBtn: document.querySelector("#reviewBtn"),
   resetBtn: document.querySelector("#resetBtn"),
@@ -34,6 +35,9 @@ let answered = savedProgress.answered;
 let streak = savedProgress.streak;
 let missed = savedProgress.missed;
 let testQueue = null;
+let questionHistory = [];
+let historyIndex = -1;
+let showingTestComplete = false;
 
 function safeJsonArray(key) {
   try {
@@ -438,65 +442,36 @@ function setVisual(question) {
     : "Read both languages, then answer from the meaning, not just memorized words.";
 }
 
-function renderQuestion() {
-  const available = testQueue || filteredPool();
-  if (!available.length) {
-    els.questionNumber.textContent = "No questions";
-    els.questionEn.textContent = "No missed questions yet.";
-    els.questionAm.textContent = "እስካሁን የተሳሳቱ ጥያቄዎች የሉም።";
-    els.answers.innerHTML = "";
-    els.feedback.hidden = true;
-    els.nextBtn.disabled = true;
-    return;
-  }
+function resetQuestionHistory() {
+  questionHistory = [];
+  historyIndex = -1;
+  showingTestComplete = false;
+}
 
-  if (!testQueue && pool.length === 0) pool = shuffle([...available]);
-  current = testQueue ? testQueue.shift() : pool.find((q) => available.includes(q)) || shuffle([...available])[0];
-  if (!testQueue) pool = pool.filter((q) => q !== current);
-  answeredCurrent = false;
-  els.questionCard?.classList?.toggle("has-inline-sign", current.topic === "signs");
-  els.nextBtn.disabled = true;
-  els.feedback.hidden = true;
-  els.questionNumber.textContent = testQueue ? `Practice test: ${20 - testQueue.length} of 20` : `Question ${answered + 1}`;
-  els.questionEn.textContent = current.question.en;
-  els.questionAm.textContent = current.question.am;
-  setVisual(current);
+function currentHistoryEntry() {
+  return questionHistory[historyIndex] || null;
+}
 
-  els.answers.innerHTML = "";
-  current.answers.forEach((answer, index) => {
-    const button = document.createElement("button");
-    button.className = "answer";
-    button.type = "button";
-    button.innerHTML = `<strong>${escapeHtml(answer.en)}</strong><span lang="am">${escapeHtml(answer.am)}</span>`;
-    button.addEventListener("click", () => chooseAnswer(index));
-    els.answers.appendChild(button);
+function updateNavButtons() {
+  const entry = currentHistoryEntry();
+  const atLatestQuestion = historyIndex === questionHistory.length - 1;
+  const readyToFinishTest = Boolean(testQueue && testQueue.length === 0 && atLatestQuestion && entry?.selectedIndex !== null);
+  els.backBtn.disabled = showingTestComplete ? questionHistory.length === 0 : historyIndex <= 0;
+  els.nextBtn.textContent = readyToFinishTest ? "Finish test" : "Next question";
+  els.nextBtn.disabled = !entry || entry.selectedIndex === null || showingTestComplete;
+}
+
+function applyAnswerState(selectedIndex) {
+  [...els.answers.children].forEach((button, buttonIndex) => {
+    button.classList.toggle("correct", selectedIndex !== null && buttonIndex === current.correctIndex);
+    button.classList.toggle("wrong", selectedIndex !== null && buttonIndex === selectedIndex && selectedIndex !== current.correctIndex);
   });
 }
 
-function chooseAnswer(index) {
-  if (answeredCurrent) return;
-  answeredCurrent = true;
-  answered += 1;
-  const isCorrect = index === current.correctIndex;
-  if (isCorrect) {
-    score += 1;
-    streak += 1;
-    missed = missed.filter((item) => item !== current.id && item !== current.question.en);
-  } else {
-    streak = 0;
-    if (!missed.includes(current.id)) missed.push(current.id);
-  }
-  saveProgress();
-  updateStats();
-
-  [...els.answers.children].forEach((button, buttonIndex) => {
-    if (buttonIndex === current.correctIndex) button.classList.add("correct");
-    if (buttonIndex === index && !isCorrect) button.classList.add("wrong");
-  });
-
-  els.feedback.hidden = false;
+function renderFeedback(selectedIndex) {
+  const isCorrect = selectedIndex === current.correctIndex;
   const correct = current.answers[current.correctIndex];
-  const selected = current.answers[index];
+  const selected = current.answers[selectedIndex];
   const correctAnswer = `
     <div class="feedback-answer">
       <span>Correct answer</span>
@@ -519,14 +494,101 @@ function chooseAnswer(index) {
       <p>This does not match the Georgia driving rule for this situation.</p>
     </div>
   `;
+  els.feedback.hidden = false;
   els.feedback.innerHTML = isCorrect
     ? `<b>Correct. ትክክል ነው።</b>${correctAnswer}${reason}`
     : `<b>Not this one. ይህ አይደለም።</b>${wrongChoice}${correctAnswer}${reason}`;
-  els.nextBtn.disabled = false;
+}
 
-  if (testQueue && testQueue.length === 0) {
-    els.nextBtn.textContent = "Finish test";
+function nextHistoryEntry() {
+  const available = testQueue || filteredPool();
+  if (!available.length) {
+    return null;
   }
+
+  if (!testQueue && pool.length === 0) pool = shuffle([...available]);
+  const question = testQueue ? testQueue.shift() : pool.find((q) => available.includes(q)) || shuffle([...available])[0];
+  if (!testQueue) pool = pool.filter((q) => q !== question);
+  return {
+    question,
+    label: testQueue ? `Practice test: ${20 - testQueue.length} of 20` : `Question ${answered + 1}`,
+    selectedIndex: null
+  };
+}
+
+function renderQuestion(entry = null) {
+  showingTestComplete = false;
+  let activeEntry = entry;
+  if (!activeEntry) {
+    activeEntry = nextHistoryEntry();
+  }
+
+  if (!activeEntry) {
+    current = null;
+    els.questionNumber.textContent = "No questions";
+    els.questionEn.textContent = "No missed questions yet.";
+    els.questionAm.textContent = "እስካሁን የተሳሳቱ ጥያቄዎች የሉም።";
+    els.answers.innerHTML = "";
+    els.feedback.hidden = true;
+    els.questionCard?.classList?.remove("has-inline-sign");
+    updateNavButtons();
+    return;
+  }
+
+  if (!entry) {
+    if (historyIndex < questionHistory.length - 1) {
+      questionHistory = questionHistory.slice(0, historyIndex + 1);
+    }
+    questionHistory.push(activeEntry);
+    historyIndex = questionHistory.length - 1;
+  }
+
+  current = activeEntry.question;
+  answeredCurrent = activeEntry.selectedIndex !== null;
+  els.questionCard?.classList?.toggle("has-inline-sign", current.topic === "signs");
+  els.feedback.hidden = true;
+  els.questionNumber.textContent = activeEntry.label;
+  els.questionEn.textContent = current.question.en;
+  els.questionAm.textContent = current.question.am;
+  setVisual(current);
+
+  els.answers.innerHTML = "";
+  current.answers.forEach((answer, index) => {
+    const button = document.createElement("button");
+    button.className = "answer";
+    button.type = "button";
+    button.innerHTML = `<strong>${escapeHtml(answer.en)}</strong><span lang="am">${escapeHtml(answer.am)}</span>`;
+    button.addEventListener("click", () => chooseAnswer(index));
+    els.answers.appendChild(button);
+  });
+
+  applyAnswerState(activeEntry.selectedIndex);
+  if (activeEntry.selectedIndex !== null) {
+    renderFeedback(activeEntry.selectedIndex);
+  }
+  updateNavButtons();
+}
+
+function chooseAnswer(index) {
+  if (answeredCurrent) return;
+  answeredCurrent = true;
+  answered += 1;
+  const isCorrect = index === current.correctIndex;
+  if (isCorrect) {
+    score += 1;
+    streak += 1;
+    missed = missed.filter((item) => item !== current.id && item !== current.question.en);
+  } else {
+    streak = 0;
+    if (!missed.includes(current.id)) missed.push(current.id);
+  }
+  const entry = currentHistoryEntry();
+  if (entry) entry.selectedIndex = index;
+  saveProgress();
+  updateStats();
+  applyAnswerState(index);
+  renderFeedback(index);
+  updateNavButtons();
 }
 
 function updateStats() {
@@ -545,23 +607,48 @@ function resetStats() {
   els.nextBtn.textContent = "Next question";
   if (els.mode.value === "missed") els.mode.value = "all";
   clearProgress();
+  resetQuestionHistory();
   pool = shuffle([...filteredPool()]);
   updateStats();
   renderQuestion();
 }
 
+function renderTestComplete() {
+  showingTestComplete = true;
+  const passed = score >= 15;
+  els.questionCard?.classList?.remove("has-inline-sign");
+  els.inlineSignVisual.hidden = true;
+  els.inlineSignVisual.innerHTML = "";
+  els.questionNumber.textContent = "Practice test complete";
+  els.questionEn.textContent = passed ? "Passed practice target." : "Keep practicing, then try again.";
+  els.questionAm.textContent = passed ? "የልምምድ ግብን አልፈዋል።" : "ልምምድ ይቀጥሉ፣ ከዚያ እንደገና ይሞክሩ።";
+  els.answers.innerHTML = "";
+  els.feedback.hidden = false;
+  els.feedback.innerHTML = `<b>Your score: ${score}/20</b>DDS uses 15 correct out of 20 as the passing target for each Knowledge Exam part.`;
+  els.nextBtn.textContent = "Next question";
+  testQueue = null;
+  updateNavButtons();
+}
+
+els.backBtn.addEventListener("click", () => {
+  if (showingTestComplete) {
+    historyIndex = questionHistory.length - 1;
+    renderQuestion(currentHistoryEntry());
+    return;
+  }
+  if (historyIndex <= 0) return;
+  historyIndex -= 1;
+  renderQuestion(currentHistoryEntry());
+});
+
 els.nextBtn.addEventListener("click", () => {
+  if (historyIndex < questionHistory.length - 1) {
+    historyIndex += 1;
+    renderQuestion(currentHistoryEntry());
+    return;
+  }
   if (testQueue && testQueue.length === 0) {
-    const passed = score >= 15;
-    els.questionNumber.textContent = "Practice test complete";
-    els.questionEn.textContent = passed ? "Passed practice target." : "Keep practicing, then try again.";
-    els.questionAm.textContent = passed ? "የልምምድ ግብን አልፈዋል።" : "ልምምድ ይቀጥሉ፣ ከዚያ እንደገና ይሞክሩ።";
-    els.answers.innerHTML = "";
-    els.feedback.hidden = false;
-    els.feedback.innerHTML = `<b>Your score: ${score}/20</b>DDS uses 15 correct out of 20 as the passing target for each Knowledge Exam part.`;
-    els.nextBtn.disabled = true;
-    els.nextBtn.textContent = "Next question";
-    testQueue = null;
+    renderTestComplete();
     return;
   }
   renderQuestion();
@@ -569,12 +656,15 @@ els.nextBtn.addEventListener("click", () => {
 
 els.mode.addEventListener("change", () => {
   testQueue = null;
+  resetQuestionHistory();
   pool = shuffle([...filteredPool()]);
   renderQuestion();
 });
 
 els.reviewBtn.addEventListener("click", () => {
   els.mode.value = "missed";
+  testQueue = null;
+  resetQuestionHistory();
   pool = shuffle([...filteredPool()]);
   renderQuestion();
 });
@@ -588,6 +678,7 @@ els.testBtn.addEventListener("click", () => {
   saveProgress();
   updateStats();
   testQueue = shuffle([...questions]).slice(0, 20);
+  resetQuestionHistory();
   els.nextBtn.textContent = "Next question";
   renderQuestion();
 });
