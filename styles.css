@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -42,7 +46,8 @@ select {
 .topbar,
 .dashboard,
 .quiz-layout,
-.practice-test {
+.practice-test,
+.missed-panel {
   display: grid;
   gap: 16px;
 }
@@ -154,7 +159,8 @@ select {
 
 .study-card,
 .question-card,
-.practice-test {
+.practice-test,
+.missed-panel {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.9);
@@ -373,6 +379,58 @@ button:disabled {
 .practice-test h2,
 .practice-test p {
   margin-bottom: 8px;
+}
+
+.missed-panel {
+  margin-top: 14px;
+  padding: 16px;
+}
+
+.missed-panel-header {
+  display: grid;
+  gap: 12px;
+}
+
+.missed-panel h2,
+.missed-panel p {
+  margin-bottom: 6px;
+}
+
+.missed-panel p {
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.missed-list {
+  display: grid;
+  gap: 10px;
+}
+
+.missed-item {
+  display: grid;
+  gap: 6px;
+  width: 100%;
+  min-height: 74px;
+  padding: 12px;
+  text-align: left;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.missed-item strong,
+.missed-item span {
+  display: block;
+}
+
+.missed-item span {
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+#clearMissedBtn {
+  min-height: 44px;
+  padding: 0 14px;
+  cursor: pointer;
 }
 
 .sign-visual {
@@ -689,6 +747,15 @@ button:disabled {
   .practice-test {
     grid-template-columns: 1fr auto;
     padding: 22px;
+  }
+
+  .missed-panel {
+    padding: 22px;
+  }
+
+  .missed-panel-header {
+    grid-template-columns: 1fr auto;
+    align-items: center;
   }
 
   .practice-test h2,

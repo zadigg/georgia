@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Georgia Driver Practice | ጆርጂያ የመንጃ ፈቃድ ልምምድ</title>
-    <link rel="stylesheet" href="./styles.css?v=mobile6" />
+    <link rel="stylesheet" href="./styles.css?v=mobile9" />
   </head>
   <body>
     <main class="app-shell">
@@ -90,8 +90,19 @@
         </div>
         <button id="testBtn" type="button">Start 20-question test</button>
       </section>
+
+      <section id="missedPanel" class="missed-panel" hidden>
+        <div class="missed-panel-header">
+          <div>
+            <h2>Questions to review</h2>
+            <p><span id="missedCount">0</span> missed questions saved for extra practice.</p>
+          </div>
+          <button id="clearMissedBtn" type="button">Clear list</button>
+        </div>
+        <div id="missedList" class="missed-list"></div>
+      </section>
     </main>
 
-    <script src="./app.js?v=mobile6"></script>
+    <script src="./app.js?v=mobile9"></script>
   </body>
 </html>

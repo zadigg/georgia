@@ -19,9 +19,13 @@ const els = {
   reviewBtn: document.querySelector("#reviewBtn"),
   resetBtn: document.querySelector("#resetBtn"),
   testBtn: document.querySelector("#testBtn"),
+  clearMissedBtn: document.querySelector("#clearMissedBtn"),
   speakBtn: document.querySelector("#speakBtn"),
   signVisual: document.querySelector("#signVisual"),
   inlineSignVisual: document.querySelector("#inlineSignVisual"),
+  missedPanel: document.querySelector("#missedPanel"),
+  missedCount: document.querySelector("#missedCount"),
+  missedList: document.querySelector("#missedList"),
   topicTitle: document.querySelector("#topicTitle"),
   topicHelp: document.querySelector("#topicHelp")
 };
@@ -34,10 +38,12 @@ let score = savedProgress.score;
 let answered = savedProgress.answered;
 let streak = savedProgress.streak;
 let missed = savedProgress.missed;
+let completedQuestionIds = savedProgress.completedQuestionIds;
 let testQueue = null;
 let questionHistory = [];
 let historyIndex = -1;
 let showingTestComplete = false;
+let showingDone = false;
 
 function safeJsonArray(key) {
   try {
@@ -60,14 +66,16 @@ function loadProgress() {
       score: positiveInteger(saved.score),
       answered: positiveInteger(saved.answered),
       streak: positiveInteger(saved.streak),
-      missed: Array.isArray(saved.missed) ? saved.missed : safeJsonArray(legacyMissedStorageKey)
+      missed: Array.isArray(saved.missed) ? saved.missed : safeJsonArray(legacyMissedStorageKey),
+      completedQuestionIds: Array.isArray(saved.completedQuestionIds) ? saved.completedQuestionIds : []
     };
   } catch {
     return {
       score: 0,
       answered: 0,
       streak: 0,
-      missed: safeJsonArray(legacyMissedStorageKey)
+      missed: safeJsonArray(legacyMissedStorageKey),
+      completedQuestionIds: []
     };
   }
 }
@@ -78,6 +86,7 @@ function saveProgress() {
     answered,
     streak,
     missed,
+    completedQuestionIds,
     savedAt: new Date().toISOString()
   };
   localStorage.setItem(progressStorageKey, JSON.stringify(progress));
@@ -96,13 +105,33 @@ function shuffle(items) {
     .map(({ item }) => item);
 }
 
-function filteredPool() {
+function baseQuestionsForMode() {
   const mode = els.mode.value;
   if (mode === "missed") {
-    return questions.filter((q) => missed.includes(q.id) || missed.includes(q.question.en));
+    return missedQuestions();
   }
   if (mode === "all") return questions;
   return questions.filter((q) => q.topic === mode);
+}
+
+function completedQuestionSet() {
+  return new Set(completedQuestionIds);
+}
+
+function filteredPool(includeCompleted = false) {
+  const base = baseQuestionsForMode();
+  if (includeCompleted || els.mode.value === "missed") return base;
+  const completed = completedQuestionSet();
+  return base.filter((q) => !completed.has(q.id));
+}
+
+function missedQuestionIds() {
+  return [...new Set(missed.map((item) => typeof item === "string" ? item : item?.id).filter(Boolean))];
+}
+
+function missedQuestions() {
+  const missedIds = missedQuestionIds();
+  return questions.filter((q) => missedIds.includes(q.id) || missedIds.includes(q.question.en));
 }
 
 function escapeHtml(value) {
@@ -446,6 +475,7 @@ function resetQuestionHistory() {
   questionHistory = [];
   historyIndex = -1;
   showingTestComplete = false;
+  showingDone = false;
 }
 
 function currentHistoryEntry() {
@@ -456,6 +486,12 @@ function updateNavButtons() {
   const entry = currentHistoryEntry();
   const atLatestQuestion = historyIndex === questionHistory.length - 1;
   const readyToFinishTest = Boolean(testQueue && testQueue.length === 0 && atLatestQuestion && entry?.selectedIndex !== null);
+  if (showingDone) {
+    els.backBtn.disabled = questionHistory.length === 0;
+    els.nextBtn.textContent = "Next question";
+    els.nextBtn.disabled = true;
+    return;
+  }
   els.backBtn.disabled = showingTestComplete ? questionHistory.length === 0 : historyIndex <= 0;
   els.nextBtn.textContent = readyToFinishTest ? "Finish test" : "Next question";
   els.nextBtn.disabled = !entry || entry.selectedIndex === null || showingTestComplete;
@@ -500,14 +536,34 @@ function renderFeedback(selectedIndex) {
     : `<b>Not this one. ይህ አይደለም።</b>${wrongChoice}${correctAnswer}${reason}`;
 }
 
+function renderReviewFeedback() {
+  const correct = current.answers[current.correctIndex];
+  els.feedback.hidden = false;
+  els.feedback.innerHTML = `
+    <b>Review this missed question. ይህን የተሳሳተ ጥያቄ ይከልሱ።</b>
+    <div class="feedback-answer">
+      <span>Correct answer</span>
+      <strong>${escapeHtml(correct.en)}</strong>
+      <em lang="am">${escapeHtml(correct.am)}</em>
+    </div>
+    <div class="feedback-reason">
+      <span>Reason</span>
+      <p>${escapeHtml(current.reasoning.en)}</p>
+      <p lang="am" class="amharic-reason">${escapeHtml(current.reasoning.am)}</p>
+    </div>
+  `;
+}
+
 function nextHistoryEntry() {
   const available = testQueue || filteredPool();
   if (!available.length) {
     return null;
   }
 
+  const availableIds = new Set(available.map((q) => q.id));
+  if (!testQueue) pool = pool.filter((q) => availableIds.has(q.id));
   if (!testQueue && pool.length === 0) pool = shuffle([...available]);
-  const question = testQueue ? testQueue.shift() : pool.find((q) => available.includes(q)) || shuffle([...available])[0];
+  const question = testQueue ? testQueue.shift() : pool[0];
   if (!testQueue) pool = pool.filter((q) => q !== question);
   return {
     question,
@@ -516,22 +572,51 @@ function nextHistoryEntry() {
   };
 }
 
+function renderDoneState() {
+  showingDone = true;
+  current = null;
+  const missedCount = missedQuestions().length;
+  const totalInMode = filteredPool(true).length;
+  els.questionCard?.classList?.remove("has-inline-sign");
+  els.inlineSignVisual.hidden = true;
+  els.inlineSignVisual.innerHTML = "";
+  els.questionNumber.textContent = "DONE";
+  els.questionEn.textContent = "DONE - You finished all questions.";
+  els.questionAm.textContent = "ተጠናቋል - ሁሉንም ጥያቄዎች ጨርሰዋል።";
+  els.answers.innerHTML = "";
+  els.feedback.hidden = false;
+  els.feedback.innerHTML = `
+    <b>Great work. ጥሩ ስራ።</b>
+    <p>You completed ${totalInMode} question${totalInMode === 1 ? "" : "s"} in this mode.</p>
+    ${missedCount
+      ? `<p>Now review the ${missedCount} missed question${missedCount === 1 ? "" : "s"} below.</p>`
+      : "<p>No missed questions saved right now.</p>"}
+  `;
+  updateMissedPanel();
+  updateNavButtons();
+}
+
 function renderQuestion(entry = null) {
   showingTestComplete = false;
+  showingDone = false;
   let activeEntry = entry;
   if (!activeEntry) {
     activeEntry = nextHistoryEntry();
   }
 
   if (!activeEntry) {
-    current = null;
-    els.questionNumber.textContent = "No questions";
-    els.questionEn.textContent = "No missed questions yet.";
-    els.questionAm.textContent = "እስካሁን የተሳሳቱ ጥያቄዎች የሉም።";
-    els.answers.innerHTML = "";
-    els.feedback.hidden = true;
-    els.questionCard?.classList?.remove("has-inline-sign");
-    updateNavButtons();
+    if (els.mode.value === "missed" && missedQuestions().length === 0) {
+      current = null;
+      els.questionNumber.textContent = "No questions";
+      els.questionEn.textContent = "No missed questions yet.";
+      els.questionAm.textContent = "እስካሁን የተሳሳቱ ጥያቄዎች የሉም።";
+      els.answers.innerHTML = "";
+      els.feedback.hidden = true;
+      els.questionCard?.classList?.remove("has-inline-sign");
+      updateNavButtons();
+    } else {
+      renderDoneState();
+    }
     return;
   }
 
@@ -558,12 +643,17 @@ function renderQuestion(entry = null) {
     button.className = "answer";
     button.type = "button";
     button.innerHTML = `<strong>${escapeHtml(answer.en)}</strong><span lang="am">${escapeHtml(answer.am)}</span>`;
+    if (activeEntry.reviewOnly) {
+      button.disabled = true;
+    }
     button.addEventListener("click", () => chooseAnswer(index));
     els.answers.appendChild(button);
   });
 
-  applyAnswerState(activeEntry.selectedIndex);
-  if (activeEntry.selectedIndex !== null) {
+  applyAnswerState(activeEntry.reviewOnly ? current.correctIndex : activeEntry.selectedIndex);
+  if (activeEntry.reviewOnly) {
+    renderReviewFeedback();
+  } else if (activeEntry.selectedIndex !== null) {
     renderFeedback(activeEntry.selectedIndex);
   }
   updateNavButtons();
@@ -582,6 +672,9 @@ function chooseAnswer(index) {
     streak = 0;
     if (!missed.includes(current.id)) missed.push(current.id);
   }
+  if (!completedQuestionIds.includes(current.id)) {
+    completedQuestionIds.push(current.id);
+  }
   const entry = currentHistoryEntry();
   if (entry) entry.selectedIndex = index;
   saveProgress();
@@ -596,6 +689,43 @@ function updateStats() {
   els.answered.textContent = answered;
   els.streak.textContent = streak;
   els.bankTotal.textContent = questions.length;
+  updateMissedPanel();
+}
+
+function renderMissedReview(question) {
+  testQueue = null;
+  resetQuestionHistory();
+  els.mode.value = "missed";
+  const entry = {
+    question,
+    label: "Missed review",
+    selectedIndex: question.correctIndex,
+    reviewOnly: true
+  };
+  questionHistory.push(entry);
+  historyIndex = 0;
+  renderQuestion(entry);
+  els.questionCard.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function updateMissedPanel() {
+  const items = missedQuestions();
+  els.missedPanel.hidden = items.length === 0;
+  els.missedCount.textContent = items.length;
+  els.reviewBtn.textContent = items.length ? `Review missed (${items.length})` : "Review missed";
+  els.missedList.innerHTML = "";
+
+  items.forEach((question, index) => {
+    const button = document.createElement("button");
+    button.className = "missed-item";
+    button.type = "button";
+    button.innerHTML = `
+      <strong>${index + 1}. ${escapeHtml(question.question.en)}</strong>
+      <span lang="am">${escapeHtml(question.question.am)}</span>
+    `;
+    button.addEventListener("click", () => renderMissedReview(question));
+    els.missedList.appendChild(button);
+  });
 }
 
 function resetStats() {
@@ -603,6 +733,7 @@ function resetStats() {
   answered = 0;
   streak = 0;
   missed = [];
+  completedQuestionIds = [];
   testQueue = null;
   els.nextBtn.textContent = "Next question";
   if (els.mode.value === "missed") els.mode.value = "all";
@@ -616,6 +747,7 @@ function resetStats() {
 function renderTestComplete() {
   showingTestComplete = true;
   const passed = score >= 15;
+  const missedCount = missedQuestions().length;
   els.questionCard?.classList?.remove("has-inline-sign");
   els.inlineSignVisual.hidden = true;
   els.inlineSignVisual.innerHTML = "";
@@ -624,14 +756,19 @@ function renderTestComplete() {
   els.questionAm.textContent = passed ? "የልምምድ ግብን አልፈዋል።" : "ልምምድ ይቀጥሉ፣ ከዚያ እንደገና ይሞክሩ።";
   els.answers.innerHTML = "";
   els.feedback.hidden = false;
-  els.feedback.innerHTML = `<b>Your score: ${score}/20</b>DDS uses 15 correct out of 20 as the passing target for each Knowledge Exam part.`;
+  els.feedback.innerHTML = `
+    <b>Your score: ${score}/20</b>
+    DDS uses 15 correct out of 20 as the passing target for each Knowledge Exam part.
+    ${missedCount ? `<p>${missedCount} missed question${missedCount === 1 ? "" : "s"} are saved below in Questions to review.</p>` : "<p>No missed questions saved right now.</p>"}
+  `;
   els.nextBtn.textContent = "Next question";
   testQueue = null;
+  updateMissedPanel();
   updateNavButtons();
 }
 
 els.backBtn.addEventListener("click", () => {
-  if (showingTestComplete) {
+  if (showingTestComplete || showingDone) {
     historyIndex = questionHistory.length - 1;
     renderQuestion(currentHistoryEntry());
     return;
@@ -671,10 +808,23 @@ els.reviewBtn.addEventListener("click", () => {
 
 els.resetBtn.addEventListener("click", resetStats);
 
+els.clearMissedBtn.addEventListener("click", () => {
+  missed = [];
+  if (els.mode.value === "missed") {
+    els.mode.value = "all";
+    resetQuestionHistory();
+    pool = shuffle([...filteredPool()]);
+    renderQuestion();
+  }
+  saveProgress();
+  updateStats();
+});
+
 els.testBtn.addEventListener("click", () => {
   score = 0;
   answered = 0;
   streak = 0;
+  completedQuestionIds = [];
   saveProgress();
   updateStats();
   testQueue = shuffle([...questions]).slice(0, 20);
