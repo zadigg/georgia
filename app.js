@@ -1,13 +1,92 @@
+let driverQuestions = [];
+let englishQuestions = [];
 let questions = [];
 let signAssets = {};
-const progressStorageKey = "gaDriverProgressV1";
-const legacyMissedStorageKey = "gaDriverMissed";
+let activeApp = localStorage.getItem("practiceActiveApp") || "driver";
+const appConfigs = {
+  driver: {
+    progressKey: "gaDriverProgressV1",
+    legacyMissedKey: "gaDriverMissed",
+    eyebrow: "Georgia DDS Study Helper",
+    title: "Driver License Practice",
+    subtitle: "English + Amharic questions for calmer studying.",
+    targetValue: "15/20",
+    targetLabel: "DDS passing target",
+    practiceTitle: "20-question practice test",
+    practiceHelp: "Start a timed-style mixed set from the full question bank. Georgia says each Knowledge Exam part needs 15 correct out of 20.",
+    testButton: "Start 20-question test",
+    sourceNote: `Based on the Georgia DDS
+      <a href="https://dds.georgia.gov/drivers-manual" target="_blank" rel="noreferrer">Drivers Manual</a>
+      and
+      <a href="https://dds.georgia.gov/testing-and-training/practice-test" target="_blank" rel="noreferrer">practice-test guidance</a>.
+      This is a study app, not an official DDS exam.`,
+    modes: [
+      ["all", "All topics"],
+      ["signs", "Road signs"],
+      ["rules", "Road rules"],
+      ["safety", "Safe driving"],
+      ["ga", "Georgia laws"],
+      ["missed", "Missed practice"]
+    ],
+    topicNames: {
+      signs: "Road signs",
+      rules: "Road rules",
+      safety: "Safe driving",
+      ga: "Georgia law"
+    },
+    topicHelp(question) {
+      return question.topic === "signs"
+        ? "Road signs are tested in English, so learn the English words and the meaning."
+        : "Read both languages, then answer from the meaning, not just memorized words.";
+    }
+  },
+  english: {
+    progressKey: "basicEnglishProgressV1",
+    legacyMissedKey: "basicEnglishMissed",
+    eyebrow: "Basic English Helper",
+    title: "English Practice",
+    subtitle: "Work, safety, money, time, and daily English with Amharic support.",
+    targetValue: "Practice",
+    targetLabel: "Build confidence",
+    practiceTitle: "20-question English practice",
+    practiceHelp: "Practice useful sentences for work, shopping, time, safety, and everyday conversation.",
+    testButton: "Start English practice",
+    sourceNote: "Basic English practice for everyday and work situations. You can edit the wording in english-questions.json.",
+    modes: [
+      ["all", "All topics"],
+      ["work", "Work English"],
+      ["safety", "Safety words"],
+      ["daily", "Daily phrases"],
+      ["time", "Time words"],
+      ["money", "Money/shopping"],
+      ["missed", "Missed practice"]
+    ],
+    topicNames: {
+      work: "Work English",
+      safety: "Safety words",
+      daily: "Daily phrases",
+      time: "Time words",
+      money: "Money/shopping"
+    },
+    topicHelp() {
+      return "Read the situation, say the English sentence out loud, then tap Practiced.";
+    }
+  }
+};
+if (!appConfigs[activeApp]) activeApp = "driver";
 const els = {
+  driverAppBtn: document.querySelector("#driverAppBtn"),
+  englishAppBtn: document.querySelector("#englishAppBtn"),
+  appEyebrow: document.querySelector("#appEyebrow"),
+  appTitle: document.querySelector("#appTitle"),
+  appSubtitle: document.querySelector("#appSubtitle"),
   mode: document.querySelector("#mode"),
   score: document.querySelector("#score"),
   answered: document.querySelector("#answered"),
   streak: document.querySelector("#streak"),
   bankTotal: document.querySelector("#bankTotal"),
+  targetValue: document.querySelector("#targetValue"),
+  targetLabel: document.querySelector("#targetLabel"),
   questionNumber: document.querySelector("#questionNumber"),
   questionEn: document.querySelector("#questionEn"),
   questionAm: document.querySelector("#questionAm"),
@@ -27,18 +106,20 @@ const els = {
   missedCount: document.querySelector("#missedCount"),
   missedList: document.querySelector("#missedList"),
   topicTitle: document.querySelector("#topicTitle"),
-  topicHelp: document.querySelector("#topicHelp")
+  topicHelp: document.querySelector("#topicHelp"),
+  sourceNote: document.querySelector(".source-note"),
+  practiceTitle: document.querySelector("#practiceTitle"),
+  practiceHelp: document.querySelector("#practiceHelp")
 };
 
-const savedProgress = loadProgress();
 let pool = shuffle([...questions]);
 let current = null;
 let answeredCurrent = false;
-let score = savedProgress.score;
-let answered = savedProgress.answered;
-let streak = savedProgress.streak;
-let missed = savedProgress.missed;
-let completedQuestionIds = savedProgress.completedQuestionIds;
+let score = 0;
+let answered = 0;
+let streak = 0;
+let missed = [];
+let completedQuestionIds = [];
 let testQueue = null;
 let questionHistory = [];
 let historyIndex = -1;
@@ -61,23 +142,33 @@ function positiveInteger(value) {
 
 function loadProgress() {
   try {
-    const saved = JSON.parse(localStorage.getItem(progressStorageKey) || "{}");
+    const config = appConfigs[activeApp];
+    const saved = JSON.parse(localStorage.getItem(config.progressKey) || "{}");
     return {
       score: positiveInteger(saved.score),
       answered: positiveInteger(saved.answered),
       streak: positiveInteger(saved.streak),
-      missed: Array.isArray(saved.missed) ? saved.missed : safeJsonArray(legacyMissedStorageKey),
+      missed: Array.isArray(saved.missed) ? saved.missed : safeJsonArray(config.legacyMissedKey),
       completedQuestionIds: Array.isArray(saved.completedQuestionIds) ? saved.completedQuestionIds : []
     };
   } catch {
+    const config = appConfigs[activeApp];
     return {
       score: 0,
       answered: 0,
       streak: 0,
-      missed: safeJsonArray(legacyMissedStorageKey),
+      missed: safeJsonArray(config.legacyMissedKey),
       completedQuestionIds: []
     };
   }
+}
+
+function applyProgress(progress) {
+  score = progress.score;
+  answered = progress.answered;
+  streak = progress.streak;
+  missed = progress.missed;
+  completedQuestionIds = progress.completedQuestionIds;
 }
 
 function saveProgress() {
@@ -89,13 +180,15 @@ function saveProgress() {
     completedQuestionIds,
     savedAt: new Date().toISOString()
   };
-  localStorage.setItem(progressStorageKey, JSON.stringify(progress));
-  localStorage.setItem(legacyMissedStorageKey, JSON.stringify(missed));
+  const config = appConfigs[activeApp];
+  localStorage.setItem(config.progressKey, JSON.stringify(progress));
+  localStorage.setItem(config.legacyMissedKey, JSON.stringify(missed));
 }
 
 function clearProgress() {
-  localStorage.removeItem(progressStorageKey);
-  localStorage.removeItem(legacyMissedStorageKey);
+  const config = appConfigs[activeApp];
+  localStorage.removeItem(config.progressKey);
+  localStorage.removeItem(config.legacyMissedKey);
 }
 
 function shuffle(items) {
@@ -132,6 +225,42 @@ function missedQuestionIds() {
 function missedQuestions() {
   const missedIds = missedQuestionIds();
   return questions.filter((q) => missedIds.includes(q.id) || missedIds.includes(q.question.en));
+}
+
+function appConfig() {
+  return appConfigs[activeApp];
+}
+
+function renderAppShell() {
+  const config = appConfig();
+  els.driverAppBtn.classList.toggle("active", activeApp === "driver");
+  els.englishAppBtn.classList.toggle("active", activeApp === "english");
+  els.appEyebrow.textContent = config.eyebrow;
+  els.appTitle.textContent = config.title;
+  els.appSubtitle.textContent = config.subtitle;
+  els.targetValue.textContent = config.targetValue;
+  els.targetLabel.textContent = config.targetLabel;
+  els.practiceTitle.textContent = config.practiceTitle;
+  els.practiceHelp.textContent = config.practiceHelp;
+  els.testBtn.textContent = config.testButton;
+  els.sourceNote.innerHTML = config.sourceNote;
+  els.mode.innerHTML = config.modes
+    .map(([value, label]) => `<option value="${escapeHtml(value)}">${escapeHtml(label)}</option>`)
+    .join("");
+}
+
+function switchPracticeApp(nextApp) {
+  if (nextApp === activeApp) return;
+  activeApp = nextApp;
+  localStorage.setItem("practiceActiveApp", activeApp);
+  questions = activeApp === "english" ? englishQuestions : driverQuestions;
+  applyProgress(loadProgress());
+  testQueue = null;
+  resetQuestionHistory();
+  renderAppShell();
+  pool = shuffle([...filteredPool()]);
+  updateStats();
+  renderQuestion();
 }
 
 function escapeHtml(value) {
@@ -455,20 +584,13 @@ function setVisual(question) {
   const visual = visualMarkup(question);
   els.signVisual.className = visual.className;
   els.signVisual.innerHTML = visual.html;
-  const showInlineSign = question.topic === "signs";
+  const showInlineSign = activeApp === "driver" && question.topic === "signs";
   els.inlineSignVisual.hidden = !showInlineSign;
   els.inlineSignVisual.className = showInlineSign ? `inline-sign-visual ${visual.className}` : "inline-sign-visual";
   els.inlineSignVisual.innerHTML = showInlineSign ? visual.html : "";
-  const topicNames = {
-    signs: "Road signs",
-    rules: "Road rules",
-    safety: "Safe driving",
-    ga: "Georgia law"
-  };
-  els.topicTitle.textContent = topicNames[question.topic] || "Practice";
-  els.topicHelp.textContent = question.topic === "signs"
-    ? "Road signs are tested in English, so learn the English words and the meaning."
-    : "Read both languages, then answer from the meaning, not just memorized words.";
+  els.signVisual.hidden = activeApp === "english";
+  els.topicTitle.textContent = appConfig().topicNames[question.topic] || "Practice";
+  els.topicHelp.textContent = appConfig().topicHelp(question);
 }
 
 function resetQuestionHistory() {
@@ -497,6 +619,29 @@ function updateNavButtons() {
   els.nextBtn.disabled = !entry || entry.selectedIndex === null || showingTestComplete;
 }
 
+function renderPhrasePractice(entry) {
+  const phrase = current.answers[current.correctIndex];
+  els.answers.innerHTML = `
+    <div class="phrase-card">
+      <span>Say this</span>
+      <strong>${escapeHtml(phrase.en)}</strong>
+      <em lang="am">${escapeHtml(phrase.am)}</em>
+    </div>
+  `;
+
+  if (entry.selectedIndex !== null) {
+    els.feedback.hidden = false;
+    els.feedback.innerHTML = `
+      <b>Practiced. ተለማምደዋል።</b>
+      <div class="feedback-reason">
+        <span>Note</span>
+        <p>${escapeHtml(current.reasoning.en)}</p>
+        <p lang="am" class="amharic-reason">${escapeHtml(current.reasoning.am)}</p>
+      </div>
+    `;
+  }
+}
+
 function applyAnswerState(selectedIndex) {
   [...els.answers.children].forEach((button, buttonIndex) => {
     button.classList.toggle("correct", selectedIndex !== null && buttonIndex === current.correctIndex);
@@ -508,6 +653,9 @@ function renderFeedback(selectedIndex) {
   const isCorrect = selectedIndex === current.correctIndex;
   const correct = current.answers[current.correctIndex];
   const selected = current.answers[selectedIndex];
+  const wrongExplanation = activeApp === "driver"
+    ? "This does not match the Georgia driving rule for this situation."
+    : "This does not match the meaning of the English sentence.";
   const correctAnswer = `
     <div class="feedback-answer">
       <span>Correct answer</span>
@@ -527,13 +675,31 @@ function renderFeedback(selectedIndex) {
       <span>Your answer</span>
       <strong>${escapeHtml(selected.en)}</strong>
       <em lang="am">${escapeHtml(selected.am)}</em>
-      <p>This does not match the Georgia driving rule for this situation.</p>
+      <p>${wrongExplanation}</p>
     </div>
   `;
   els.feedback.hidden = false;
   els.feedback.innerHTML = isCorrect
     ? `<b>Correct. ትክክል ነው።</b>${correctAnswer}${reason}`
     : `<b>Not this one. ይህ አይደለም።</b>${wrongChoice}${correctAnswer}${reason}`;
+}
+
+function practiceEnglishPhrase() {
+  if (answeredCurrent) return;
+  answeredCurrent = true;
+  answered += 1;
+  score += 1;
+  streak += 1;
+  missed = missed.filter((item) => item !== current.id && item !== current.question.en);
+  if (!completedQuestionIds.includes(current.id)) {
+    completedQuestionIds.push(current.id);
+  }
+  const entry = currentHistoryEntry();
+  if (entry) entry.selectedIndex = current.correctIndex;
+  saveProgress();
+  updateStats();
+  renderPhrasePractice(entry);
+  updateNavButtons();
 }
 
 function renderReviewFeedback() {
@@ -630,7 +796,7 @@ function renderQuestion(entry = null) {
 
   current = activeEntry.question;
   answeredCurrent = activeEntry.selectedIndex !== null;
-  els.questionCard?.classList?.toggle("has-inline-sign", current.topic === "signs");
+  els.questionCard?.classList?.toggle("has-inline-sign", activeApp === "driver" && current.topic === "signs");
   els.feedback.hidden = true;
   els.questionNumber.textContent = activeEntry.label;
   els.questionEn.textContent = current.question.en;
@@ -638,6 +804,21 @@ function renderQuestion(entry = null) {
   setVisual(current);
 
   els.answers.innerHTML = "";
+  if (activeApp === "english") {
+    renderPhrasePractice(activeEntry);
+    if (!activeEntry.reviewOnly) {
+      const button = document.createElement("button");
+      button.className = "answer practice-done";
+      button.type = "button";
+      button.textContent = activeEntry.selectedIndex === null ? "I practiced this" : "Practiced";
+      button.disabled = activeEntry.selectedIndex !== null;
+      button.addEventListener("click", practiceEnglishPhrase);
+      els.answers.appendChild(button);
+    }
+    updateNavButtons();
+    return;
+  }
+
   current.answers.forEach((answer, index) => {
     const button = document.createElement("button");
     button.className = "answer";
@@ -746,19 +927,23 @@ function resetStats() {
 
 function renderTestComplete() {
   showingTestComplete = true;
-  const passed = score >= 15;
+  const passed = activeApp === "driver" ? score >= 15 : true;
   const missedCount = missedQuestions().length;
   els.questionCard?.classList?.remove("has-inline-sign");
   els.inlineSignVisual.hidden = true;
   els.inlineSignVisual.innerHTML = "";
   els.questionNumber.textContent = "Practice test complete";
-  els.questionEn.textContent = passed ? "Passed practice target." : "Keep practicing, then try again.";
-  els.questionAm.textContent = passed ? "የልምምድ ግብን አልፈዋል።" : "ልምምድ ይቀጥሉ፣ ከዚያ እንደገና ይሞክሩ።";
+  els.questionEn.textContent = activeApp === "driver"
+    ? (passed ? "Passed practice target." : "Keep practicing, then try again.")
+    : "English practice complete.";
+  els.questionAm.textContent = activeApp === "driver"
+    ? (passed ? "የልምምድ ግብን አልፈዋል።" : "ልምምድ ይቀጥሉ፣ ከዚያ እንደገና ይሞክሩ።")
+    : "የእንግሊዝኛ ልምምድ ተጠናቋል።";
   els.answers.innerHTML = "";
   els.feedback.hidden = false;
   els.feedback.innerHTML = `
     <b>Your score: ${score}/20</b>
-    DDS uses 15 correct out of 20 as the passing target for each Knowledge Exam part.
+    ${activeApp === "driver" ? "DDS uses 15 correct out of 20 as the passing target for each Knowledge Exam part." : "Review the missed English questions below, then try again when ready."}
     ${missedCount ? `<p>${missedCount} missed question${missedCount === 1 ? "" : "s"} are saved below in Questions to review.</p>` : "<p>No missed questions saved right now.</p>"}
   `;
   els.nextBtn.textContent = "Next question";
@@ -820,6 +1005,9 @@ els.clearMissedBtn.addEventListener("click", () => {
   updateStats();
 });
 
+els.driverAppBtn.addEventListener("click", () => switchPracticeApp("driver"));
+els.englishAppBtn.addEventListener("click", () => switchPracticeApp("english"));
+
 els.testBtn.addEventListener("click", () => {
   score = 0;
   answered = 0;
@@ -844,15 +1032,21 @@ els.speakBtn.addEventListener("click", () => {
 
 async function loadQuestions() {
   try {
-    const [response, assetResponse] = await Promise.all([
+    const [response, englishResponse, assetResponse] = await Promise.all([
       fetch("./questions.json?v=assets1"),
+      fetch("./english-questions.json?v=apps1"),
       fetch("./assets/signs/sources.json?v=assets1")
     ]);
     if (!response.ok) throw new Error(`Unable to load questions: ${response.status}`);
+    if (!englishResponse.ok) throw new Error(`Unable to load English questions: ${englishResponse.status}`);
     if (!assetResponse.ok) throw new Error(`Unable to load sign assets: ${assetResponse.status}`);
     signAssets = await assetResponse.json();
-    questions = await response.json();
-    pool = shuffle([...questions]);
+    driverQuestions = await response.json();
+    englishQuestions = await englishResponse.json();
+    questions = activeApp === "english" ? englishQuestions : driverQuestions;
+    applyProgress(loadProgress());
+    renderAppShell();
+    pool = shuffle([...filteredPool()]);
     updateStats();
     renderQuestion();
   } catch (error) {

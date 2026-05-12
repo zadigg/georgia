@@ -1,0 +1,496 @@
+[
+  {
+    "id": "en001",
+    "topic": "daily",
+    "question": {
+      "en": "To greet someone in the morning, say:",
+      "am": "ጠዋት ሰውን ለመሰላምታ ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "Good morning.",
+        "am": "እንደምን አደሩ።"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Use this greeting early in the day.",
+      "am": "ይህን ሰላምታ በጠዋት ይጠቀሙ።"
+    }
+  },
+  {
+    "id": "en002",
+    "topic": "daily",
+    "question": {
+      "en": "To greet someone any time of day, say:",
+      "am": "በማንኛውም ጊዜ ሰውን ለመሰላምታ ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "Hello, how are you?",
+        "am": "ሰላም፣ እንዴት ነዎት?"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "This is a friendly everyday greeting.",
+      "am": "ይህ በየቀኑ ለመጠቀም የሚሆን ወዳጃዊ ሰላምታ ነው።"
+    }
+  },
+  {
+    "id": "en003",
+    "topic": "daily",
+    "question": {
+      "en": "When someone asks how you are, say:",
+      "am": "አንድ ሰው እንዴት ነዎት ብሎ ሲጠይቅ ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "I am good, thank you.",
+        "am": "ደህና ነኝ፣ አመሰግናለሁ።"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "This is a simple polite answer.",
+      "am": "ይህ ቀላልና ትህትና ያለው መልስ ነው።"
+    }
+  },
+  {
+    "id": "en004",
+    "topic": "daily",
+    "question": {
+      "en": "To politely get someone’s attention, say:",
+      "am": "የአንድ ሰው ትኩረት በትህትና ለማግኘት ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "Excuse me.",
+        "am": "ይቅርታ።"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Use this before asking a question or passing by.",
+      "am": "ጥያቄ ከመጠየቅዎ በፊት ወይም ለማለፍ ሲፈልጉ ይጠቀሙበት።"
+    }
+  },
+  {
+    "id": "en005",
+    "topic": "daily",
+    "question": {
+      "en": "If you do not understand, say:",
+      "am": "ካልገባዎት ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "Could you say that again, please?",
+        "am": "እባክዎ ያንን እንደገና ሊናገሩ ይችላሉ?"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "This asks someone to repeat politely.",
+      "am": "ይህ አንድ ሰው በትህትና እንዲደግም ይጠይቃል።"
+    }
+  },
+  {
+    "id": "en006",
+    "topic": "daily",
+    "question": {
+      "en": "To ask for water politely, say:",
+      "am": "ውሃ በትህትና ለመጠየቅ ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "May I have some water, please?",
+        "am": "እባክዎ ትንሽ ውሃ ማግኘት እችላለሁ?"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "May I and please make the request polite.",
+      "am": "May I እና please ጥያቄውን ትህትና ያለው ያደርጉታል።"
+    }
+  },
+  {
+    "id": "en007",
+    "topic": "work",
+    "question": {
+      "en": "When you arrive at work, you can say:",
+      "am": "ስራ ቦታ ሲደርሱ ይህን ማለት ይችላሉ:"
+    },
+    "answers": [
+      {
+        "en": "Good morning, I am here for my shift.",
+        "am": "እንደምን አደሩ፣ ለስራ ሰዓቴ መጥቻለሁ።"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "This tells them you arrived for work.",
+      "am": "ይህ ለስራ እንደደረሱ ያሳያል።"
+    }
+  },
+  {
+    "id": "en008",
+    "topic": "work",
+    "question": {
+      "en": "If you are late for work, say:",
+      "am": "ለስራ ከዘገዩ ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "I am sorry, I am running late.",
+        "am": "ይቅርታ፣ እዘገያለሁ።"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Running late means you will arrive later than expected.",
+      "am": "Running late ማለት ከተጠበቀው ጊዜ በኋላ መድረስ ማለት ነው።"
+    }
+  },
+  {
+    "id": "en009",
+    "topic": "work",
+    "question": {
+      "en": "To ask your supervisor for help, say:",
+      "am": "ኃላፊዎን እርዳታ ለመጠየቅ ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "Could you please help me?",
+        "am": "እባክዎ ሊረዱኝ ይችላሉ?"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "This is polite and clear at work.",
+      "am": "ይህ በስራ ቦታ ትህትና ያለውና ግልጽ ነው።"
+    }
+  },
+  {
+    "id": "en010",
+    "topic": "work",
+    "question": {
+      "en": "If you need instructions, say:",
+      "am": "መመሪያ ካስፈለገዎት ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "Can you show me how to do this?",
+        "am": "ይህን እንዴት መስራት እንዳለብኝ ሊያሳዩኝ ይችላሉ?"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "This asks someone to demonstrate the task.",
+      "am": "ይህ አንድ ሰው ስራውን እንዲያሳይዎት ይጠይቃል።"
+    }
+  },
+  {
+    "id": "en011",
+    "topic": "work",
+    "question": {
+      "en": "If a customer needs help, say:",
+      "am": "ደንበኛ እርዳታ ካስፈለገው ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "How can I help you?",
+        "am": "እንዴት ልረዳዎት እችላለሁ?"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "This is a common customer-service phrase.",
+      "am": "ይህ በደንበኛ አገልግሎት የተለመደ አረፍተ ነገር ነው።"
+    }
+  },
+  {
+    "id": "en012",
+    "topic": "work",
+    "question": {
+      "en": "If you need a short break, say:",
+      "am": "አጭር ዕረፍት ካስፈለገዎት ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "May I take a short break?",
+        "am": "አጭር ዕረፍት መውሰድ እችላለሁ?"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "This asks permission politely.",
+      "am": "ይህ ፈቃድን በትህትና ይጠይቃል።"
+    }
+  },
+  {
+    "id": "en013",
+    "topic": "work",
+    "question": {
+      "en": "If your coworker says thank you, say:",
+      "am": "የስራ ጓደኛዎ አመሰግናለሁ ቢል ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "You are welcome.",
+        "am": "ምንም አይደለም።"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "This is a polite response to thank you.",
+      "am": "ይህ ለአመሰግናለሁ ትህትና ያለው መልስ ነው።"
+    }
+  },
+  {
+    "id": "en014",
+    "topic": "work",
+    "question": {
+      "en": "If you cannot come to work, say:",
+      "am": "ወደ ስራ መምጣት ካልቻሉ ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "I cannot come to work today.",
+        "am": "ዛሬ ወደ ስራ መምጣት አልችልም።"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "This clearly explains that you cannot come today.",
+      "am": "ይህ ዛሬ መምጣት እንደማይችሉ በግልጽ ይናገራል።"
+    }
+  },
+  {
+    "id": "en015",
+    "topic": "safety",
+    "question": {
+      "en": "If the floor is wet, say:",
+      "am": "መሬቱ እርጥብ ከሆነ ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "Be careful, the floor is wet.",
+        "am": "ተጠንቀቁ፣ መሬቱ እርጥብ ነው።"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "This warns people about slipping.",
+      "am": "ይህ ሰዎች እንዳይንሸራተቱ ያስጠነቅቃል።"
+    }
+  },
+  {
+    "id": "en016",
+    "topic": "safety",
+    "question": {
+      "en": "If something is hot, say:",
+      "am": "አንድ ነገር ትኩስ ከሆነ ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "Be careful, it is hot.",
+        "am": "ተጠንቀቁ፣ ትኩስ ነው።"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "This warns someone not to touch carelessly.",
+      "am": "ይህ ሰው በግዴለሽነት እንዳይነካ ያስጠነቅቃል።"
+    }
+  },
+  {
+    "id": "en017",
+    "topic": "safety",
+    "question": {
+      "en": "If there is an emergency, say:",
+      "am": "አደጋ ካለ ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "Please call 911.",
+        "am": "እባክዎ 911 ይደውሉ።"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "This asks someone to call emergency services.",
+      "am": "ይህ አንድ ሰው የአደጋ እርዳታ እንዲደውል ይጠይቃል።"
+    }
+  },
+  {
+    "id": "en018",
+    "topic": "safety",
+    "question": {
+      "en": "If you need someone to stop, say:",
+      "am": "አንድ ሰው እንዲቆም ካስፈለገ ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "Please stop for a moment.",
+        "am": "እባክዎ ለአፍታ ይቁሙ።"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "This is polite and direct.",
+      "am": "ይህ ትህትና ያለውና ቀጥተኛ ነው።"
+    }
+  },
+  {
+    "id": "en019",
+    "topic": "time",
+    "question": {
+      "en": "To ask what time work starts, say:",
+      "am": "ስራ ስንት ሰዓት እንደሚጀምር ለመጠየቅ ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "What time does my shift start?",
+        "am": "የስራ ሰዓቴ ስንት ሰዓት ይጀምራል?"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Shift means your scheduled work time.",
+      "am": "Shift ማለት የተመደበልዎት የስራ ሰዓት ነው።"
+    }
+  },
+  {
+    "id": "en020",
+    "topic": "time",
+    "question": {
+      "en": "To ask when something is due, say:",
+      "am": "አንድ ነገር መቼ እንደሚጠናቀቅ ለመጠየቅ ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "When is this due?",
+        "am": "ይህ መቼ ነው መጠናቀቅ ያለበት?"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Due means the time something must be finished.",
+      "am": "Due ማለት ነገሩ መጠናቀቅ ያለበት ጊዜ ነው።"
+    }
+  },
+  {
+    "id": "en021",
+    "topic": "time",
+    "question": {
+      "en": "To say you will do something soon, say:",
+      "am": "አንድ ነገር በቅርቡ እንደሚያደርጉ ለመናገር ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "I will do it as soon as possible.",
+        "am": "በተቻለ ፍጥነት አደርገዋለሁ።"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "As soon as possible means quickly when you can.",
+      "am": "As soon as possible ማለት በተቻለ ፍጥነት ማለት ነው።"
+    }
+  },
+  {
+    "id": "en022",
+    "topic": "time",
+    "question": {
+      "en": "To ask for today’s schedule, say:",
+      "am": "የዛሬን መርሃ ግብር ለመጠየቅ ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "What is the schedule for today?",
+        "am": "የዛሬ መርሃ ግብር ምንድን ነው?"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Schedule means the plan for times and tasks.",
+      "am": "Schedule ማለት የጊዜና የስራ እቅድ ነው።"
+    }
+  },
+  {
+    "id": "en023",
+    "topic": "money",
+    "question": {
+      "en": "To ask how much something costs, say:",
+      "am": "አንድ ነገር ስንት እንደሚያወጣ ለመጠየቅ ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "How much does this cost?",
+        "am": "ይህ ስንት ያወጣል?"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "This is a common shopping question.",
+      "am": "ይህ በግዢ ጊዜ የተለመደ ጥያቄ ነው።"
+    }
+  },
+  {
+    "id": "en024",
+    "topic": "money",
+    "question": {
+      "en": "To ask for a receipt, say:",
+      "am": "Receipt ለመጠየቅ ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "Can I have a receipt, please?",
+        "am": "እባክዎ receipt ማግኘት እችላለሁ?"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "A receipt is proof of payment.",
+      "am": "Receipt የክፍያ ማረጋገጫ ነው።"
+    }
+  },
+  {
+    "id": "en025",
+    "topic": "money",
+    "question": {
+      "en": "To ask about paying with a card, say:",
+      "am": "በካርድ መክፈል ይቻላል ወይ ለመጠየቅ ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "Can I pay with a card?",
+        "am": "በካርድ መክፈል እችላለሁ?"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "This asks if card payment is accepted.",
+      "am": "ይህ በካርድ መክፈል እንደሚቻል ይጠይቃል።"
+    }
+  },
+  {
+    "id": "en026",
+    "topic": "money",
+    "question": {
+      "en": "To ask for your money back, say:",
+      "am": "ገንዘብዎ እንዲመለስ ለመጠየቅ ይህን ይበሉ:"
+    },
+    "answers": [
+      {
+        "en": "Can I get a refund?",
+        "am": "ገንዘቤን መመለስ እችላለሁ?"
+      }
+    ],
+    "correctIndex": 0,
+    "reasoning": {
+      "en": "Refund means money returned to you.",
+      "am": "Refund ማለት ወደ እርስዎ የሚመለስ ገንዘብ ነው።"
+    }
+  }
+]

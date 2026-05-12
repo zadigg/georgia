@@ -3,16 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Georgia Driver Practice | ጆርጂያ የመንጃ ፈቃድ ልምምድ</title>
-    <link rel="stylesheet" href="./styles.css?v=mobile9" />
+    <title>Practice Helper | Driver License + English</title>
+    <link rel="stylesheet" href="./styles.css?v=phrase1" />
   </head>
   <body>
     <main class="app-shell">
+      <section class="app-picker" aria-label="Practice area">
+        <button id="driverAppBtn" class="app-choice active" type="button">
+          <strong>Driver License</strong>
+          <span>Georgia DDS test practice</span>
+        </button>
+        <button id="englishAppBtn" class="app-choice" type="button">
+          <strong>English Practice</strong>
+          <span>Basic work and daily English</span>
+        </button>
+      </section>
+
       <section class="topbar" aria-label="Quiz controls">
         <div>
-          <p class="eyebrow">Georgia DDS Study Helper</p>
-          <h1>Driver License Practice</h1>
-          <p class="subtitle">English + Amharic questions for calmer studying.</p>
+          <p id="appEyebrow" class="eyebrow">Georgia DDS Study Helper</p>
+          <h1 id="appTitle">Driver License Practice</h1>
+          <p id="appSubtitle" class="subtitle">English + Amharic questions for calmer studying.</p>
         </div>
         <div class="mode-panel">
           <label for="mode">Mode</label>
@@ -45,8 +56,8 @@
           <p>Question bank</p>
         </div>
         <div class="metric pass">
-          <span>15/20</span>
-          <p>DDS passing target</p>
+          <span id="targetValue">15/20</span>
+          <p id="targetLabel">DDS passing target</p>
         </div>
       </section>
 
@@ -85,8 +96,8 @@
 
       <section class="practice-test">
         <div>
-          <h2>20-question practice test</h2>
-          <p>Start a timed-style mixed set from the full question bank. Georgia says each Knowledge Exam part needs 15 correct out of 20.</p>
+          <h2 id="practiceTitle">20-question practice test</h2>
+          <p id="practiceHelp">Start a timed-style mixed set from the full question bank. Georgia says each Knowledge Exam part needs 15 correct out of 20.</p>
         </div>
         <button id="testBtn" type="button">Start 20-question test</button>
       </section>
@@ -103,6 +114,6 @@
       </section>
     </main>
 
-    <script src="./app.js?v=mobile9"></script>
+    <script src="./app.js?v=phrase1"></script>
   </body>
 </html>
