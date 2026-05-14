@@ -1,5 +1,6 @@
 let driverQuestions = [];
 let englishQuestions = [];
+let liliQuestions = [];
 let questions = [];
 let signAssets = {};
 let activeApp = localStorage.getItem("practiceActiveApp") || "driver";
@@ -71,12 +72,45 @@ const appConfigs = {
     topicHelp() {
       return "Read the situation, say the English sentence out loud, then tap Practiced.";
     }
+  },
+  lili: {
+    progressKey: "liliDriverProgressV1",
+    legacyMissedKey: "liliDriverMissed",
+    eyebrow: "Lili Driver Study Helper",
+    title: "Lili Questions",
+    subtitle: "Separate English + Amharic driver license practice set.",
+    targetValue: "15/20",
+    targetLabel: "Practice target",
+    practiceTitle: "20-question Lili practice test",
+    practiceHelp: "Start a mixed set from the Lili question bank. These questions are saved and reviewed separately.",
+    testButton: "Start Lili test",
+    sourceNote: "Lili Questions are loaded from liliQuestion.json. This is a study app, not an official DDS exam.",
+    modes: [
+      ["all", "All topics"],
+      ["signs", "Road signs"],
+      ["rules", "Road rules"],
+      ["safety", "Safe driving"],
+      ["ga", "Georgia laws"],
+      ["missed", "Missed practice"]
+    ],
+    topicNames: {
+      signs: "Road signs",
+      rules: "Road rules",
+      safety: "Safe driving",
+      ga: "Georgia law"
+    },
+    topicHelp(question) {
+      return question.topic === "signs"
+        ? "Study the sign question, then choose the best answer."
+        : "Read both languages, then answer from the meaning, not just memorized words.";
+    }
   }
 };
 if (!appConfigs[activeApp]) activeApp = "driver";
 const els = {
   driverAppBtn: document.querySelector("#driverAppBtn"),
   englishAppBtn: document.querySelector("#englishAppBtn"),
+  liliAppBtn: document.querySelector("#liliAppBtn"),
   appEyebrow: document.querySelector("#appEyebrow"),
   appTitle: document.querySelector("#appTitle"),
   appSubtitle: document.querySelector("#appSubtitle"),
@@ -231,10 +265,15 @@ function appConfig() {
   return appConfigs[activeApp];
 }
 
+function isEnglishPractice() {
+  return activeApp === "english";
+}
+
 function renderAppShell() {
   const config = appConfig();
   els.driverAppBtn.classList.toggle("active", activeApp === "driver");
   els.englishAppBtn.classList.toggle("active", activeApp === "english");
+  els.liliAppBtn.classList.toggle("active", activeApp === "lili");
   els.appEyebrow.textContent = config.eyebrow;
   els.appTitle.textContent = config.title;
   els.appSubtitle.textContent = config.subtitle;
@@ -253,7 +292,7 @@ function switchPracticeApp(nextApp) {
   if (nextApp === activeApp) return;
   activeApp = nextApp;
   localStorage.setItem("practiceActiveApp", activeApp);
-  questions = activeApp === "english" ? englishQuestions : driverQuestions;
+  questions = questionBankForApp(activeApp);
   applyProgress(loadProgress());
   testQueue = null;
   resetQuestionHistory();
@@ -261,6 +300,12 @@ function switchPracticeApp(nextApp) {
   pool = shuffle([...filteredPool()]);
   updateStats();
   renderQuestion();
+}
+
+function questionBankForApp(appName) {
+  if (appName === "english") return englishQuestions;
+  if (appName === "lili") return liliQuestions;
+  return driverQuestions;
 }
 
 function escapeHtml(value) {
@@ -584,11 +629,11 @@ function setVisual(question) {
   const visual = visualMarkup(question);
   els.signVisual.className = visual.className;
   els.signVisual.innerHTML = visual.html;
-  const showInlineSign = activeApp === "driver" && question.topic === "signs";
+  const showInlineSign = !isEnglishPractice() && question.topic === "signs";
   els.inlineSignVisual.hidden = !showInlineSign;
   els.inlineSignVisual.className = showInlineSign ? `inline-sign-visual ${visual.className}` : "inline-sign-visual";
   els.inlineSignVisual.innerHTML = showInlineSign ? visual.html : "";
-  els.signVisual.hidden = activeApp === "english";
+  els.signVisual.hidden = isEnglishPractice();
   els.topicTitle.textContent = appConfig().topicNames[question.topic] || "Practice";
   els.topicHelp.textContent = appConfig().topicHelp(question);
 }
@@ -653,9 +698,9 @@ function renderFeedback(selectedIndex) {
   const isCorrect = selectedIndex === current.correctIndex;
   const correct = current.answers[current.correctIndex];
   const selected = current.answers[selectedIndex];
-  const wrongExplanation = activeApp === "driver"
-    ? "This does not match the Georgia driving rule for this situation."
-    : "This does not match the meaning of the English sentence.";
+  const wrongExplanation = isEnglishPractice()
+    ? "This does not match the meaning of the English sentence."
+    : "This does not match the driver license rule for this situation.";
   const correctAnswer = `
     <div class="feedback-answer">
       <span>Correct answer</span>
@@ -796,7 +841,7 @@ function renderQuestion(entry = null) {
 
   current = activeEntry.question;
   answeredCurrent = activeEntry.selectedIndex !== null;
-  els.questionCard?.classList?.toggle("has-inline-sign", activeApp === "driver" && current.topic === "signs");
+  els.questionCard?.classList?.toggle("has-inline-sign", !isEnglishPractice() && current.topic === "signs");
   els.feedback.hidden = true;
   els.questionNumber.textContent = activeEntry.label;
   els.questionEn.textContent = current.question.en;
@@ -804,7 +849,7 @@ function renderQuestion(entry = null) {
   setVisual(current);
 
   els.answers.innerHTML = "";
-  if (activeApp === "english") {
+  if (isEnglishPractice()) {
     renderPhrasePractice(activeEntry);
     if (!activeEntry.reviewOnly) {
       const button = document.createElement("button");
@@ -927,23 +972,23 @@ function resetStats() {
 
 function renderTestComplete() {
   showingTestComplete = true;
-  const passed = activeApp === "driver" ? score >= 15 : true;
+  const passed = isEnglishPractice() ? true : score >= 15;
   const missedCount = missedQuestions().length;
   els.questionCard?.classList?.remove("has-inline-sign");
   els.inlineSignVisual.hidden = true;
   els.inlineSignVisual.innerHTML = "";
   els.questionNumber.textContent = "Practice test complete";
-  els.questionEn.textContent = activeApp === "driver"
-    ? (passed ? "Passed practice target." : "Keep practicing, then try again.")
-    : "English practice complete.";
-  els.questionAm.textContent = activeApp === "driver"
-    ? (passed ? "የልምምድ ግብን አልፈዋል።" : "ልምምድ ይቀጥሉ፣ ከዚያ እንደገና ይሞክሩ።")
-    : "የእንግሊዝኛ ልምምድ ተጠናቋል።";
+  els.questionEn.textContent = isEnglishPractice()
+    ? "English practice complete."
+    : (passed ? "Passed practice target." : "Keep practicing, then try again.");
+  els.questionAm.textContent = isEnglishPractice()
+    ? "የእንግሊዝኛ ልምምድ ተጠናቋል።"
+    : (passed ? "የልምምድ ግብን አልፈዋል።" : "ልምምድ ይቀጥሉ፣ ከዚያ እንደገና ይሞክሩ።");
   els.answers.innerHTML = "";
   els.feedback.hidden = false;
   els.feedback.innerHTML = `
     <b>Your score: ${score}/20</b>
-    ${activeApp === "driver" ? "DDS uses 15 correct out of 20 as the passing target for each Knowledge Exam part." : "Review the missed English questions below, then try again when ready."}
+    ${isEnglishPractice() ? "Review the practiced English items below, then try again when ready." : "Use 15 correct out of 20 as the practice target."}
     ${missedCount ? `<p>${missedCount} missed question${missedCount === 1 ? "" : "s"} are saved below in Questions to review.</p>` : "<p>No missed questions saved right now.</p>"}
   `;
   els.nextBtn.textContent = "Next question";
@@ -1007,6 +1052,7 @@ els.clearMissedBtn.addEventListener("click", () => {
 
 els.driverAppBtn.addEventListener("click", () => switchPracticeApp("driver"));
 els.englishAppBtn.addEventListener("click", () => switchPracticeApp("english"));
+els.liliAppBtn.addEventListener("click", () => switchPracticeApp("lili"));
 
 els.testBtn.addEventListener("click", () => {
   score = 0;
@@ -1032,18 +1078,21 @@ els.speakBtn.addEventListener("click", () => {
 
 async function loadQuestions() {
   try {
-    const [response, englishResponse, assetResponse] = await Promise.all([
+    const [response, englishResponse, liliResponse, assetResponse] = await Promise.all([
       fetch("./questions.json?v=assets1"),
       fetch("./english-questions.json?v=apps1"),
+      fetch("./liliQuestion.json?v=lili1"),
       fetch("./assets/signs/sources.json?v=assets1")
     ]);
     if (!response.ok) throw new Error(`Unable to load questions: ${response.status}`);
     if (!englishResponse.ok) throw new Error(`Unable to load English questions: ${englishResponse.status}`);
+    if (!liliResponse.ok) throw new Error(`Unable to load Lili questions: ${liliResponse.status}`);
     if (!assetResponse.ok) throw new Error(`Unable to load sign assets: ${assetResponse.status}`);
     signAssets = await assetResponse.json();
     driverQuestions = await response.json();
     englishQuestions = await englishResponse.json();
-    questions = activeApp === "english" ? englishQuestions : driverQuestions;
+    liliQuestions = await liliResponse.json();
+    questions = questionBankForApp(activeApp);
     applyProgress(loadProgress());
     renderAppShell();
     pool = shuffle([...filteredPool()]);

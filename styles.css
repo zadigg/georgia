@@ -838,6 +838,10 @@ button:disabled {
 }
 
 @media (min-width: 840px) {
+  .app-picker {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .topbar {
     grid-template-columns: 1fr auto;
     align-items: end;
